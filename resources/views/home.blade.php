@@ -19,8 +19,10 @@
                                 <div class="banner__content p-relative">
                                     <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".7s">Hi, <span class="banner__shape-hand"><img
                                    src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found"></span>
-                                        I’m <span class="bd-text-primary">Portlu</span> UI Designer Based in Florida </h1>
-                                    <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">We are a creative agency that specializes in providing high-quality design and branding solutions to design and coding.</p>
+                                        I’m <span class="bd-text-primary">Eddy</span> Web Developer Based in Madrid </h1>
+                                    <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
+                                        My passion is creating stunning and functional digital experiences. From sleek websites to dynamic applications, I'm here to turn your ideas into reality. Welcome to my portfolio, where you can see what I can do for you.
+                                    </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
                                     <a class="bd-btn is-btn-anim" href="portfolio.html">
@@ -88,16 +90,20 @@
                         <div class="section__title-wrapper mb-25">
                             <div class="section__title-wrapper">
                                 <span class="section__subtitle">ABOUT ME</span>
-                                <h2 class="section__title">Young Man Student With Notebooks</h2>
+                                <h2 class="section__title">I am a specialist in web application development</h2>
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p class="about__text">Our journey began with a simple belief that every idea, no matter how small, has the power to make a significant impact.passion meets progress and company to grow </p>
-                        <p class="about__text-two">In a world saturated with noise, we stand out by embracing a commitment to authenticity and originality. </p>
+                        <p class="about__text">
+                            With over five years of experience as a software developer, I've had the privilege of working on a variety of challenging projects that have enriched my skills and knowledge in the field of technology. Each step in my career has been guided by an unwavering passion for innovation and technical excellence.
+                        </p>
+                        <p class="about__text-two">
+                            I'm excited to continue growing and learning in this exciting field, and I'm committed to pushing the boundaries of what's possible in software development. I'm ready to tackle new challenges and contribute my expertise and skills to innovative projects that make a difference in the digital world.
+                        </p>
                         <div class="about__counter-wrapper">
                             <div class="about__counter-info">
                                 <div class="about__counter-count">
-                                    <h3><span class="counter">20</span>th</h3>
+                                    <h3><span class="counter">5</span>th</h3>
                                 </div>
                                 <p>Years of Experience</p>
                             </div>
@@ -111,14 +117,11 @@
                         <div class="about__btn">
                             <a class="bd-btn is-btn-anim" href="about.html">
                                 <span class="bd-btn-inner">
-    <span class="bd-btn-normal">Know more</span>
+                                <span class="bd-btn-normal">Know more</span>
                                 <span class="bd-btn-hover">Know more</span>
                                 <i class="contentHidden"></i>
                                 </span>
                             </a>
-
-
-
                             <a class="play__btn popup-video animate-play" href="https://www.youtube.com/watch?v=9341cn0KokE"><span><i
                             class="icon-play"></i></span></a>
                         </div>
@@ -139,8 +142,11 @@
                 <div class="col-lg-6">
                     <div class="section__title-wrapper text-center section__title-space">
                         <span class="section__subtitle">MY SERVICE</span>
-                        <h2 class="section__title mb-20">Professional Services</h2>
-                        <p class="section__paragraph is-br-none">Begin with a brief introduction or summary that <br> highlights who you are and what</p>
+                        <h2 class="section__title mb-20">Professional Services</h2>                        
+                        {{-- <p class="section__paragraph is-br-none">Begin with a brief introduction or summary that <br> highlights who you are and what</p> --}}
+                        <p class="section__paragraph is-br-none">
+                            Expert web developer in frontend and backend, blending technical skills with graphic design to craft impactful digital experiences. From system architecture to the implementation of attractive interfaces, I'm committed to creating digital experiences that are both functional and visually striking for my clients.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -149,33 +155,28 @@
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="contentHidden"></div>
                         <div class="contentHidden"></div>
-                        <span class="service__icon-wrap">
-        <i class="icon-ux-design"></i>
-    </span>
+                        <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
                             <p>Start with a brief introduction about your a yourself. Mention your name, your current role or status .</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-        <i class="icon-design"></i>
-    </span>
+                        <span class="service__icon-wrap"><i class="icon-design"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
                             <p>Develop detailed case studies for a few key projects to provide deeper insights into your design process.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -185,15 +186,13 @@
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-        <i class="icon-project"></i>
-    </span>
+                        <span class="service__icon-wrap"><i class="icon-project"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
                             <p>Showcase your design process, from initial concept to final execution. Include stages research, ideation.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -203,15 +202,13 @@
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-        <i class="icon-animation"></i>
-    </span>
+                        <span class="service__icon-wrap"><i class="icon-animation"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Animation</a></h5>
                             <p>If applicable, include storyboard sketches, concept art, or character designs that contributed to art design.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -221,15 +218,13 @@
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-        <i class="icon-application"></i>
-    </span>
+                        <span class="service__icon-wrap"><i class="icon-application"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
                             <p>Whenever possible, incorporate interactive prototypes that allow visitors to experience the app's user.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -239,15 +234,13 @@
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
-                        <span class="service__icon-wrap">
-        <i class="icon-game"></i>
-    </span>
+                        <span class="service__icon-wrap"><i class="icon-game"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Game Development</a></h5>
                             <p>Share design documents, storyboards, or game design document that illustrate your planning and concept.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="assets/imgs/icons/arrow.png"> </i></span></a>
+                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -278,14 +271,11 @@
                     <div class="portfolio__more text-md-end">
                         <a class="bd-btn is-btn-anim" href="portfolio.html">
                             <span class="bd-btn-inner">
-    <span class="bd-btn-normal">View all project</span>
-                            <span class="bd-btn-hover">View all project</span>
-                            <i class="contentHidden"></i>
+                                <span class="bd-btn-normal">View all project</span>
+                                <span class="bd-btn-hover">View all project</span>
+                                <i class="contentHidden"></i>
                             </span>
                         </a>
-
-
-
                     </div>
                 </div>
             </div>
@@ -294,7 +284,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                         <div class=" portfolio__item">
                             <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="assets/imgs/portfolio/masonary/portfolio-masonary-01.png" alt="img not found"></a>
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-01.png') }}" alt="img not found"></a>
                             </div>
                             <div class="portfolio__content">
                                 <div class="portfolio__info">
@@ -316,7 +306,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                         <div class=" portfolio__item">
                             <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="assets/imgs/portfolio/masonary/portfolio-masonary-02.png" alt="img not found"></a>
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-02.png') }}" alt="img not found"></a>
                             </div>
                             <div class="portfolio__content">
                                 <div class="portfolio__info">
@@ -338,7 +328,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                         <div class=" portfolio__item">
                             <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="assets/imgs/portfolio/masonary/portfolio-masonary-04.png" alt="img not found"></a>
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-04.png') }}" alt="img not found"></a>
                             </div>
                             <div class="portfolio__content">
                                 <div class="portfolio__info">
@@ -360,7 +350,7 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                         <div class=" portfolio__item">
                             <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="assets/imgs/portfolio/masonary/portfolio-masonary-03.png" alt="img not found"></a>
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-03.png') }}" alt="img not found"></a>
                             </div>
                             <div class="portfolio__content">
                                 <div class="portfolio__info">
@@ -720,7 +710,7 @@
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".3s">
                         <div class="skill__icon-thumb white-bg">
-                            <img src="assets/imgs/skill/01.png" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/01.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">88</span>%</h3>
@@ -731,7 +721,7 @@
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".5s">
                         <div class="skill__icon-thumb pink-bg">
-                            <img src="assets/imgs/skill/02.png" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/02.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">98</span>%</h3>
@@ -742,7 +732,7 @@
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".7s">
                         <div class="skill__icon-thumb white-bg">
-                            <img src="assets/imgs/skill/03.png" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/03.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">78</span>%</h3>
@@ -753,7 +743,7 @@
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
                         <div class="skill__icon-thumb red-bg">
-                            <img src="assets/imgs/skill/04.png" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/04.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">68</span>%</h3>
@@ -912,11 +902,11 @@
                     <div class="testimonial__thumb-wrap">
                         <div class="testimonial__thumb">
                             <div class="testimonial__bg"></div>
-                            <img src="assets/imgs/testimonial/testimonial-01.png" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}" alt="img not found">
                             <div class="testimonial__thumb-small">
-                                <img class="img-one" src="assets/imgs/user/user-04.png" alt="img not found">
-                                <img class="img-two" src="assets/imgs/user/user-05.png" alt="img not found">
-                                <img class="img-three" src="assets/imgs/user/user-06.png" alt="img not found">
+                                <img class="img-one" src="{{ Vite::asset('resources/imgs/user/user-04.png') }}" alt="img not found">
+                                <img class="img-two" src="{{ Vite::asset('resources/imgs/user/user-05.png') }}" alt="img not found">
+                                <img class="img-three" src="{{ Vite::asset('resources/imgs/user/user-06.png') }}" alt="img not found">
                             </div>
                         </div>
                     </div>
@@ -955,7 +945,7 @@
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
-                                                <img src="assets/imgs/user/user-03.png" alt="img not found">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-03.png') }}" alt="img not found">
                                             </div>
                                             <div class="testimonial__avatar-info">
                                                 <h6 class="testimonial__avatar-title">Louis</h6>
@@ -990,7 +980,7 @@
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
-                                                <img src="assets/imgs/user/user-01.png" alt="img not found">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-01.png') }}" alt="img not found">
                                             </div>
                                             <div class="testimonial__avatar-info">
                                                 <h6 class="testimonial__avatar-title">Alexa</h6>
@@ -1025,7 +1015,7 @@
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
-                                                <img src="assets/imgs/user/user-02.png" alt="img not found">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-02.png') }}" alt="img not found">
                                             </div>
                                             <div class="testimonial__avatar-info">
                                                 <h6 class="testimonial__avatar-title">Morish</h6>
@@ -1068,7 +1058,7 @@
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
                             <a href="blog-details.html">
-                                <img src="assets/imgs/blog/blog-01.png" alt="image not found">
+                                <img src="{{ Vite::asset('resources/imgs/blog/blog-01.png') }}" alt="image not found">
                             </a>
                             <div class="blog__meta style-one">
                                 <h2 class="date">25 <span class="month">OCT</span></h2>
@@ -1090,7 +1080,7 @@
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
                             <a href="blog-details.html">
-                                <img src="assets/imgs/blog/blog-02.png" alt="image not found">
+                                <img src="{{ Vite::asset('resources/imgs/blog/blog-02.png') }}" alt="image not found">
                             </a>
                             <div class="blog__meta style-one">
                                 <h2 class="date">20 <span class="month">FEB</span></h2>
@@ -1116,8 +1106,8 @@
     <!-- Contact area start -->
     <div id="homecontact" class="bd-contact__area theme-bg-secondary section-space p-relative fix">
         <div class="contact__shape">
-            <img class="contact__shape-one" src="assets/imgs/shape/contact-shape-01.png" alt="image not found">
-            <img class="contact__shape-two" src="assets/imgs/shape/contact-shape-02.png" alt="image not found">
+            <img class="contact__shape-one" src="{{ Vite::asset('resources/imgs/shape/contact-shape-01.png') }}" alt="image not found">
+            <img class="contact__shape-two" src="{{ Vite::asset('resources/imgs/shape/contact-shape-02.png') }}" alt="image not found">
         </div>
         <div class="container">
             <div class="row g-5 align-items-center">
@@ -1163,7 +1153,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-1 order-0 wow fadeInRight" data-wow-delay=".3s">
                     <div class="contact__info-wrapper">
                         <div class="contact__thumb">
-                            <img src="assets/imgs/contact/contact-01.png" alt="img not found">
+                            <img src="{{ Vite::asset('resources/imgs/contact/contact-01.png') }}" alt="img not found">
                         </div>
                         <div class="contact__info-item">
                             <ul>
