@@ -114,7 +114,7 @@
         <div class="footer__copyright style-two">
             <div class="container">
                 <div class="footer__copyright">
-                    <p>Copyright @ 2024 <a href="#">Portlu.</a> All Right Reserved</p>
+                    <p>Copyright @ 2024 <a href="#">Lujandev.</a> All Right Reserved</p>
                 </div>
             </div>
         </div>

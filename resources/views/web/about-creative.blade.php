@@ -12,12 +12,12 @@
                 <div class="col-xl-8 col-lg-8 col-md-10">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1">
                         <div class="breadcrumb__title-wrapper text-center">
-                            <h1 class="breadcrumb__title mb-25">Digital Agency for Your Business Solutions</h1>
+                            <h1 class="breadcrumb__title mb-25">Full Stack Web Developer</h1>
                         </div>
                         <div class="breadcrumb__menu text-center">
                             <nav>
                                 <ul>
-                                    <li><span><a href="index.html">Home</a></span></li>
+                                    <li><span><a href="{{ route('home') }}">Home</a></span></li>
                                     <li><span>About Creative</span></li>
                                 </ul>
                             </nav>
@@ -40,12 +40,21 @@
                 </div>
                 <div class="col-xl-8 col-lg-8">
                     <div class="about__text wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1s">
-                        <p class="mb-15">The agency looking to outsource design work. a company in search of a designer or
-                            product work. a agency that needs a landing page a startup that wants to launch an app or an
-                            enterprise that plans to rebrand. or redesign its website, we welcome any challenge with our
-                            arms wide open builds digital products that let people do things differently. Share your
-                            challenge with our team.</p>
-                        <p>A agency we are specialize in designing, building, shipping and scaling beautiful, usable products with blazing fast efficiency we welcome any challenge with our arms wide open.</p>
+                        <p class="mb-15">
+                            My name is Eddy Luján. I am a technology enthusiast with over 4 years of experience in the application development sector.                            
+                        </p>
+                        <p class="mb-15">
+                            Since 2018, I have worked for major companies such as Avanweb, Cas-training, and I am currently employed by Indra.                            
+                        </p>
+                        <p class="mb-15">
+                            You can also refer to me as a programmer, application developer, or any other job title defined by the market.                            
+                        </p>
+                        <p class="mb-15">
+                            Lujandev reflects the enthusiasm and energy that drive me to keep learning, keep challenging myself, and do meaningful work.
+                        </p>
+                        <p class="mb-15">
+                            I enjoy gaining experience in various areas throughout my life and career. Currently, I work remotely and am open to new opportunities.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -118,9 +127,8 @@
                         <div class="section__title-wrapper mb-40">
                             <div class="section__title-wrapper">
                                 <span class="section__subtitle bg-field">OUR SKILLS</span>
-                                <h2 class="section__title mb-20">Display Our Best Skills For The World</h2>
-                                <p>Multiple variations of passages resembling Lorem Ipsum are accessible, yet the majority
-                                    have been modified.</p>
+                                <h2 class="section__title mb-20">Frontend and Backend Developer</h2>
+                                <p>Since I began my journey as a developer over 4 years ago, I have undertaken remote work for startups and collaborated with talented individuals to create digital products for both commercial and consumer use. I am quietly confident, naturally curious, and perpetually working to enhance my skills, one development challenge at a time.</p>
                             </div>
                         </div>
                         <div class="bd-progress__wrap">
@@ -128,18 +136,25 @@
                                 <div class="bd__progress">
                                     <div class="bd__progress-wrapper">
                                         <div class="bd__progress-head">
-                                            <h6 class="bd__progress-title">UX/UI Design</h6>
-                                            <p class="bd__progress-percentage">80%</p>
+                                            <h6 class="bd__progress-title">Laravel</h6>
+                                            <p class="bd__progress-percentage">90%</p>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                                <span></span>
-                                            </div>
+                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="bd__progress-wrapper">
                                         <div class="bd__progress-head">
-                                            <h6 class="bd__progress-title">Development</h6>
+                                            <h6 class="bd__progress-title">Javascript</h6>
+                                            <p class="bd__progress-percentage">60%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bd__progress-wrapper">
+                                        <div class="bd__progress-head">
+                                            <h6 class="bd__progress-title">Angular</h6>
                                             <p class="bd__progress-percentage">70%</p>
                                         </div>
                                         <div class="progress">
@@ -148,20 +163,31 @@
                                     </div>
                                     <div class="bd__progress-wrapper">
                                         <div class="bd__progress-head">
-                                            <h6 class="bd__progress-title">Coding</h6>
-                                            <p class="bd__progress-percentage">85%</p>
+                                            <h6 class="bd__progress-title">NodeJS</h6>
+                                            <p class="bd__progress-percentage">70%</p>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div class="bd__progress-wrapper">
                                         <div class="bd__progress-head">
-                                            <h6 class="bd__progress-title">Figma</h6>
-                                            <p class="bd__progress-percentage">90%</p>
+                                            <h6 class="bd__progress-title">Swift</h6>
+                                            <p class="bd__progress-percentage">40%</p>
                                         </div>
                                         <div class="progress">
-                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 40%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                    </div>
+                                    <div class="bd__progress-wrapper">
+                                        <div class="bd__progress-head">
+                                            <h6 class="bd__progress-title">UX/UI Design</h6>
+                                            <p class="bd__progress-percentage">50%</p>
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar wow slideInLeft" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                                <span></span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -172,7 +198,7 @@
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <div class="skill__thumb-wrapper wow fadeInRight" data-wow-delay=".3s">
                         <div class="skill__thumb">
-                            <img src="assets/imgs/skill/skill-01.png" alt="image not found">
+                            <img src="{{ Vite::asset('resources/imgs/skill/skill-01.png') }}" alt="image not found">
                         </div>
                         <div class="video__content text-center">
                             <div class="video__play">
@@ -294,7 +320,7 @@
                                 <div class="team__wrap team__item text-center">
                                     <div class="team__thumb bg-solid">
                                         <a href="team-details.html">
-                                            <img src="assets/imgs/team/team-01.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/team/team-01.png') }}" alt="image not found">
                                         </a>
                                     </div>
                                     <div class="team__content">
@@ -317,7 +343,7 @@
                                 <div class="team__wrap team__item text-center">
                                     <div class="team__thumb bg-solid">
                                         <a href="team-details.html">
-                                            <img src="assets/imgs/team/team-02.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/team/team-02.png') }}" alt="image not found">
                                         </a>
                                     </div>
                                     <div class="team__content">
@@ -340,7 +366,7 @@
                                 <div class="team__wrap team__item text-center">
                                     <div class="team__thumb bg-solid">
                                         <a href="team-details.html">
-                                            <img src="assets/imgs/team/team-03.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/team/team-03.png') }}" alt="image not found">
                                         </a>
                                     </div>
                                     <div class="team__content">
@@ -363,7 +389,7 @@
                                 <div class="team__wrap team__item text-center">
                                     <div class="team__thumb bg-solid">
                                         <a href="team-details.html">
-                                            <img src="assets/imgs/team/team-04.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/team/team-04.png') }}" alt="image not found">
                                         </a>
                                     </div>
                                     <div class="team__content">
@@ -386,7 +412,7 @@
                                 <div class="team__wrap team__item text-center">
                                     <div class="team__thumb bg-solid">
                                         <a href="team-details.html">
-                                            <img src="assets/imgs/team/team-01.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/team/team-01.png') }}" alt="image not found">
                                         </a>
                                     </div>
                                     <div class="team__content">
@@ -409,7 +435,7 @@
                                 <div class="team__wrap team__item text-center">
                                     <div class="team__thumb bg-solid">
                                         <a href="team-details.html">
-                                            <img src="assets/imgs/team/team-03.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/team/team-03.png') }}" alt="image not found">
                                         </a>
                                     </div>
                                     <div class="team__content">
@@ -530,7 +556,7 @@
 
     <!-- testimonial area start -->
     <section class="bd-testimonial__area section-space p-relative style-seven">
-        <div class="bg__thumb-position include-bg is-overlay" data-background="assets/imgs/bg/testimonial-bg-01.png">
+        <div class="bg__thumb-position include-bg is-overlay" data-background="{{ Vite::asset('resources/imgs/bg/testimonial-bg-01.png') }}">
         </div>
         <div class="container">
             <div class="row g-5 justify-content-center">
@@ -550,24 +576,24 @@
                                 <div class="testimonial__wrapper style-seven">
                                     <div class="testimonial__top-item">
                                         <span class="testimonial__rating">
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                             </span>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                        </span>
                                         <div class="testimonial__shape">
-                                            <img class="testimonial__shape-quote" src="assets/imgs/shape/testimonial-quote-07.png" alt="image not found">
+                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07.png') }}" alt="image not found">
                                         </div>
                                     </div>
                                     <div class="testimonial__item">
@@ -582,12 +608,11 @@
                                     </div>
                                     <div class="testimonial__thumb-wrap">
                                         <div class="testimonial__thumb">
-                                            <img src="assets/imgs/user/user-08.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/user/user-08.png') }}" alt="image not found">
                                         </div>
                                         <div class="testimonial__avatar-info">
                                             <h6 class="testimonial__avatar-title">Alex</h6>
-                                            <span class="testimonial__avatar-designation">Manager
-                                </span>
+                                            <span class="testimonial__avatar-designation">Manager</span>
                                         </div>
                                     </div>
                                 </div>
@@ -596,24 +621,24 @@
                                 <div class="testimonial__wrapper style-seven">
                                     <div class="testimonial__top-item">
                                         <span class="testimonial__rating">
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                             </span>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                        </span>
                                         <div class="testimonial__shape">
-                                            <img class="testimonial__shape-quote" src="assets/imgs/shape/testimonial-quote-07.png" alt="image not found">
+                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07') }}.png" alt="image not found">
                                         </div>
                                     </div>
                                     <div class="testimonial__item">
@@ -628,12 +653,11 @@
                                     </div>
                                     <div class="testimonial__thumb-wrap">
                                         <div class="testimonial__thumb">
-                                            <img src="assets/imgs/user/user-09.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/user/user-09.png') }}" alt="image not found">
                                         </div>
                                         <div class="testimonial__avatar-info">
                                             <h6 class="testimonial__avatar-title"> Louis</h6>
-                                            <span class="testimonial__avatar-designation">Web Designer
-                                </span>
+                                            <span class="testimonial__avatar-designation">Web Designer</span>
                                         </div>
                                     </div>
                                 </div>
@@ -642,24 +666,24 @@
                                 <div class="testimonial__wrapper style-seven">
                                     <div class="testimonial__top-item">
                                         <span class="testimonial__rating">
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                                <a href="#">
-                                   <i class="icon-star"></i>
-                                </a>
-                             </span>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                            <i class="icon-star"></i>
+                                            </a>
+                                        </span>
                                         <div class="testimonial__shape">
-                                            <img class="testimonial__shape-quote" src="assets/imgs/shape/testimonial-quote-07.png" alt="image not found">
+                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07') }}.png" alt="image not found">
                                         </div>
                                     </div>
                                     <div class="testimonial__item">
@@ -674,12 +698,11 @@
                                     </div>
                                     <div class="testimonial__thumb-wrap">
                                         <div class="testimonial__thumb">
-                                            <img src="assets/imgs/user/user-10.png" alt="image not found">
+                                            <img src="{{ Vite::asset('resources/imgs/user/user-10.png') }}" alt="image not found">
                                         </div>
                                         <div class="testimonial__avatar-info">
                                             <h6 class="testimonial__avatar-title">Alex</h6>
-                                            <span class="testimonial__avatar-designation">Manager
-                                </span>
+                                            <span class="testimonial__avatar-designation">Manager</span>
                                         </div>
                                     </div>
                                 </div>
@@ -708,42 +731,42 @@
                         <div class="swiper-slide">
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
-                                    <img src="assets/imgs/brand/02/brand-01.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-01.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
-                                    <img src="assets/imgs/brand/02/brand-02.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-02.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
-                                    <img src="assets/imgs/brand/02/brand-03.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-03.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
-                                    <img src="assets/imgs/brand/02/brand-04.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-04.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
-                                    <img src="assets/imgs/brand/02/brand-05.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-05.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
-                                    <img src="assets/imgs/brand/02/brand-06.png" alt="image not found">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-06.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
