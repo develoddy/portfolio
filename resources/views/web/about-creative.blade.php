@@ -29,38 +29,114 @@
     </section>
     <!-- breadcrumb area  end -->
 
-    <!-- about text area start -->
-    <section class="bd-about-text__area section-space">
+    <!-- about style 04 start -->
+    <section class="bd-about__area section-space p-relative theme-bg-secondary">
+        <div class="about__shape">
+            <img class="about__shape-two" src="{{ Vite::asset('resources/imgs/shape/lamp-shape.png') }}" alt="image not found">
+        </div>
         <div class="container">
-            <div class="row g-5">
-                <div class="col-xl-4 col-lg-4">
-                    <div class="about__inner-wrapper wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-                        <h4 class="about__title"> We're here to design and digital experience</h4>
+            <div class="row align-items-center d-none">
+                <div class="col-12">
+                    <div class="section__title-wrapper section__title-space text-center">
+                        <div class="elements-section__wrapper elements-line">
+                            <div class="separator__line line-left"></div>
+                            <div class="elements-title__wrapper">
+                                <h4 class="section__title elements__title">About Style 04</h4>
+                            </div>
+                            <div class="separator__line line-right"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-xl-8 col-lg-8">
-                    <div class="about__text wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1s">
-                        <p class="mb-15">
-                            My name is Eddy Luján. I am a technology enthusiast with over 4 years of experience in the application development sector.                            
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="about__thumb-wrapper style-four wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="about__thumb">
+                            <img src="{{ Vite::asset('resources/imgs/about/about-04.png') }}" alt="image not found">
+                            <div class="about__shape">
+                                <img class="about__shape-one" src="{{ Vite::asset('resources/imgs/shape/dot-small.png') }}" alt="image not found">
+                            </div>
+                            <div class="about__counter-wrapper d-none">
+                                <div class="about__counter-info">
+                                    <div class="about__counter-count">
+                                        <h2><span class="counter">20</span>+</h2>
+                                    </div>
+                                    <p>Years of Experience</p>
+                                </div>
+                                <div class="about__counter-info">
+                                    <div class="about__counter-count">
+                                        <h2><span class="counter">500</span>+</h2>
+                                    </div>
+                                    <p>Stratified Customers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <div class="about__content style-four  wow fadeInRight" data-wow-delay=".3s">
+                        <div class="section__title-wrapper mb-25">
+                            <div class="section__title-wrapper">
+                                <span class="section__subtitle sec-border">Who I Am</span>
+                                <h2 class="section__title">My history</h2>
+                                <p class="contentHidden">contentHiddenText</p>
+                            </div>
+                        </div>
+                        <p>Our agency thrives on collaboration, where each member of our team brings unique perspective expertise
+                            to the table. We are believe in the power creativity transform.
                         </p>
-                        <p class="mb-15">
-                            Since 2018, I have worked for major companies such as Avanweb, Cas-training, and I am currently employed by Indra.                            
+                        <p>Our agency thrives on collaboration, where each member of our team brings unique perspective expertise
+                            to the table. We are believe in the power creativity transform.
                         </p>
-                        <p class="mb-15">
-                            You can also refer to me as a programmer, application developer, or any other job title defined by the market.                            
+                        <p>Our agency thrives on collaboration, where each member of our team brings unique perspective expertise
+                            to the table. We are believe in the power creativity transform.
                         </p>
-                        <p class="mb-15">
-                            Lujandev reflects the enthusiasm and energy that drive me to keep learning, keep challenging myself, and do meaningful work.
+                        <p>Our agency thrives on collaboration, where each member of our team brings unique perspective expertise
+                            to the table. We are believe in the power creativity transform.
                         </p>
-                        <p class="mb-15">
-                            I enjoy gaining experience in various areas throughout my life and career. Currently, I work remotely and am open to new opportunities.
-                        </p>
+                        <div class="about__info-list d-none">
+                            <div class="about__info-item">
+                                <div class="about__info-icon">
+                                    <span><i class="icon-partner"></i></span>
+                                </div>
+                                <div class="about__info-content">
+                                    <h5>Trustworthy</h5>
+                                    <p>Candid heading and confrontation</p>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <div class="about__info-icon">
+                                    <span><i class="icon-grow"></i></span>
+                                </div>
+                                <div class="about__info-content">
+                                    <h5>Improvement</h5>
+                                    <p>Progress title and debate</p>
+                                </div>
+                            </div>
+                            <div class="about__info-item">
+                                <div class="about__info-icon">
+                                    <span><i class="icon-strategy"></i></span>
+                                </div>
+                                <div class="about__info-content">
+                                    <h5>Strategy</h5>
+                                    <p>Approach heading and dispute</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about__btn">
+                            <a class="bd-btn is-btn-anim bordered-blue" href="about.html">
+                                <span class="bd-btn-inner"><span class="bd-btn-normal">Know more</span>
+                                <span class="bd-btn-hover">Know more</span>
+                                <i class="contentHidden"></i>
+                                </span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- about text area end -->
+    <!-- about style 04 end -->
 
     <!-- portfolio slider area start -->
     <div class="bd-portfoli-details-area section-space-bottom fix">
@@ -95,6 +171,13 @@
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png')}}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class=" portfolio__item style-six portfolio-details">
+                                        <div class="portfolio__item-thumb">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-05.png')}}" alt="">
                                         </div>
                                     </div>
                                 </div>

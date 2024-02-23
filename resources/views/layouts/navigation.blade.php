@@ -1,6 +1,6 @@
 <!-- Header area start -->
 <header>
-    <div id="header-sticky" class="header__area header-transparent">
+    <div id="header-sticky" class="header__area header-transparent is-border-bottom">
         <div class="container">
             <div class="mega__menu-wrapper p-relative">
                 <div class="header__main">

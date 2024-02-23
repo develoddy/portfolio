@@ -17,7 +17,7 @@
         <meta name="description" content="">
 
         <!-- Place favicon.ico in the root directory -->
-        <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.svg') }}">
+        <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
 
         <!-- CSS here -->
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
