@@ -181,6 +181,13 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class=" portfolio__item style-six portfolio-details">
+                                        <div class="portfolio__item-thumb">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-09.png')}}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- If we need navigation buttons -->
                             <div class="portfolio__navigation d-none d-sm-block">

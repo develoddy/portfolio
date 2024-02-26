@@ -6,7 +6,7 @@
                 <div class="header__main">
                     <div class="header__left">
                         <div class="header__logo">
-                            <a href="index.html">
+                            <a href="{{ route('home') }}">
                                 <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="logo not found">
                             </a>
                         </div>
@@ -40,15 +40,11 @@
                         <div class="header__action d-flex align-items-center">
                             <div class="header__btn-wrap d-none d-sm-inline-flex d-inline-flex align-items-center gap-5">
                                 <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('contact') }}">
-                                    <span class="bd-btn-inner">
-    <span class="bd-btn-normal">Contact me</span>
+                                    <span class="bd-btn-inner"><span class="bd-btn-normal">Contact me</span>
                                     <span class="bd-btn-hover">Contact me</span>
                                     <i class="contentHidden"></i>
                                     </span>
                                 </a>
-
-
-
                             </div>
                             <div class="header__hamburger ml-20 d-lg-none">
                                 <div class="sidebar__toggle">

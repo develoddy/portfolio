@@ -12,7 +12,10 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">Connect With Us For More Information</h1>
+                            <h1 class="breadcrumb__title mb-25">Contact</h1>
+                            <p class="mb-15">
+                                ¡Hablemos sobre tu visión y cómo podemos convertirla en realidad a través de un desarrollo web completo y personalizado!
+                            </p>
                         </div>
                         <div class="breadcrumb__menu">
                             <nav>
@@ -42,7 +45,7 @@
                         </div>
                         <div class="contact__item-content">
                             <span class="contact-item-subtitle">Location</span>
-                            <h5><a target="_blank" href="https://www.google.com/maps">Paseo de la chopera 76, Alcobendas, MAadrid</a></h5>
+                            <h5><a target="_blank" href="https://www.google.com/maps">Paseo de la chopera 76, Alcobendas, Madrid</a></h5>
                         </div>
                     </div>
                 </div>

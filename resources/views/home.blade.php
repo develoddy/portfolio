@@ -25,7 +25,7 @@
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    <a class="bd-btn is-btn-anim" href="portfolio.html">
+                                    <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                                         <span class="bd-btn-inner"><span class="bd-btn-normal">Get my work</span>
                                         <span class="bd-btn-hover">Get my work</span>
                                         <i class="contentHidden"></i>
@@ -269,7 +269,7 @@
                 </div>
                 <div class="col-lg-7 col-md-5">
                     <div class="portfolio__more text-md-end">
-                        <a class="bd-btn is-btn-anim" href="portfolio.html">
+                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                             <span class="bd-btn-inner">
                                 <span class="bd-btn-normal">View all project</span>
                                 <span class="bd-btn-hover">View all project</span>
@@ -714,18 +714,18 @@
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">88</span>%</h3>
-                            <span class="skill__name">Figma</span>
+                            <span class="skill__name">Laravel</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".5s">
-                        <div class="skill__icon-thumb pink-bg">
+                        <div class="skill__icon-thumb white-bg">
                             <img src="{{ Vite::asset('resources/imgs/skill/02.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">98</span>%</h3>
-                            <span class="skill__name">Vision</span>
+                            <span class="skill__name">Angular</span>
                         </div>
                     </div>
                 </div>
@@ -736,18 +736,51 @@
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">78</span>%</h3>
-                            <span class="skill__name">Sketch</span>
+                            <span class="skill__name">MySQL</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
-                        <div class="skill__icon-thumb red-bg">
+                        <div class="skill__icon-thumb white-bg">
                             <img src="{{ Vite::asset('resources/imgs/skill/04.png') }}" alt="img not found">
                         </div>
                         <div class="skill__content">
                             <h3><span class="counter">68</span>%</h3>
-                            <span class="skill__name">Cloud</span>
+                            <span class="skill__name">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/05.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">HTML5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/06.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/07.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">Javascript</span>
                         </div>
                     </div>
                 </div>
@@ -757,7 +790,7 @@
     <!-- counter area end -->
 
     <!-- pricing area start -->
-    <div class="bd-pricing__area section-space">
+    <div class="bd-pricing__area section-space d-none">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6">
@@ -893,6 +926,62 @@
         </div>
     </div>
     <!-- pricing area end -->
+
+     <!-- brand style 02 start -->
+    <section class="bd-brand__area section-space x-clip">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="section__title-wrapper section__title-space text-center">
+                        <div class="elements-section__wrapper elements-line">
+                            <div class="separator__line line-left"></div>
+                            <div class="elements-title__wrapper">
+                                <h4 class="section__title elements__title">Brand Style 02</h4>
+                            </div>
+                            <div class="separator__line line-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="brand__wrapper wow fadeInUp" data-wow-delay=".3s">
+            <div class="swiper brand__active">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-01.png') }}" alt="image not found">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-02.png') }}" alt="image not found">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-03.png') }}" alt="image not found">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-04.png') }}" alt="image not found">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-01.png') }}" alt="image not found">
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand__item">
+                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-02.png') }}" alt="image not found">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brand style 02 end -->
 
     <!-- testimonial area start -->
     <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
@@ -1041,6 +1130,7 @@
     </section>
     <!-- testimonial area end -->
 
+
     <!-- blog area start -->
     <div id="homeblog" class="bd-blog__area section-space">
         <div class="container">
@@ -1061,11 +1151,11 @@
                                 <img src="{{ Vite::asset('resources/imgs/blog/blog-01.png') }}" alt="image not found">
                             </a>
                             <div class="blog__meta style-one">
-                                <h2 class="date">25 <span class="month">OCT</span></h2>
+                                <h2 class="date">26 <span class="month">FEB</span></h2>
                             </div>
                         </div>
                         <div class="blog__content">
-                            <h4 class="blog__title small"><a href="blog-details.html">The Impact of Micro interactions User Engagement</a></h4>
+                            <h4 class="blog__title small"><a href="blog-details.html">Full-Stack Web Developer</a></h4>
                             <p>Explore how subtle micro interactions can enhance user and satisfaction Stay up to-date with the latest trends in web develop including new technologies</p>
                             <div class="blog__btn-text">
                                 <a href="blog-details.html" class="underline-btn">
@@ -1074,7 +1164,6 @@
                             </div>
                         </div>
                     </section>
-
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-6">
                     <section class="blog__wrap blog__item bg-solid">
@@ -1087,7 +1176,7 @@
                             </div>
                         </div>
                         <div class="blog__content">
-                            <h4 class="blog__title small"><a href="blog-details.html">Share Their Office Relocation on Digital Platforms</a></h4>
+                            <h4 class="blog__title small"><a href="blog-details.html">Company Evidenze</a></h4>
                             <p>Our decision to move from our growth and providing an even better experience for our clients and team members. This move allows us to expand our</p>
                             <div class="blog__btn-text">
                                 <a href="blog-details.html" class="underline-btn">
@@ -1096,7 +1185,27 @@
                             </div>
                         </div>
                     </section>
-
+                </div>
+                <div class="col-xl-6 col-lg-6 col-md-6">
+                    <section class="blog__wrap blog__item bg-solid">
+                        <div class="blog__thumb is-hover">
+                            <a href="blog-details.html">
+                                <img src="{{ Vite::asset('resources/imgs/blog/blog-03.png') }}" alt="image not found">
+                            </a>
+                            <div class="blog__meta style-one">
+                                <h2 class="date">20 <span class="month">DIC</span></h2>
+                            </div>
+                        </div>
+                        <div class="blog__content">
+                            <h4 class="blog__title small"><a href="blog-details.html">Company Evidenze</a></h4>
+                            <p>Our decision to move from our growth and providing an even better experience for our clients and team members. This move allows us to expand our</p>
+                            <div class="blog__btn-text">
+                                <a href="blog-details.html" class="underline-btn">
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>

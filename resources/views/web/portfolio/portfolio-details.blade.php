@@ -19,14 +19,11 @@
                         </div>
                         <div class="portfolio__details-btn">
                             <a class="bd-btn is-btn-anim" href="portfolio.html">
-                                <span class="bd-btn-inner">
-    <span class="bd-btn-normal">View website</span>
+                                <span class="bd-btn-inner"><span class="bd-btn-normal">View website</span>
                                 <span class="bd-btn-hover">View website</span>
                                 <i class="contentHidden"></i>
                                 </span>
                             </a>
-
-
 
                         </div>
                     </div>
