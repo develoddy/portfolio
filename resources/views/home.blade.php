@@ -929,7 +929,7 @@
 
      <!-- brand style 02 start -->
     <section class="bd-brand__area section-space x-clip">
-        <div class="container">
+        <div class="container d-none">
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="section__title-wrapper section__title-space text-center">
@@ -1197,7 +1197,7 @@
                             </div>
                         </div>
                         <div class="blog__content">
-                            <h4 class="blog__title small"><a href="blog-details.html">Company Evidenze</a></h4>
+                            <h4 class="blog__title small"><a href="blog-details.html">Company Indra</a></h4>
                             <p>Our decision to move from our growth and providing an even better experience for our clients and team members. This move allows us to expand our</p>
                             <div class="blog__btn-text">
                                 <a href="blog-details.html" class="underline-btn">

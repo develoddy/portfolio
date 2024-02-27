@@ -29,6 +29,83 @@
     </section>
     <!-- breadcrumb area  end -->
 
+
+
+
+    <!-- about style 02 start -->
+    <section class="bd-about__area section-space-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <div class="section__title-wrapper section__title-space text-center">
+                        <div class="elements-section__wrapper elements-line">
+                            <div class="separator__line line-left"></div>
+                            <div class="elements-title__wrapper">
+                                <h4 class="section__title elements__title">About Style 02</h4>
+                            </div>
+                            <div class="separator__line line-right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about__thumb-wrapper style-two  wow fadeInLeft" data-wow-delay=".3s">
+                        <div class="about__thumb">
+                            <img src="{{ Vite::asset('resources/imgs/about/about-02.png') }}" alt="image not found">
+                        </div>
+                        <div class="about__thumb is-small">
+                            <img src="{{ Vite::asset('resources/imgs/about/about-small.png') }}" alt="image not found">
+                        </div>
+                        <div class="about__experience">
+                            <div class="about__experience-bg"></div>
+                            <div class="about__experience-content">
+                                <div class="about__experience-content-inner">
+                                    <h2 class="about__experience-title"><span class="counter">5</span>+</h2>
+                                    <p>Years of Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about__content style-two  wow fadeInRight" data-wow-delay=".3s">
+                        <div class="section__title-wrapper mb-25">
+                            <div class="section__title-wrapper">
+                                <span class="section__subtitle bg-field">Who I Am</span>
+                                <h2 class="section__title">My history</h2>
+                                <p class="contentHidden">contentHiddenText</p>
+                            </div>
+                        </div>
+                        <p>The minimal agency looking to outsource design work. a company in search of a designer or product work. a digital agency that needs a landing page a startup that wants to launch an app or an enterprise that plans to rebrand.</p>
+                        <div class="counter__wrapper" id="percentage">
+                            <div class="counter__item">
+                                <div class="counter__canvas">
+                                    <div class="circle__counter" data-count="85">
+                                        <span class="counter__percentage"></span>
+                                    </div>
+                                </div>
+                                <p class="counter__title">Laravel</p>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__canvas">
+                                    <div class="circle__counter" data-count="95">
+                                        <span class="counter__percentage"></span>
+                                    </div>
+                                </div>
+                                <p class="counter__title">Angular</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about style 02 end -->
+
+
+
     <!-- about style 04 start -->
     <section class="bd-about__area section-space p-relative theme-bg-secondary">
         <div class="about__shape">
