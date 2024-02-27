@@ -95,7 +95,10 @@
                                 </div>
                                 <p class="counter__title">Angular</p>
                             </div>
+<<<<<<< HEAD
                             
+=======
+>>>>>>> main
                         </div>
                     </div>
                 </div>
