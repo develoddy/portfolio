@@ -72,14 +72,14 @@
                                                     10 Comments
                                                 </span>
                                             </div>
-                                            <h5 class="blog__title"><a href="blog-details.html">Strategy A Glimpse into Our
-                                                    Corporate
-                                                    Success Stories</a></h5>
+                                            <h5 class="blog__title">
+                                                <a href="{{ route('eddy-lujan-software-developer') }}">Eddy Lujan | Software Developer</a>
+                                            </h5>
                                             <p>Explore how subtle micro actions can enhance user engagement and satisfaction
                                                 Stay up to date
                                                 with latest trends </p>
                                             <div class="blog-btn-text">
-                                                <a href="blog-details.html" class="underline-btn">
+                                                <a href="{{ route('eddy-lujan-software-developer') }}" class="underline-btn">
                                                     Read More
                                                 </a>
                                             </div>

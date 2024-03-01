@@ -132,6 +132,230 @@
     </section>
     <!-- About area end -->
 
+    <!-- Section divider -->
+    <div class="section__divider d-none">
+        <hr>
+    </div>
+
+    <!-- Portfolio area start -->
+    <section id="homeworks" class="bd-portfolio__area section-space">
+        <div class="container">
+            <div class="row g-5 align-items-end section__title-space">
+                <div class="col-lg-5 col-md-7">
+                    <div class="section__title-wrapper">
+                        <span class="section__subtitle">MY RECENT PORTFOLIO</span>
+                        <h2 class="section__title">Check My Latest Works</h2>
+                        <p class="contentHidden">contentHiddenText</p>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-5">
+                    <div class="portfolio__more text-md-end">
+                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
+                            <span class="bd-btn-inner">
+                                <span class="bd-btn-normal">View all project</span>
+                                <span class="bd-btn-hover">View all project</span>
+                                <i class="contentHidden"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio__wrapper">
+                <div class="row grid g-5 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                        <div class=" portfolio__item">
+                            <div class="portfolio__thumb">
+                                <a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-01.png') }}" alt="img not found"></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__tag">
+                                        <a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}">Design</a>
+                                    </div>
+                                    <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}">Mockup Design</a></h5>
+                                </div>
+                                <div class="portfolio__btn">
+                                    <a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}" class="circle-btn">
+                                        <span class="icon__box">
+                            <i class="fa-regular fa-arrow-right-long"></i>
+                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                        <div class=" portfolio__item">
+                            <div class="portfolio__thumb">
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-02.png') }}" alt="img not found"></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__tag">
+                                        <a href="portfolio-details.html">Creative</a>
+                                    </div>
+                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Creative Idea</a></h5>
+                                </div>
+                                <div class="portfolio__btn">
+                                    <a href="portfolio-details.html" class="circle-btn">
+                                        <span class="icon__box">
+                                <i class="fa-regular fa-arrow-right-long"></i>
+                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                        <div class=" portfolio__item">
+                            <div class="portfolio__thumb">
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-04.png') }}" alt="img not found"></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__tag">
+                                        <a href="portfolio-details.html">Branding</a>
+                                    </div>
+                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Logo With Branding</a></h5>
+                                </div>
+                                <div class="portfolio__btn">
+                                    <a href="portfolio-details.html" class="circle-btn">
+                                        <span class="icon__box">
+                                <i class="fa-regular fa-arrow-right-long"></i>
+                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                        <div class=" portfolio__item">
+                            <div class="portfolio__thumb">
+                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-03.png') }}" alt="img not found"></a>
+                            </div>
+                            <div class="portfolio__content">
+                                <div class="portfolio__info">
+                                    <div class="portfolio__tag">
+                                        <a href="portfolio-details.html">Digital Art</a>
+                                    </div>
+                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Digital Art Beauty</a></h5>
+                                </div>
+                                <div class="portfolio__btn">
+                                    <a href="portfolio-details.html" class="circle-btn">
+                                        <span class="icon__box">
+                                <i class="fa-regular fa-arrow-right-long"></i>
+                            </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio area start -->
+
+    <!-- Section divider -->
+    <div class="section__divider d-none">
+        <hr>
+    </div>
+
+    <!-- counter area start -->
+    <section class="bd-counter__area section-space theme-bg-secondary">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="section__title-wrapper section__title-space">
+                        <span class="section__subtitle">Design experience</span>
+                        <h2 class="section__title">Design Skills</h2>
+                        <p class="contentHidden">contentHiddenText</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".3s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/01.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">88</span>%</h3>
+                            <span class="skill__name">Laravel</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".5s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/02.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">98</span>%</h3>
+                            <span class="skill__name">Angular</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".7s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/03.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">78</span>%</h3>
+                            <span class="skill__name">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/04.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/05.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">HTML5</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/06.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">CSS3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
+                        <div class="skill__icon-thumb white-bg">
+                            <img src="{{ Vite::asset('resources/imgs/skill/07.png') }}" alt="img not found">
+                        </div>
+                        <div class="skill__content">
+                            <h3><span class="counter">68</span>%</h3>
+                            <span class="skill__name">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- counter area end -->
+
     <!-- Service area start -->
     <section id="homeservices" class="bd-service__area section-space p-relative fix">
         <div class="service__shape-wrapper">
@@ -256,115 +480,175 @@
         <hr>
     </div>
 
-    <!-- Portfolio area start -->
-    <section id="homeworks" class="bd-portfolio__area section-space">
+    <!-- pricing area start -->
+    <div class="bd-pricing__area section-space d-none">
         <div class="container">
-            <div class="row g-5 align-items-end section__title-space">
-                <div class="col-lg-5 col-md-7">
-                    <div class="section__title-wrapper">
-                        <span class="section__subtitle">MY RECENT PORTFOLIO</span>
-                        <h2 class="section__title">Check My Latest Works</h2>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section__title-wrapper text-center section__title-space">
+                        <span class="section__subtitle">Costing</span>
+                        <h2 class="section__title mb-20">Make a Best Plan</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
-                <div class="col-lg-7 col-md-5">
-                    <div class="portfolio__more text-md-end">
-                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
-                            <span class="bd-btn-inner">
-                                <span class="bd-btn-normal">View all project</span>
-                                <span class="bd-btn-hover">View all project</span>
-                                <i class="contentHidden"></i>
-                            </span>
-                        </a>
+            </div>
+            <div class="row g-5 wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pricing__wrapper pricing__item">
+                        <div class="pricing__content">
+                            <h5 class=" pricing__title">Basic</h5>
+                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
+                            <h2 class="pricing__amount">
+                                <span class="dollar-sign color-primary">$</span>
+                                200
+                                <span class="duration">/monthly</span>
+                            </h2>
+                        </div>
+                        <div class="pricing__btn">
+                            <a class="bd-btn bordered-light w-100" href="contact.html">Choose this Package</a>
+                        </div>
+                        <div class="pricing__feature">
+                            <ul class="pricing__list">
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Require your wireframe</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Design with Figma</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 6 months</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 12 months</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+
+
+
+
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pricing__wrapper pricing__item active">
+                        <div class="pricing__content">
+                            <h5 class=" pricing__title">Premium</h5>
+                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
+                            <h2 class="pricing__amount">
+                                <span class="dollar-sign color-primary">$</span>
+                                400
+                                <span class="duration">/monthly</span>
+                            </h2>
+                        </div>
+                        <div class="pricing__btn">
+                            <a class="bd-btn w-100" href="contact.html">Choose this Package</a>
+                        </div>
+                        <div class="pricing__feature">
+                            <ul class="pricing__list">
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Work weekend days</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Customized Gifts</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 6 months</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 12 months</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <div class="col-xl-4 col-lg-6 col-md-6">
+                    <div class="pricing__wrapper pricing__item">
+                        <div class="pricing__content">
+                            <h5 class=" pricing__title">Enterprise</h5>
+                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
+                            <h2 class="pricing__amount">
+                                <span class="dollar-sign color-primary">$</span>
+                                600
+                                <span class="duration">/monthly</span>
+                            </h2>
+                        </div>
+                        <div class="pricing__btn">
+                            <a class="bd-btn bordered-light w-100" href="contact.html">Choose this Package</a>
+                        </div>
+                        <div class="pricing__feature">
+                            <ul class="pricing__list">
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Customer Management</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Custom guest editors</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 6 months</p>
+                                </li>
+                                <li>
+                                    <i class="fa-regular fa-check"></i>
+                                    <p>Support 12 months</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+
                 </div>
             </div>
-            <div class="portfolio__wrapper">
-                <div class="row grid g-5 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-01.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Design</a>
-                                    </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Mockup Design</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
-                            <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
+        </div>
+    </div>
+    <!-- pricing area end -->
+
+    <!-- brand area start -->
+    <div class="brand__area section-space theme-bg-secondary">
+        <div class="brand__wrapper style-two wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+            <div class="container">
+                <div class="swiper brand__active">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-01.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-02.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Creative</a>
-                                    </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Creative Idea</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
-                                <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-02.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-04.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Branding</a>
-                                    </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Logo With Branding</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
-                                <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-03.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-03.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Digital Art</a>
-                                    </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Digital Art Beauty</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
-                                <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
+                        <div class="swiper-slide">
+                            <div class="brand__item text-center">
+                                <div class="brand__thumb">
+                                    <img src="{{ Vite::asset('resources/imgs/brand/01/brand-04.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>
@@ -372,13 +656,160 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Portfolio area start -->
+    </div>
+    <!-- brand area end -->
 
     <!-- Section divider -->
     <div class="section__divider">
         <hr>
     </div>
+
+    <!-- testimonial area start -->
+    <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
+        <div class="container">
+            <div class="row align-items-center g-5 wow fadeInUp" data-wow-delay=".3s">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="testimonial__thumb-wrap">
+                        <div class="testimonial__thumb">
+                            <div class="testimonial__bg"></div>
+                            <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}" alt="img not found">
+                            <div class="testimonial__thumb-small">
+                                <img class="img-one" src="{{ Vite::asset('resources/imgs/user/user-04.png') }}" alt="img not found">
+                                <img class="img-two" src="{{ Vite::asset('resources/imgs/user/user-05.png') }}" alt="img not found">
+                                <img class="img-three" src="{{ Vite::asset('resources/imgs/user/user-06.png') }}" alt="img not found">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7">
+                    <div class="testimonial__item">
+                        <div class="section__title-wrapper mb-25">
+                            <span class="section__subtitle mb-15">Client say</span>
+                            <h2 class="section__title">Client Experiences and Testimonials</h2>
+                        </div>
+                        <div class="swiper testimonial__active p-relative">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testimonial__content">
+                                        <div class="testimonial__rating">
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="testimonial__text">
+                                            <p>“The improved user experience our website immediately noticeable. Navigation are
+                                                more intuitive and the layout our visitors through our content seamlessly.
+                                                The responsive design ensures.”</p>
+                                        </div>
+                                        <div class="testimonial__avatar-item">
+                                            <div class="testimonial__avatar-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-03.png') }}" alt="img not found">
+                                            </div>
+                                            <div class="testimonial__avatar-info">
+                                                <h6 class="testimonial__avatar-title">Louis</h6>
+                                                <span class="testimonial__avatar-designation">Founder </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial__content">
+                                        <div class="testimonial__rating">
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="testimonial__text">
+                                            <p>“The improved user experience our website immediately noticeable. Navigation are
+                                                more intuitive and the layout our visitors through our content seamlessly.
+                                                The responsive design ensures.”</p>
+                                        </div>
+                                        <div class="testimonial__avatar-item">
+                                            <div class="testimonial__avatar-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-01.png') }}" alt="img not found">
+                                            </div>
+                                            <div class="testimonial__avatar-info">
+                                                <h6 class="testimonial__avatar-title">Alexa</h6>
+                                                <span class="testimonial__avatar-designation">Designer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="testimonial__content">
+                                        <div class="testimonial__rating">
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                            <a href="#">
+                                                <i class="icon-star"></i>
+                                            </a>
+                                        </div>
+                                        <div class="testimonial__text">
+                                            <p>“The improved user experience our website immediately noticeable. Navigation are
+                                                more intuitive and the layout our visitors through our content seamlessly.
+                                                The responsive design ensures.”</p>
+                                        </div>
+                                        <div class="testimonial__avatar-item">
+                                            <div class="testimonial__avatar-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/user/user-02.png') }}" alt="img not found">
+                                            </div>
+                                            <div class="testimonial__avatar-info">
+                                                <h6 class="testimonial__avatar-title">Morish</h6>
+                                                <span class="testimonial__avatar-designation">Director</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need navigation buttons -->
+                            <div class="testimonial__navigation d-none d-sm-block">
+                                <button class="testimonial__button-prev circle-btn slider__nav-btn"><i
+                            class="fa-regular fa-arrow-left-long"></i></button>
+                                <button class="testimonial__button-next circle-btn ml-5 slider__nav-btn"><i
+                            class="fa-regular fa-arrow-right-long"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- testimonial area end -->
 
     <!-- qualification start -->
     <section class="bd-qulafication__area section-space">
@@ -694,442 +1125,10 @@
     </section>
     <!-- qualification end -->
 
-    <!-- counter area start -->
-    <section class="bd-counter__area section-space theme-bg-secondary">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="section__title-wrapper section__title-space">
-                        <span class="section__subtitle">Design experience</span>
-                        <h2 class="section__title">Design Skills</h2>
-                        <p class="contentHidden">contentHiddenText</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".3s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/01.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">88</span>%</h3>
-                            <span class="skill__name">Laravel</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".5s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/02.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">98</span>%</h3>
-                            <span class="skill__name">Angular</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".7s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/03.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">78</span>%</h3>
-                            <span class="skill__name">MySQL</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/04.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">68</span>%</h3>
-                            <span class="skill__name">Figma</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/05.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">68</span>%</h3>
-                            <span class="skill__name">HTML5</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/06.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">68</span>%</h3>
-                            <span class="skill__name">CSS3</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
-                    <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
-                        <div class="skill__icon-thumb white-bg">
-                            <img src="{{ Vite::asset('resources/imgs/skill/07.png') }}" alt="img not found">
-                        </div>
-                        <div class="skill__content">
-                            <h3><span class="counter">68</span>%</h3>
-                            <span class="skill__name">Javascript</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- counter area end -->
-
-    <!-- pricing area start -->
-    <div class="bd-pricing__area section-space d-none">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-6">
-                    <div class="section__title-wrapper text-center section__title-space">
-                        <span class="section__subtitle">Costing</span>
-                        <h2 class="section__title mb-20">Make a Best Plan</h2>
-                        <p class="contentHidden">contentHiddenText</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row g-5 wow fadeInUp" data-wow-delay=".3s">
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="pricing__wrapper pricing__item">
-                        <div class="pricing__content">
-                            <h5 class=" pricing__title">Basic</h5>
-                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
-                            <h2 class="pricing__amount">
-                                <span class="dollar-sign color-primary">$</span>
-                                200
-                                <span class="duration">/monthly</span>
-                            </h2>
-                        </div>
-                        <div class="pricing__btn">
-                            <a class="bd-btn bordered-light w-100" href="contact.html">Choose this Package</a>
-                        </div>
-                        <div class="pricing__feature">
-                            <ul class="pricing__list">
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Require your wireframe</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Design with Figma</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Support 6 months</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Support 12 months</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="pricing__wrapper pricing__item active">
-                        <div class="pricing__content">
-                            <h5 class=" pricing__title">Premium</h5>
-                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
-                            <h2 class="pricing__amount">
-                                <span class="dollar-sign color-primary">$</span>
-                                400
-                                <span class="duration">/monthly</span>
-                            </h2>
-                        </div>
-                        <div class="pricing__btn">
-                            <a class="bd-btn w-100" href="contact.html">Choose this Package</a>
-                        </div>
-                        <div class="pricing__feature">
-                            <ul class="pricing__list">
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Work weekend days</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Customized Gifts</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Support 6 months</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Support 12 months</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-                <div class="col-xl-4 col-lg-6 col-md-6">
-                    <div class="pricing__wrapper pricing__item">
-                        <div class="pricing__content">
-                            <h5 class=" pricing__title">Enterprise</h5>
-                            <p class="pricing__description">An introductory section that provides an overview of the document</p>
-                            <h2 class="pricing__amount">
-                                <span class="dollar-sign color-primary">$</span>
-                                600
-                                <span class="duration">/monthly</span>
-                            </h2>
-                        </div>
-                        <div class="pricing__btn">
-                            <a class="bd-btn bordered-light w-100" href="contact.html">Choose this Package</a>
-                        </div>
-                        <div class="pricing__feature">
-                            <ul class="pricing__list">
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Customer Management</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Custom guest editors</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Support 6 months</p>
-                                </li>
-                                <li>
-                                    <i class="fa-regular fa-check"></i>
-                                    <p>Support 12 months</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-
-
-                </div>
-            </div>
-        </div>
+    <!-- Section divider -->
+    <div class="section__divider">
+        <hr>
     </div>
-    <!-- pricing area end -->
-
-     <!-- brand style 02 start -->
-    <section class="bd-brand__area section-space x-clip">
-        <div class="container d-none">
-            <div class="row align-items-center">
-                <div class="col-12">
-                    <div class="section__title-wrapper section__title-space text-center">
-                        <div class="elements-section__wrapper elements-line">
-                            <div class="separator__line line-left"></div>
-                            <div class="elements-title__wrapper">
-                                <h4 class="section__title elements__title">Brand Style 02</h4>
-                            </div>
-                            <div class="separator__line line-right"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="brand__wrapper wow fadeInUp" data-wow-delay=".3s">
-            <div class="swiper brand__active">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="brand__item">
-                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-01.png') }}" alt="image not found">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand__item">
-                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-02.png') }}" alt="image not found">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand__item">
-                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-03.png') }}" alt="image not found">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand__item">
-                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-04.png') }}" alt="image not found">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand__item">
-                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-01.png') }}" alt="image not found">
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand__item">
-                            <img src="{{ Vite::asset('resources/imgs/brand/01/brand-02.png') }}" alt="image not found">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- brand style 02 end -->
-
-    <!-- testimonial area start -->
-    <section class="bd-testimonial__area section-space theme-bg-secondary p-relative z-index-1">
-        <div class="container">
-            <div class="row align-items-center g-5 wow fadeInUp" data-wow-delay=".3s">
-                <div class="col-xl-5 col-lg-5">
-                    <div class="testimonial__thumb-wrap">
-                        <div class="testimonial__thumb">
-                            <div class="testimonial__bg"></div>
-                            <img src="{{ Vite::asset('resources/imgs/testimonial/testimonial-01.png') }}" alt="img not found">
-                            <div class="testimonial__thumb-small">
-                                <img class="img-one" src="{{ Vite::asset('resources/imgs/user/user-04.png') }}" alt="img not found">
-                                <img class="img-two" src="{{ Vite::asset('resources/imgs/user/user-05.png') }}" alt="img not found">
-                                <img class="img-three" src="{{ Vite::asset('resources/imgs/user/user-06.png') }}" alt="img not found">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-7 col-lg-7">
-                    <div class="testimonial__item">
-                        <div class="section__title-wrapper mb-25">
-                            <span class="section__subtitle mb-15">Client say</span>
-                            <h2 class="section__title">Client Experiences and Testimonials</h2>
-                        </div>
-                        <div class="swiper testimonial__active p-relative">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="testimonial__content">
-                                        <div class="testimonial__rating">
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                        </div>
-                                        <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable. Navigation are
-                                                more intuitive and the layout our visitors through our content seamlessly.
-                                                The responsive design ensures.”</p>
-                                        </div>
-                                        <div class="testimonial__avatar-item">
-                                            <div class="testimonial__avatar-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/user/user-03.png') }}" alt="img not found">
-                                            </div>
-                                            <div class="testimonial__avatar-info">
-                                                <h6 class="testimonial__avatar-title">Louis</h6>
-                                                <span class="testimonial__avatar-designation">Founder </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial__content">
-                                        <div class="testimonial__rating">
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                        </div>
-                                        <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable. Navigation are
-                                                more intuitive and the layout our visitors through our content seamlessly.
-                                                The responsive design ensures.”</p>
-                                        </div>
-                                        <div class="testimonial__avatar-item">
-                                            <div class="testimonial__avatar-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/user/user-01.png') }}" alt="img not found">
-                                            </div>
-                                            <div class="testimonial__avatar-info">
-                                                <h6 class="testimonial__avatar-title">Alexa</h6>
-                                                <span class="testimonial__avatar-designation">Designer</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="testimonial__content">
-                                        <div class="testimonial__rating">
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                            <a href="#">
-                                                <i class="icon-star"></i>
-                                            </a>
-                                        </div>
-                                        <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable. Navigation are
-                                                more intuitive and the layout our visitors through our content seamlessly.
-                                                The responsive design ensures.”</p>
-                                        </div>
-                                        <div class="testimonial__avatar-item">
-                                            <div class="testimonial__avatar-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/user/user-02.png') }}" alt="img not found">
-                                            </div>
-                                            <div class="testimonial__avatar-info">
-                                                <h6 class="testimonial__avatar-title">Morish</h6>
-                                                <span class="testimonial__avatar-designation">Director</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- If we need navigation buttons -->
-                            <div class="testimonial__navigation d-none d-sm-block">
-                                <button class="testimonial__button-prev circle-btn slider__nav-btn"><i
-                            class="fa-regular fa-arrow-left-long"></i></button>
-                                <button class="testimonial__button-next circle-btn ml-5 slider__nav-btn"><i
-                            class="fa-regular fa-arrow-right-long"></i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- testimonial area end -->
-
 
     <!-- blog area start -->
     <div id="homeblog" class="bd-blog__area section-space">

@@ -29,13 +29,11 @@
     </section>
     <!-- breadcrumb area  end -->
 
-
-
-
     <!-- about style 02 start -->
-    <section class="bd-about__area section-space-bottom">
+    {{-- <section class="bd-about__area section-space-bottom"> --}}
+    <section class="bd-about__area section-space">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center d-none">
                 <div class="col-12">
                     <div class="section__title-wrapper section__title-space text-center">
                         <div class="elements-section__wrapper elements-line">
@@ -52,7 +50,7 @@
                 <div class="col-xl-6 col-lg-6">
                     <div class="about__thumb-wrapper style-two  wow fadeInLeft" data-wow-delay=".3s">
                         <div class="about__thumb">
-                            <img src="{{ Vite::asset('resources/imgs/about/about-02.png') }}" alt="image not found">
+                            <img src="{{ Vite::asset('resources/imgs/about/about-09.png') }}" alt="image not found">
                         </div>
                         <div class="about__thumb is-small">
                             <img src="{{ Vite::asset('resources/imgs/about/about-small.png') }}" alt="image not found">
@@ -78,10 +76,12 @@
                             </div>
                         </div>
                         <p>The minimal agency looking to outsource design work. a company in search of a designer or product work. a digital agency that needs a landing page a startup that wants to launch an app or an enterprise that plans to rebrand.</p>
+                        <p>The minimal agency looking to outsource design work. a company in search of a designer or product work.</p>
+                        <p>The minimal agency looking to outsource design work. a company in search of a designer or product work.</p>
                         <div class="counter__wrapper" id="percentage">
                             <div class="counter__item">
                                 <div class="counter__canvas">
-                                    <div class="circle__counter" data-count="85">
+                                    <div class="circle__counter" data-count="90">
                                         <span class="counter__percentage"></span>
                                     </div>
                                 </div>
@@ -89,16 +89,12 @@
                             </div>
                             <div class="counter__item">
                                 <div class="counter__canvas">
-                                    <div class="circle__counter" data-count="95">
+                                    <div class="circle__counter" data-count="75">
                                         <span class="counter__percentage"></span>
                                     </div>
                                 </div>
                                 <p class="counter__title">Angular</p>
                             </div>
-<<<<<<< HEAD
-                            
-=======
->>>>>>> main
                         </div>
                     </div>
                 </div>
@@ -107,10 +103,13 @@
     </section>
     <!-- about style 02 end -->
 
-
+    <!-- Section divider -->
+    <div class="section__divider d-none">
+        <hr>
+    </div>
 
     <!-- about style 04 start -->
-    <section class="bd-about__area section-space p-relative theme-bg-secondary">
+    <section class="bd-about__area section-space p-relative theme-bg-secondary d-none">
         <div class="about__shape">
             <img class="about__shape-two" src="{{ Vite::asset('resources/imgs/shape/lamp-shape.png') }}" alt="image not found">
         </div>
@@ -219,7 +218,7 @@
     <!-- about style 04 end -->
 
     <!-- portfolio slider area start -->
-    <div class="bd-portfoli-details-area section-space-bottom fix">
+    <div class="bd-portfoli-details-area section-space fix">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -471,7 +470,7 @@
     <!-- service area start -->
 
     <!-- team area start -->
-    <section class="bd-team__area section-space theme-bg-secondary">
+    <section class="bd-team__area section-space theme-bg-secondary d-none">
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10">
@@ -923,20 +922,6 @@
                             <div class="brand__item text-center">
                                 <div class="brand__thumb">
                                     <img src="{{ Vite::asset('resources/imgs/brand/02/brand-04.png') }}" alt="image not found">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand__item text-center">
-                                <div class="brand__thumb">
-                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-05.png') }}" alt="image not found">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand__item text-center">
-                                <div class="brand__thumb">
-                                    <img src="{{ Vite::asset('resources/imgs/brand/02/brand-06.png') }}" alt="image not found">
                                 </div>
                             </div>
                         </div>

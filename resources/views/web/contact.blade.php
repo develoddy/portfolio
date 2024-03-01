@@ -14,7 +14,7 @@
                         <div class="breadcrumb__title-wrapperr">
                             <h1 class="breadcrumb__title mb-25">Contact</h1>
                             <p class="mb-15">
-                                ¡Hablemos sobre tu visión y cómo podemos convertirla en realidad a través de un desarrollo web completo y personalizado!
+                                Let's talk about your vision and how we can make it a reality through complete, custom web development!
                             </p>
                         </div>
                         <div class="breadcrumb__menu">

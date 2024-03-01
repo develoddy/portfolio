@@ -23,10 +23,6 @@ Route::get('/service', function () {
     return view('web.service-standard');
 })->name('service');
 
-Route::get('/blog', function () {
-    return view('web.blog-list-sidebar');
-})->name('blog');
-
 Route::get('/contact', function () {
     return view('web.contact');
 })->name('contact');
@@ -37,12 +33,31 @@ Route::group(['prefix' => 'about'], function () {
     })->name('about');
 });
 
+// Group Portfolio
 Route::group(['prefix' => 'portfolio'], function () {
     Route::get('/', function () {
         return view('web.portfolio');
     })->name('portfolio');
     
-    Route::get('/detail/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio-detail');
+    //Route::get('/detail/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio-detail')
+    Route::get('/detail/01', function () { 
+        return view('web.portfolio.01.design-with-mockup'); 
+    })->name('design-with-mockup');
+
+    Route::get('/detail/02', function () { 
+        return view('web.portfolio.02.creative-idea'); 
+    })->name('creative-idea');
+});
+
+// Group Blog
+Route::group(['prefix' => 'blog'], function () {
+    Route::get('/', function () {
+        return view('web.blog-list-sidebar');
+    })->name('blog');
+
+    Route::get('/detail/2024-03-27/eddy-lujan-software-developer', function () { 
+        return view('web.blog.2024-03-27.eddy-lujan-software-developer'); 
+    })->name('eddy-lujan-software-developer');
 });
 
 

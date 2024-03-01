@@ -13,7 +13,10 @@
                     <div class="col-xl-6 col-lg-8 col-md-9">
                         <div class="breadcrumb__content-wrapper p-relative z-index-1">
                             <div class="breadcrumb__title-wrapper text-center">
-                                <h1 class="breadcrumb__title mb-25">We Provide a Long Range of Services</h1>
+                                <h1 class="breadcrumb__title mb-25">Services</h1>
+                                <p class="mb-15">
+                                    Let's talk about your vision and how we can make it a reality through complete, custom web development!
+                                </p>
                             </div>
                             <div class="breadcrumb__menu text-center">
                                 <nav>
@@ -142,11 +145,11 @@
                                 <div class="about__counter-wrapper">
                                     <div class="about__counter-info">
                                         <div class="about__counter-count">
-                                            <h2><span class="counter">20</span>+</h2>
+                                            <h2><span class="counter">5</span>+</h2>
                                         </div>
                                         <p>Years of Experience</p>
                                     </div>
-                                    <div class="about__counter-info">
+                                    <div class="about__counter-info d-none">
                                         <div class="about__counter-count">
                                             <h2><span class="counter">500</span>+</h2>
                                         </div>
@@ -205,9 +208,6 @@
                                         <i class="contentHidden"></i>
                                     </span>
                                 </a>
-
-
-
                             </div>
                         </div>
                     </div>
@@ -261,7 +261,7 @@
                                                 <a href="portfolio-details.html">Development</a>
                                             </div>
                                             <h5 class="portfolio__item-title underline"><a
-                                                    href="portfolio-details.html">Mockup Design</a></h5>
+                                                    href="portfolio-details.html">Spaincap</a></h5>
                                         </div>
                                     </div>
                                 </div>
@@ -425,9 +425,9 @@
         <!-- testimonial area start -->
         <section class="bd-testimonial__area section-space theme-bg-secondary p-relative">
             <div class="testimonial__shape">
-                <img class="testimonial__shape-three" src="assets/imgs/shape/four-line-shape-1.png"
+                <img class="testimonial__shape-three" src="{{ Vite::asset('resources/imgs/shape/four-line-shape-1.png') }}"
                     alt="image not found">
-                <img class="testimonial__shape-four" src="assets/imgs/shape/four-line-shape-2.png" alt="image not found">
+                <img class="testimonial__shape-four" src="{{ Vite::asset('resources/imgs/shape/four-line-shape-2.png') }}" alt="image not found">
             </div>
             <div class="container">
                 <div class="row g-5 justify-content-center">
@@ -448,7 +448,7 @@
                                         <div class="testimonial__top-item">
                                             <div class="testimonial__thumb-wrap">
                                                 <div class="testimonial__thumb">
-                                                    <img src="assets/imgs/user/user-08.png" alt="image not found">
+                                                    <img src="{{ Vite::asset('resources/imgs/user/user-08.png') }}" alt="image not found">
                                                 </div>
                                                 <div class="testimonial__avatar-info">
                                                     <h6 class="testimonial__avatar-title">Chamain Louis</h6>
@@ -475,7 +475,7 @@
                                             </div>
                                             <div class="testimonial__shape">
                                                 <img class="testimonial__shape-quote"
-                                                    src="assets/imgs/shape/testimonial-quote-small.png"
+                                                    src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-small.png') }}"
                                                     alt="image not found">
                                             </div>
                                         </div>
@@ -497,7 +497,7 @@
                                         <div class="testimonial__top-item">
                                             <div class="testimonial__thumb-wrap">
                                                 <div class="testimonial__thumb">
-                                                    <img src="assets/imgs/user/user-09.png" alt="image not found">
+                                                    <img src="{{ Vite::asset('resources/imgs/user/user-09.png') }}" alt="image not found">
                                                 </div>
                                                 <div class="testimonial__avatar-info">
                                                     <h6 class="testimonial__avatar-title">Henry Louis</h6>
@@ -524,7 +524,7 @@
                                             </div>
                                             <div class="testimonial__shape">
                                                 <img class="testimonial__shape-quote"
-                                                    src="assets/imgs/shape/testimonial-quote-small.png"
+                                                    src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-small.png') }}"
                                                     alt="image not found">
                                             </div>
                                         </div>
@@ -545,7 +545,7 @@
                                         <div class="testimonial__top-item">
                                             <div class="testimonial__thumb-wrap">
                                                 <div class="testimonial__thumb">
-                                                    <img src="assets/imgs/user/user-10.png" alt="image not found">
+                                                    <img src="{{ Vite::asset('resources/imgs/user/user-10.png') }}" alt="image not found">
                                                 </div>
                                                 <div class="testimonial__avatar-info">
                                                     <h6 class="testimonial__avatar-title">Chamain Louis</h6>
@@ -572,7 +572,7 @@
                                             </div>
                                             <div class="testimonial__shape">
                                                 <img class="testimonial__shape-quote"
-                                                    src="assets/imgs/shape/testimonial-quote-small.png"
+                                                    src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-small.png') }}"
                                                     alt="image not found">
                                             </div>
                                         </div>

@@ -82,20 +82,19 @@
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-08.png') }}"
                                                 alt="image not found">
                                             <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"href="{{ Vite::asset('resources/imgs/portfolio/portfolio-08.png') }}">
+                                                <span class="icon__box">
+                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-08.png') }}">
                                                         <i class="icon-plus"></i></a></span>
                                             </div>
                                         </div>
                                         <div class="portfolio__item-content">
                                             <div class="portfolio__item-info">
                                                 <div class="portfolio__tag">
-                                                    <a
-                                                        href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}">Mockup</a>
+                                                    <a href="{{ route('design-with-mockup') }}">Mockup</a>
                                                 </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}">Design
-                                                        With Mockup</a></h5>
+                                                <h5 class="portfolio__item-title underline">
+                                                    <a href="{{ route('design-with-mockup') }}">Design With Mockup</a>
+                                                </h5>
                                             </div>
                                         </div>
                                     </div>
@@ -106,19 +105,19 @@
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}"
                                                 alt="">
                                             <div class="portfolio__item-btn">
-                                                <span class="icon__box"> <a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}">
+                                                <span class="icon__box">
+                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}">
                                                         <i class="icon-plus"></i></a></span>
                                             </div>
                                         </div>
                                         <div class="portfolio__item-content">
                                             <div class="portfolio__item-info">
                                                 <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
+                                                    <a href="{{ route('creative-idea') }}">Creative</a>
                                                 </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Creative Idea is key</a></h5>
+                                                <h5 class="portfolio__item-title underline">
+                                                    <a href="{{ route('creative-idea') }}">Creative Idea is key</a>
+                                                </h5>
                                             </div>
                                         </div>
                                     </div>
