@@ -25,7 +25,7 @@
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
+                                    <a class="bd-btn is-btn-anim" href="{{ route('portfolio-all') }}">
                                         <span class="bd-btn-inner"><span class="bd-btn-normal">Get my work</span>
                                         <span class="bd-btn-hover">Get my work</span>
                                         <i class="contentHidden"></i>
@@ -150,7 +150,7 @@
                 </div>
                 <div class="col-lg-7 col-md-5">
                     <div class="portfolio__more text-md-end">
-                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
+                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio-all') }}">
                             <span class="bd-btn-inner">
                                 <span class="bd-btn-normal">View all project</span>
                                 <span class="bd-btn-hover">View all project</span>
@@ -165,17 +165,17 @@
                     <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                         <div class=" portfolio__item">
                             <div class="portfolio__thumb">
-                                <a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-01.png') }}" alt="img not found"></a>
+                                <a href="{{ route('design-with-mockup') }}"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-01.png') }}" alt="img not found"></a>
                             </div>
                             <div class="portfolio__content">
                                 <div class="portfolio__info">
                                     <div class="portfolio__tag">
-                                        <a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}">Design</a>
+                                        <a href="{{ route('design-with-mockup') }}">Design</a>
                                     </div>
-                                    <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}">Mockup Design</a></h5>
+                                    <h5 class="portfolio__title"><a href="{{ route('design-with-mockup') }}">Mockup Design</a></h5>
                                 </div>
                                 <div class="portfolio__btn">
-                                    <a href="{{ route('portfolio-detail', ['portfolio' => 'slug-details']) }}" class="circle-btn">
+                                    <a href="{{ route('design-with-mockup') }}" class="circle-btn">
                                         <span class="icon__box">
                             <i class="fa-regular fa-arrow-right-long"></i>
                             </span>

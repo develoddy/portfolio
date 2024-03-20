@@ -35,18 +35,8 @@ Route::group(['prefix' => 'about'], function () {
 
 // Group Portfolio
 Route::group(['prefix' => 'portfolio'], function () {
-    Route::get('/', function () {
-        return view('web.portfolio');
-    })->name('portfolio');
-    
-    //Route::get('/detail/{portfolio:slug}', [PortfolioController::class, 'show'])->name('portfolio-detail')
-    Route::get('/detail/01', function () { 
-        return view('web.portfolio.01.design-with-mockup'); 
-    })->name('design-with-mockup');
-
-    Route::get('/detail/02', function () { 
-        return view('web.portfolio.02.creative-idea'); 
-    })->name('creative-idea');
+    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio-all');
+    Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
 });
 
 // Group Blog
@@ -59,6 +49,13 @@ Route::group(['prefix' => 'blog'], function () {
         return view('web.blog.2024-03-27.eddy-lujan-software-developer'); 
     })->name('eddy-lujan-software-developer');
 });
+
+
+
+
+
+
+
 
 
  
@@ -74,3 +71,8 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

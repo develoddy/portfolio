@@ -83,59 +83,74 @@
     <!-- portfolio area end -->
 
     <!-- portfolio slider area start -->
-    <div class="bd-portfoli-details-area section-space-bottom fix">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-                        <div class="swiper portfolio-details__active">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-01.png') }}" alt="">
+    @if(!empty($portfolioDetail))
+        <div class="bd-portfoli-details-area section-space-bottom fix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
+                            <div class="swiper portfolio-details__active">
+                                <div class="swiper-wrapper">
+                                    <!-- El objeto no está vacío, haz algo con él -->
+                                    @foreach ($portfolioDetail as $portDetail)
+                                        @foreach ($portDetail->related_images as $images)
+                                        <div class="swiper-slide">
+                                            <div class=" portfolio__item style-six portfolio-details">
+                                                <div class="portfolio__item-thumb">
+                                                    <img src="{{ $images }}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        @endforeach
+                                    @endforeach
+                                    {{-- <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-01.png') }}" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-02.png') }}" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-02.png') }}" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-03.png') }}" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-03.png') }}" alt="">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class=" portfolio__item style-six portfolio-details">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png') }}" alt="">
+                                    <div class="swiper-slide">
+                                        <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item-thumb">
+                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png') }}" alt="">
+                                            </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
-                            </div>
-                            <!-- If we need navigation buttons -->
-                            <div class="portfolio__navigation d-none d-sm-block">
-                                <button class="portfolio__button-prev circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
-                             class="fa-regular fa-arrow-left-long"></i></button>
-                                <button class="portfolio__button-next circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
-                             class="fa-regular fa-arrow-right-long"></i></button>
-                            </div>
-                            <!-- If we need pagination -->
-                            <div class="pagination__wrapper d-block d-sm-none">
-                                <div class="bd-swiper-dot text-center"></div>
+                                <!-- If we need navigation buttons -->
+                                <div class="portfolio__navigation d-none d-sm-block">
+                                    <button class="portfolio__button-prev circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
+                                class="fa-regular fa-arrow-left-long"></i></button>
+                                    <button class="portfolio__button-next circle-btn is-bg-white slider__nav-btn is-hover-blue"><i
+                                class="fa-regular fa-arrow-right-long"></i></button>
+                                </div>
+                                <!-- If we need pagination -->
+                                <div class="pagination__wrapper d-block d-sm-none">
+                                    <div class="bd-swiper-dot text-center"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    @endif
+    
     <!-- portfolio slider area end -->
 
     <!-- counter area start -->

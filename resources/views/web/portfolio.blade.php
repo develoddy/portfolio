@@ -75,31 +75,40 @@
                     <div class="tab-content wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s" id="myTabContent">
                         <div class="tab-pane fade show active" id="view" role="tabpanel"
                             aria-labelledby="view-tab">
-                            <div class="row  g-5">
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-08.png') }}"
-                                                alt="image not found">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box">
-                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-08.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="{{ route('design-with-mockup') }}">Mockup</a>
+                            <div class="row g-5">
+                                @if(isset($portfolios) && !empty($portfolios))
+                                    @foreach ($portfolios as $portfolio)
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class=" portfolio__item style-seven">
+                                                <div class="portfolio__item-thumb">
+                                                    <img src="{{ $portfolio->image }}" alt="image not found">
+                                                    <div class="portfolio__item-btn">
+                                                        <span class="icon__box">
+                                                            <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ $portfolio->image }}">
+                                                                <i class="icon-plus"></i>
+                                                            </a>
+                                                        </span>
+                                                    </div>
                                                 </div>
-                                                <h5 class="portfolio__item-title underline">
-                                                    <a href="{{ route('design-with-mockup') }}">Design With Mockup</a>
-                                                </h5>
+                                                <div class="portfolio__item-content">
+                                                    <div class="portfolio__item-info">
+                                                        <div class="portfolio__tag">
+                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">{{ $portfolio->title }}</a>
+                                                        </div>
+                                                        <h5 class="portfolio__item-title underline">
+                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->id, 'name' => $portfolio->link()]) }}">{{ $portfolio->title }}</a>
+                                                        </h5>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
+                                    @endforeach
+                                @endif
+
+                                
+
+                                
+                                {{-- <div class="col-lg-4 col-md-6">
                                     <div class=" portfolio__item style-seven ">
                                         <div class="portfolio__item-thumb">
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}"
@@ -429,7 +438,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                         <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab">
