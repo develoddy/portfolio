@@ -81,19 +81,19 @@
                         <div class="counter__wrapper" id="percentage">
                             <div class="counter__item">
                                 <div class="counter__canvas">
-                                    <div class="circle__counter" data-count="90">
-                                        <span class="counter__percentage"></span>
-                                    </div>
-                                </div>
-                                <p class="counter__title">Laravel</p>
-                            </div>
-                            <div class="counter__item">
-                                <div class="counter__canvas">
                                     <div class="circle__counter" data-count="75">
                                         <span class="counter__percentage"></span>
                                     </div>
                                 </div>
-                                <p class="counter__title">Angular</p>
+                                <p class="counter__title">Frontend</p>
+                            </div>
+                            <div class="counter__item">
+                                <div class="counter__canvas">
+                                    <div class="circle__counter" data-count="90">
+                                        <span class="counter__percentage"></span>
+                                    </div>
+                                </div>
+                                <p class="counter__title">Backend</p>
                             </div>
                         </div>
                     </div>

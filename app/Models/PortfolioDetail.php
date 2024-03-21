@@ -26,10 +26,7 @@ class PortfolioDetail extends Model
         'updated_at',
     ];
 
-    
-
-    public function portfolio()
-    {
+    public function portfolio() {
         return $this->belongsTo(Portfolio::class, 'portfolio_id');
     }
 }

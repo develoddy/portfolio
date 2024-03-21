@@ -162,94 +162,34 @@
             </div>
             <div class="portfolio__wrapper">
                 <div class="row grid g-5 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="{{ route('design-with-mockup') }}"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-01.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="{{ route('design-with-mockup') }}">Design</a>
-                                    </div>
-                                    <h5 class="portfolio__title"><a href="{{ route('design-with-mockup') }}">Mockup Design</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="{{ route('design-with-mockup') }}" class="circle-btn">
-                                        <span class="icon__box">
-                            <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
+                    @if(isset($portfolios) && !empty($portfolios))
+                        @foreach ($portfolios as $portfolio)
+                        <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
+                            <div class=" portfolio__item">
+                                <div class="portfolio__thumb">
+                                    <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">
+                                        <img src="{{ $portfolio->image }}" alt="img not found">
                                     </a>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-02.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Creative</a>
+                                <div class="portfolio__content">
+                                    <div class="portfolio__info">
+                                        <div class="portfolio__tag">
+                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">Design</a>
+                                        </div>
+                                        <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">Mockup Design</a></h5>
                                     </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Creative Idea</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
+                                    <div class="portfolio__btn">
+                                        <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}" class="circle-btn">
+                                            <span class="icon__box">
                                 <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-04.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Branding</a>
+                                </span>
+                                        </a>
                                     </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Logo With Branding</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
-                                <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
-                        <div class=" portfolio__item">
-                            <div class="portfolio__thumb">
-                                <a href="portfolio-details.html"><img src="{{ Vite::asset('resources/imgs/portfolio/masonary/portfolio-masonary-03.png') }}" alt="img not found"></a>
-                            </div>
-                            <div class="portfolio__content">
-                                <div class="portfolio__info">
-                                    <div class="portfolio__tag">
-                                        <a href="portfolio-details.html">Digital Art</a>
-                                    </div>
-                                    <h5 class="portfolio__title"><a href="portfolio-details.html">Digital Art Beauty</a></h5>
-                                </div>
-                                <div class="portfolio__btn">
-                                    <a href="portfolio-details.html" class="circle-btn">
-                                        <span class="icon__box">
-                                <i class="fa-regular fa-arrow-right-long"></i>
-                            </span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
                 </div>
             </div>
         </div>

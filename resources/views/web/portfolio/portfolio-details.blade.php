@@ -91,11 +91,10 @@
                         <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                             <div class="swiper portfolio-details__active">
                                 <div class="swiper-wrapper">
-                                    <!-- El objeto no está vacío, haz algo con él -->
-                                    @foreach ($portfolioDetail as $portDetail)
-                                        @foreach ($portDetail->related_images as $images)
+                                    @foreach ( $portfolioDetail as $portDetail )
+                                        @foreach ( $portDetail->related_images as $images )
                                         <div class="swiper-slide">
-                                            <div class=" portfolio__item style-six portfolio-details">
+                                            <div class="portfolio__item style-six portfolio-details">
                                                 <div class="portfolio__item-thumb">
                                                     <img src="{{ $images }}" alt="">
                                                 </div>
@@ -103,34 +102,6 @@
                                         </div>
                                         @endforeach
                                     @endforeach
-                                    {{-- <div class="swiper-slide">
-                                        <div class=" portfolio__item style-six portfolio-details">
-                                            <div class="portfolio__item-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-01.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class=" portfolio__item style-six portfolio-details">
-                                            <div class="portfolio__item-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-02.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class=" portfolio__item style-six portfolio-details">
-                                            <div class="portfolio__item-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-03.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class=" portfolio__item style-six portfolio-details">
-                                            <div class="portfolio__item-thumb">
-                                                <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-04.png') }}" alt="">
-                                            </div>
-                                        </div>
-                                    </div> --}}
                                 </div>
                                 <!-- If we need navigation buttons -->
                                 <div class="portfolio__navigation d-none d-sm-block">

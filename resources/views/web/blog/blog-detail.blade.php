@@ -9,7 +9,7 @@
                 <div class="row align-items-center">
                     <div class="col-xl-8 col-lg-10 col-md-10">
                         <div class="section__title-wrapper section__title-space">
-                            <h2 class="section__title">How To Earn More SMS Leads For Your Business</h2>
+                            <h2 class="section__title">{{ $blogDetail->title }}</h2>
                         </div>
                     </div>
                 </div>
@@ -18,18 +18,20 @@
                         <div class="postbox__wrapper style-two">
                             <div class="row g-5">
                                 <div class="col-lg-8">
-                                    <div class="postbox__top">
-                                        <div class="postbox__thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/blog/post/blog-post-03.png') }}" alt="image not found">
+                                    @if ($blogDetail->image)
+                                        <div class="postbox__top">
+                                            <div class="postbox__thumb">
+                                                <img src="{{ $blogDetail->image }}" alt="image not found">
+                                            </div>
                                         </div>
-                                    </div>
+                                    @endif
                                     <div class="postbox__main-wrapper">
                                         <div class="postbox__meta-wrapper">
                                             <div class="postbox__meta-item">
                                                 <div class="postbox__meta-author">
                                                     <div class="postbox__meta-author-thumb">
                                                         <a href="#">
-                                                            <img src="assets/imgs/user/user-03.png" alt="image not found">
+                                                            <img src="{{ Vite::asset('resources/imgs/user/user-03.png') }}" alt="image not found">
                                                         </a>
                                                     </div>
                                                     <div class="postbox__meta-content">
@@ -46,15 +48,14 @@
                                             </div>
                                             <div class="postbox__meta-item">
                                                 <div class="postbox__meta-content">
-                                                    <span class="postbox__meta-type">3 Comments</span>
-                                                    <p class="postbox__meta-name"><a href="#">Join the
-                                                            Conversation</a></p>
+                                                    <span class="postbox__meta-type">{{ $blogDetail->countComment }} Comments</span>
+                                                    <p class="postbox__meta-name"><a href="#">Join the Conversation</a></p>
                                                 </div>
                                             </div>
                                             <div class="postbox__meta-item">
                                                 <div class="postbox__meta-content">
                                                     <span class="postbox__meta-type">View</span>
-                                                    <p class="postbox__meta-name">10,236 views</p>
+                                                    <p class="postbox__meta-name">{{ $blogDetail->viewComment }} views</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -62,20 +63,20 @@
                                             <h5 class="postbox__details-title">Just set something gratifying to indulge in
                                                 after completing a certain undertaking. The best time to learn about
                                                 motivation is before you’re in the thick of things.</h5>
-                                            <p class="mb-20">One morning, when Gregor Samsa woke from troubled dreams, he
-                                                found himself transformed in his bed into a horrible vermin. He lay on his
-                                                armour-like back, and if he lifted his head a little he could see his brown
-                                                belly, slightly domed and divided by arches into stiff sections. The bedding
-                                                was hardly able to cover it and seemed ready to slide off any moment.</p>
+                                            <p class="mb-20">
+                                                {{ $blogDetail->description }}
+                                            </p>
                                             <p class="mb-45">I should be incapable of drawing a single stroke at the
                                                 present moment; and yet I feel that never was a greater artist than now.</p>
+
+                                            {{-- implement foreach --}}
                                             <div class="postbox__thumb-wrapper">
                                                 <div class="postbox__thumb">
-                                                    <img src="assets/imgs/blog/details/blog-details-01.png"
+                                                    <img src="{{ Vite::asset('resources/imgs/blog/details/blog-details-01.png') }}"
                                                         alt="image not found">
                                                 </div>
                                                 <div class="postbox__thumb">
-                                                    <img src="assets/imgs/blog/details/blog-details-02.png"
+                                                    <img src="{{ Vite::asset('resources/imgs/blog/details/blog-details-02.png') }}"
                                                         alt="image not found">
                                                 </div>
                                             </div>
@@ -89,7 +90,7 @@
                                             <div class="postbox__quote">
                                                 <blockquote>
                                                     <div class="postbox__quote-icon">
-                                                        <img src="assets/imgs/shape/testimonial-quote-02.png"
+                                                        <img src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-02.png') }}"
                                                             alt="image not found">
                                                     </div>
                                                     <p>“Believe in the magic within you. Your potential is limitless, and
@@ -98,21 +99,23 @@
                                             </div>
                                             <div class="postbox__features">
                                                 <h5 class="postbox__features-title">Learning from failure</h5>
-                                                <p>The European languages are members of the same family. Their separate
-                                                    existence is a myth. For science europe uses the same vocabulary. </p>
-
+                                                <p>
+                                                    The European languages are members of the same family. Their separate
+                                                    existence is a myth. For science europe uses the same vocabulary. 
+                                                </p>
                                                 <ul>
                                                     <li>Get yourself comfortable.</li>
                                                     <li>Manage your workspace and organize your desk.</li>
                                                     <li>Keep In touch with your co-workers.</li>
                                                 </ul>
                                             </div>
-                                            <p>The new common language will be more simple and regular than the existing
+                                            <p>
+                                                The new common language will be more simple and regular than the existing
                                                 European languages. It will be as simple as Occidental; in fact, it will be
                                                 Occidental. To an English person, it will seem like simplified English, as a
                                                 skeptical Cambridge friend of mine told me what Occidental is. The European
-                                                languages are members of the same family.</p>
-
+                                                languages are members of the same family.
+                                            </p>
                                         </div>
                                         <div class="postbox__more-navigation grid-reduce theme-bg-secondary">
                                             <div class="postbox__more-left">
@@ -170,16 +173,17 @@
                                         <div class="postbox__author">
                                             <div class="postbox__author-thumb">
                                                 <a href="#">
-                                                    <img src="assets/imgs/user/user-07.png" alt="image not found">
+                                                    <img src="{{ Vite::asset('resources/imgs/user/user-07.png') }}" alt="image not found">
                                                 </a>
                                             </div>
                                             <div class="postbox__author-content">
                                                 <h6 class="postbox__author-title">
                                                     <a href="#">Colene Landin</a>
                                                 </h6>
-                                                <p>Digital content wrangler | UX enthusiast | Recovering educator & GIF
-                                                    hockey fan Oxford comma or death.!</p>
-
+                                                <p>
+                                                    Digital content wrangler | UX enthusiast | Recovering educator & GIF
+                                                    hockey fan Oxford comma or death.!
+                                                </p>
                                                 <div class="postbox__author-social">
                                                     <div class="theme__social">
                                                         <a href="#"><i class="fa-brands fa-facebook-f"></i>
@@ -202,8 +206,7 @@
                                                     <div class="blog__wrap blog__item style-five">
                                                         <div class="blog__thumb is-hover">
                                                             <a href="blog-details.html">
-                                                                <img src="assets/imgs/blog/blog-12.png"
-                                                                    alt="image not found">
+                                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-12.png') }}" alt="image not found">
                                                             </a>
                                                             <div class="blog__tag">
                                                                 <a href="#">Development</a>
@@ -220,11 +223,13 @@
                                                                     10 Comments
                                                                 </span>
                                                             </div>
-                                                            <h5 class="blog__title"><a href="blog-details.html">The Role
-                                                                    of actions in User Engagement</a></h5>
+                                                            <h5 class="blog__title">
+                                                                <a href="blog-details.html">The Role
+                                                                    of actions in User Engagement
+                                                                </a>
+                                                            </h5>
                                                             <div class="blog__btn">
-                                                                <a class="bd-btn bordered-light is-btn-anim"
-                                                                    href="blog-details.html">
+                                                                <a class="bd-btn bordered-light is-btn-anim" href="blog-details.html">
                                                                     <span class="bd-btn-inner">
                                                                         <span class="bd-btn-normal">Read More</span>
                                                                         <span class="bd-btn-hover">Read More</span>
@@ -240,8 +245,7 @@
                                                     <div class="blog__wrap blog__item style-five">
                                                         <div class="blog__thumb is-hover">
                                                             <a href="blog-details.html">
-                                                                <img src="assets/imgs/blog/blog-13.png"
-                                                                    alt="image not found">
+                                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-13.png') }}" alt="image not found">
                                                             </a>
                                                             <div class="blog__tag">
                                                                 <a href="#">Project</a>
@@ -258,8 +262,7 @@
                                                                     20 Comments
                                                                 </span>
                                                             </div>
-                                                            <h5 class="blog__title"><a href="blog-details.html">Talent
-                                                                    Acquisition and Global Work Force</a></h5>
+                                                            <h5 class="blog__title"><a href="blog-details.html">Talent Acquisition and Global Work Force</a></h5>
                                                             <div class="blog__btn">
                                                                 <a class="bd-btn bordered-light is-btn-anim"
                                                                     href="blog-details.html">
@@ -283,8 +286,7 @@
                                                         <div class="postbox__comment-box">
                                                             <div class="postbox__comment-info">
                                                                 <div class="postbox__comment-avater">
-                                                                    <img src="assets/imgs/user/user-08.png"
-                                                                        alt="image">
+                                                                    <img src="{{ Vite::asset('resources/imgs/user/user-08.png') }}" alt="image">
                                                                 </div>
                                                             </div>
                                                             <div class="postbox__comment-text ">
@@ -292,21 +294,19 @@
                                                                     <span class="post-meta mb-5"> July 14, 2022</span>
                                                                     <h6><a href="#">Eleanor Fant</a></h6>
                                                                 </div>
-                                                                <p>One’s of the best template out of there. design, code
+                                                                <p>
+                                                                    One’s of the best template out of there. design, code
                                                                     quality, updates etc everything you needs guys, buy it
-                                                                    you won’t regret it!</p>
+                                                                    you won’t regret it!
+                                                                </p>
                                                                 <div class="postbox__comment-btn">
-                                                                    <a class="bd-btn is-btn-anim bordered-light"
-                                                                        href="contact.html">
+                                                                    <a class="bd-btn is-btn-anim bordered-light" href="contact.html">
                                                                         <span class="bd-btn-inner">
                                                                             <span class="bd-btn-normal">Reply</span>
                                                                             <span class="bd-btn-hover">Reply</span>
                                                                             <i class="contentHidden"></i>
                                                                         </span>
                                                                     </a>
-
-
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -315,19 +315,20 @@
                                                                 <div class="postbox__comment-box">
                                                                     <div class="postbox__comment-info">
                                                                         <div class="postbox__comment-avater">
-                                                                            <img src="assets/imgs/user/user-09.png"
+                                                                            <img src="{{ Vite::asset('resources/imgs/user/user-09.png') }}"
                                                                                 alt="image">
                                                                         </div>
                                                                     </div>
                                                                     <div class="postbox__comment-text ">
                                                                         <div class="postbox__comment-name">
-                                                                            <span class="post-meta mb-5"> July 14,
-                                                                                2022</span>
+                                                                            <span class="post-meta mb-5"> July 14, 2022</span>
                                                                             <h6><a href="#">Alexander</a></h6>
                                                                         </div>
-                                                                        <p>This theme is super awesome! But I had one small
+                                                                        <p>
+                                                                            This theme is super awesome! But I had one small
                                                                             issue with link option in parallax portfolio.
-                                                                            The other day! </p>
+                                                                            The other day! 
+                                                                        </p>
                                                                         <div class="postbox__comment-btn">
                                                                             <a class="bd-btn is-btn-anim bordered-light"
                                                                                 href="contact.html">
@@ -338,9 +339,6 @@
                                                                                     <i class="contentHidden"></i>
                                                                                 </span>
                                                                             </a>
-
-
-
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -351,7 +349,7 @@
                                                         <div class="postbox__comment-box">
                                                             <div class="postbox__comment-info">
                                                                 <div class="postbox__comment-avater">
-                                                                    <img src="assets/imgs/user/user-10.png"
+                                                                    <img src="{{ Vite::asset('resources/imgs/user/user-10.png') }}"
                                                                         alt="image">
                                                                 </div>
                                                             </div>
@@ -371,9 +369,6 @@
                                                                             <i class="contentHidden"></i>
                                                                         </span>
                                                                     </a>
-
-
-
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -425,9 +420,6 @@
                                                                         <i class="contentHidden"></i>
                                                                     </span>
                                                                 </a>
-
-
-
                                                             </div>
                                                         </div>
                                                     </div>
@@ -457,7 +449,7 @@
                                             <div class="sidebar__widget-content">
                                                 <div class="sidebar__author">
                                                     <div class="sidebar__author-thumb">
-                                                        <img src="assets/imgs/user/user-07.png" alt="image not found">
+                                                        <img src="{{ Vite::asset('resources/imgs/user/user-07.png') }}" alt="image not found">
                                                     </div>
                                                     <div class="sidebar__author-content">
                                                         <h6 class=" sidebar__author-title">Colene Landin</h6>
@@ -518,7 +510,7 @@
                                                     <div class="rc__post">
                                                         <div class="rc__post-thumb">
                                                             <a href="blog-details.html"><img
-                                                                    src="assets/imgs/blog/post/sidebar/sidebar-post-blog-01.png"
+                                                                    src="{{ Vite::asset('resources/imgs/blog/post/sidebar/sidebar-post-blog-01.png') }}"
                                                                     alt="image not found"></a>
                                                         </div>
                                                         <div class="rc__post-content">
@@ -537,7 +529,7 @@
                                                     <div class="rc__post">
                                                         <div class="rc__post-thumb">
                                                             <a href="blog-details.html"><img
-                                                                    src="assets/imgs/blog/post/sidebar/sidebar-post-blog-02.png"
+                                                                    src="{{ Vite::asset('resources/imgs/blog/post/sidebar/sidebar-post-blog-02.png') }}"
                                                                     alt="image not found"></a>
                                                         </div>
                                                         <div class="rc__post-content">
@@ -556,7 +548,7 @@
                                                     <div class="rc__post">
                                                         <div class="rc__post-thumb">
                                                             <a href="blog-details.html"><img
-                                                                    src="assets/imgs/blog/post/sidebar/sidebar-post-blog-03.png"
+                                                                    src="{{ Vite::asset('resources/imgs/blog/post/sidebar/sidebar-post-blog-03.png') }}"
                                                                     alt="image not found"></a>
                                                         </div>
                                                         <div class="rc__post-content">

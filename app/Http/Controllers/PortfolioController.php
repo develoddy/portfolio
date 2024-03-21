@@ -21,52 +21,39 @@ class PortfolioController extends Controller
             }
         }
 
-        return view(
-            'web.portfolio', 
-            compact('portfolios')
-        );
+        return view('web.portfolio', compact('portfolios'));
     }
 
     public function show($portfolio_id) {
-
         try {
-            $portfolioDetail = PortfolioDetail::where('id', $portfolio_id)->get();
+            $portfolioDetail = PortfolioDetail::where('portfolio_id', $portfolio_id)->get();
             
             // Verificar si el objeto está vacío
             if ($portfolioDetail->isEmpty()) {
                  // El objeto está vacío
-                 // Hacer algo aquí, como redirigir o mostrar un mensaje
                  $portfolioDetail = [];
             } else {
                 // El objeto no está vacío
                 // Hacer algo con el objeto, como mostrar sus detalles
-                foreach ($portfolioDetail as $portfolio) {
-                    if ($portfolio->related_images != '[]') {
-                        $related_images = json_decode($portfolio->related_images);
-                        foreach ($related_images as $key => $image) {
+                foreach ( $portfolioDetail as $portfolio ) {
+                    if ( $portfolio->related_images != '[]' ) {
+                        $related_images = json_decode(
+                            $portfolio->related_images
+                        );
+                        foreach ( $related_images as $key => $image ) {
                             $related_images[$key] = Storage::url($image);
                         }
                         $portfolio->related_images = $related_images;
                     }
                 }
-            }
-       
+            }    
+            return view('web.portfolio.portfolio-details', compact('portfolioDetail'));
 
-            
         } catch (\Throwable $th) {
             throw $th;
         }
         
         
-
-        
-
-        
-
-        return view(
-            'web.portfolio.portfolio-details',
-            compact('portfolioDetail')
-        );
        
     }
 }

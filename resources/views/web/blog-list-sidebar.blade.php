@@ -49,6 +49,48 @@
                     <div class="col-xxl-8 col-lg-8">
                         <div class="blog__list-wrapper">
                             <div class="row g-5">
+                                @if(isset($blogs) && !empty($blogs))
+                                    @foreach ($blogs as $blog)
+                                        <div class="col-xl-12 col-lg-12 col-md-6">
+                                            <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
+                                                data-wow-delay=".3s">
+                                                <div class="blog__thumb is-hover">
+                                                    <a href="blog-details.html">
+                                                        <img src="{{ $blog->image }}" alt="image not found">
+                                                    </a>
+                                                    <div class="blog__tag">
+                                                        <a href="#">Development</a>
+                                                    </div>
+                                                </div>
+                                                <div class="blog__content ">
+                                                    <div class="blog__meta">
+                                                        <span>
+                                                            <i class="fa-light fa-calendar"></i>
+                                                            {{ $blog->created_at->format('M d, Y') }}
+                                                        </span>
+                                                        <span>
+                                                            <i class="fa-light fa-comment"></i>
+                                                            {{ $blog->countComment == null ? 0 : $blog->countComment }} Comments
+                                                        </span>
+                                                    </div>
+                                                    <h5 class="blog__title">
+                                                        <a href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a>
+                                                    </h5>
+                                                    <p>
+                                                        {{ $blog->description }}
+                                                    </p>
+                                                    <div class="blog-btn-text">
+                                                        <a href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}" class="underline-btn">
+                                                            Read More
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endif
+
+                                <!--
                                 <div class="col-xl-12 col-lg-12 col-md-6">
                                     <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
                                         data-wow-delay=".3s">
@@ -73,13 +115,13 @@
                                                 </span>
                                             </div>
                                             <h5 class="blog__title">
-                                                <a href="{{ route('eddy-lujan-software-developer') }}">Eddy Lujan | Software Developer</a>
+                                                <a href="#">Eddy Lujan | Software Developer</a>
                                             </h5>
                                             <p>Explore how subtle micro actions can enhance user engagement and satisfaction
                                                 Stay up to date
                                                 with latest trends </p>
                                             <div class="blog-btn-text">
-                                                <a href="{{ route('eddy-lujan-software-developer') }}" class="underline-btn">
+                                                <a href="#" class="underline-btn">
                                                     Read More
                                                 </a>
                                             </div>
@@ -266,7 +308,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div>-->
                             </div>
                         </div>
                     </div>

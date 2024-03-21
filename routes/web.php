@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PortfolioController;
+use App\Http\Controllers\BlogController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,9 +17,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('home');
-})->name('home');
+})->name('home');*/
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/service', function () {
     return view('web.service-standard');
@@ -41,13 +45,12 @@ Route::group(['prefix' => 'portfolio'], function () {
 
 // Group Blog
 Route::group(['prefix' => 'blog'], function () {
-    Route::get('/', function () {
-        return view('web.blog-list-sidebar');
-    })->name('blog');
+    Route::get('/', [BlogController::class, 'index'])->name('blog');
+    Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
 
-    Route::get('/detail/2024-03-27/eddy-lujan-software-developer', function () { 
+    /*Route::get('/detail/2024-03-27/eddy-lujan-software-developer', function () { 
         return view('web.blog.2024-03-27.eddy-lujan-software-developer'); 
-    })->name('eddy-lujan-software-developer');
+    })->name('eddy-lujan-software-developer');*/
 });
 
 
