@@ -10,18 +10,21 @@ use Illuminate\Support\Facades\Storage;
 class PortfolioController extends Controller
 {
     public function index() {
-
-        $portfolios = Portfolio::all();
+        try {
+            $portfolios = Portfolio::all();
         
-        foreach ( $portfolios as $portfolio ) {
-            if ( $portfolio->image != '[]' ) {
-                $portfolio->image = Storage::url(
-                    (json_decode($portfolio->image))[0]->download_link
-                );
+            foreach ( $portfolios as $portfolio ) {
+                if ( $portfolio->image != '[]' ) {
+                    $portfolio->image = Storage::url(
+                        (json_decode($portfolio->image))[0]->download_link
+                    );
+                }
             }
-        }
 
-        return view('web.portfolio', compact('portfolios'));
+            return view('web.portfolio', compact('portfolios'));
+        } catch (\Throwable $th) {
+            throw $th;
+        }
     }
 
     public function show($portfolio_id) {
@@ -47,7 +50,11 @@ class PortfolioController extends Controller
                     }
                 }
             }    
-            return view('web.portfolio.portfolio-details', compact('portfolioDetail'));
+
+            $description = implode(', ', $portfolioDetail->pluck('description')->toArray());
+            $title = implode(', ', $portfolioDetail->pluck('title')->toArray());//$portfolioDetail->pluck('description')->toArray();
+            
+            return view('web.portfolio.portfolio-details', compact('portfolioDetail', 'description', 'title'));
 
         } catch (\Throwable $th) {
             throw $th;

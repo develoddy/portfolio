@@ -322,7 +322,7 @@
                         <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
-                            <p>Start with a brief introduction about your a yourself. Mention your name, your current role or status .</p>
+                            <p>I excel at creating attractive and functional user interfaces that balance aesthetics with functionality.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
                                 <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
@@ -337,7 +337,7 @@
                         <span class="service__icon-wrap"><i class="icon-design"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
-                            <p>Develop detailed case studies for a few key projects to provide deeper insights into your design process.</p>
+                            <p>Full stack web developer with a passion for web design. I create attractive and functional interfaces that captivate users.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
                                 <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
@@ -353,7 +353,7 @@
                         <span class="service__icon-wrap"><i class="icon-project"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
-                            <p>Showcase your design process, from initial concept to final execution. Include stages research, ideation.</p>
+                            <p>Full stack web developer with skills in project design, creating attractive and functional solutions.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
                                 <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
@@ -369,7 +369,7 @@
                         <span class="service__icon-wrap"><i class="icon-animation"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Animation</a></h5>
-                            <p>If applicable, include storyboard sketches, concept art, or character designs that contributed to art design.</p>
+                            <p>Using JavaScript and Bootstrap to enhance interactivity and user experience in web projects.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
                                 <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
@@ -385,7 +385,7 @@
                         <span class="service__icon-wrap"><i class="icon-application"></i></span>
                         <div class="service__content">
                             <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
-                            <p>Whenever possible, incorporate interactive prototypes that allow visitors to experience the app's user.</p>
+                            <p>Full stack web developer in the process of learning Swift and Android technologies for mobile app development.</p>
                             <div class="contentHidden">
                                 <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
                                 <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
@@ -394,7 +394,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".8s" data-wow-duration="1s">
+                <div class="col-lg-4 col-md-6 wow fadeInUp d-none" data-wow-delay=".8s" data-wow-duration="1s">
                     <div class="service__wrapper service__item bg-solid bordered-style">
                         <div class="service__shape"></div>
                         <div class="service__shape-2"></div>
@@ -1082,8 +1082,34 @@
                     </div>
                 </div>
             </div>
-            <div class="row g-30 wow fadeInUp" data-wow-delay=".3s">
-                <div class="col-xl-6 col-lg-6 col-md-6">
+            <div class="row g-30 wow fadeInUp mb-40" data-wow-delay=".3s">
+                {{-- Foreach --}}
+                @if(isset($blogs) && !empty($blogs))
+                    @foreach ($blogs as $blog)
+                        <div class="col-xl-6 col-lg-6 col-md-6">
+                            <section class="blog__wrap blog__item bg-solid">
+                                <div class="blog__thumb is-hover">
+                                    <a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">
+                                        <img src="{{ $blog->image }}" alt="image not found">
+                                    </a>
+                                    <div class="blog__meta style-one">
+                                        <h2 class="date">26 <span class="month">FEB</span></h2>
+                                    </div>
+                                </div>
+                                <div class="blog__content">
+                                    <h4 class="blog__title small"><a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a></h4>
+                                    <p>{{ $blog->description }}</p>
+                                    <div class="blog__btn-text">
+                                        <a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}" class="underline-btn">
+                                            Read More
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    @endforeach
+                @endif
+                {{-- <div class="col-xl-6 col-lg-6 col-md-6">
                     <section class="blog__wrap blog__item bg-solid">
                         <div class="blog__thumb is-hover">
                             <a href="blog-details.html">
@@ -1145,6 +1171,19 @@
                             </div>
                         </div>
                     </section>
+                </div> --}}
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-lg-12 col-md-5">
+                    <div class="portfolio__more text-md-center text-center">
+                        <a class="bd-btn is-btn-anim" href="{{ route('blog') }}">
+                            <span class="bd-btn-inner">
+                                <span class="bd-btn-normal">View all blog</span>
+                                <span class="bd-btn-hover">View all blog</span>
+                                <i class="contentHidden"></i>
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

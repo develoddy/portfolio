@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,10 +18,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
-    return view('home');
-})->name('home');*/
-
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/service', function () {
@@ -31,10 +28,12 @@ Route::get('/contact', function () {
     return view('web.contact');
 })->name('contact');
 
+// About
 Route::group(['prefix' => 'about'], function () {
-    Route::get('/', function () {
+    /*Route::get('/', function () {
         return view('web.about-creative');
-    })->name('about');
+    })->name('about');*/
+    Route::get('/', [AboutController::class, 'index'])->name('about');
 });
 
 // Group Portfolio
@@ -47,10 +46,6 @@ Route::group(['prefix' => 'portfolio'], function () {
 Route::group(['prefix' => 'blog'], function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
     Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
-
-    /*Route::get('/detail/2024-03-27/eddy-lujan-software-developer', function () { 
-        return view('web.blog.2024-03-27.eddy-lujan-software-developer'); 
-    })->name('eddy-lujan-software-developer');*/
 });
 
 

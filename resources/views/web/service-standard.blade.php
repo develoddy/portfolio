@@ -164,13 +164,14 @@
                             <div class="section__title-wrapper mb-25">
                                 <div class="section__title-wrapper">
                                     <span class="section__subtitle sec-border">Who I Am</span>
-                                    <h2 class="section__title">Fostering Creativity in Everyday Life</h2>
+                                    <h2 class="section__title">Full Stack Web Development Turning Ideas into Digital Reality</h2>
                                     <p class="contentHidden">contentHiddenText</p>
                                 </div>
                             </div>
-                            <p>Our agency thrives on collaboration, where each member of our team brings unique perspective
-                                expertise
-                                to the table. We are believe in the power creativity transform</p>
+                            <p>
+                                Discover how I can turn your ideas into functional and appealing web applications. With a solid experience in developing various applications over the past years, 
+                                I am ready to take your project to the next digital level.
+                            </p>
                             <div class="about__info-list">
                                 <div class="about__info-item">
                                     <div class="about__info-icon">
@@ -178,7 +179,7 @@
                                     </div>
                                     <div class="about__info-content">
                                         <h5>Trustworthy</h5>
-                                        <p>Candid heading and confrontation</p>
+                                        <p>A service you can fully trust.</p>
                                     </div>
                                 </div>
                                 <div class="about__info-item">
@@ -187,7 +188,7 @@
                                     </div>
                                     <div class="about__info-content">
                                         <h5>Improvement</h5>
-                                        <p>Progress title and debate</p>
+                                        <p>Your path to growth and continuous improvement.</p>
                                     </div>
                                 </div>
                                 <div class="about__info-item">
@@ -196,7 +197,7 @@
                                     </div>
                                     <div class="about__info-content">
                                         <h5>Strategy</h5>
-                                        <p>Approach heading and dispute</p>
+                                        <p>Strategic planning for success.</p>
                                     </div>
                                 </div>
                             </div>

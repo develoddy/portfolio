@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Portfolio;
+use App\Models\Blog;
 use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
@@ -21,7 +22,17 @@ class HomeController extends Controller
                 }
             }
 
-            return view('home', compact('portfolios'));
+            $blogs = Blog::take(4)->get();
+        
+            foreach ( $blogs as $blog ) {
+                if ( $blog->image != '[]' ) {
+                    $blog->image = Storage::url(
+                        (json_decode($blog->image))[0]->download_link
+                    );
+                }
+            }
+
+            return view('home', compact('portfolios', 'blogs'));
         } catch (\Throwable $th) {
             throw $th;
         }

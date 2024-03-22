@@ -12,13 +12,13 @@
                 <div class="col-xl-8 col-lg-8 col-md-10">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1">
                         <div class="breadcrumb__title-wrapper text-center">
-                            <h1 class="breadcrumb__title mb-25">Full Stack Web Developer</h1>
+                            <h1 class="breadcrumb__title mb-25">Full-Stack Software Developer</h1>
                         </div>
                         <div class="breadcrumb__menu text-center">
                             <nav>
                                 <ul>
                                     <li><span><a href="{{ route('home') }}">Home</a></span></li>
-                                    <li><span>About Creative</span></li>
+                                    <li><span>About</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -225,6 +225,18 @@
                     <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                         <div class="swiper portfolio-details__active">
                             <div class="swiper-wrapper">
+                                @foreach ($abouts as $about)
+                                    @foreach ( $about->images as $image )
+                                        <div class="swiper-slide">
+                                            <div class=" portfolio__item style-six portfolio-details">
+                                                <div class="portfolio__item-thumb">
+                                                    <img src="{{ $image }}" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                @endforeach
+                                {{-- 
                                 <div class="swiper-slide">
                                     <div class=" portfolio__item style-six portfolio-details">
                                         <div class="portfolio__item-thumb">
@@ -266,7 +278,7 @@
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/large/portfolio-large-09.png')}}" alt="">
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                             <!-- If we need navigation buttons -->
                             <div class="portfolio__navigation d-none d-sm-block">
@@ -650,7 +662,7 @@
                 </div>
             </div>
             <div class="row g-5">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="award__single-item style-two  wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                         <div class="award__icon">
                             <span>
@@ -658,8 +670,8 @@
                     </span>
                         </div>
                         <div class="award__content">
-                            <h5 class="award__title"><a href="service-details.html">Graphics Design</a></h5>
-                            <p>Cartier / 2022</p>
+                            <h5 class="award__title"><a href="service-details.html">IT admin</a></h5>
+                            <p>Virgen de la paz / 2011</p>
                         </div>
                         <div class="award__btn">
                             <a class="circle-btn" href="service-details.html"> <span class="icon__box"> <i
@@ -667,7 +679,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="award__single-item style-two  wow fadeInUp" data-wow-delay=".5s" data-wow-duration="1s">
                         <div class="award__icon">
                             <span>
@@ -676,7 +688,7 @@
                         </div>
                         <div class="award__content">
                             <h5 class="award__title"><a href="service-details.html">Development</a></h5>
-                            <p>Cartier / 2023</p>
+                            <p>San roman / 2016</p>
                         </div>
                         <div class="award__btn">
                             <a class="circle-btn" href="service-details.html"> <span class="icon__box"> <i
@@ -684,7 +696,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
                     <div class="award__single-item style-two  wow fadeInUp" data-wow-delay=".7s" data-wow-duration="1s">
                         <div class="award__icon">
                             <span>
@@ -692,8 +704,8 @@
                     </span>
                         </div>
                         <div class="award__content">
-                            <h5 class="award__title"><a href="service-details.html">Management</a></h5>
-                            <p>Cartier / 2020</p>
+                            <h5 class="award__title"><a href="service-details.html">Apps Móviles</a></h5>
+                            <p>TokioSchool / 2024</p>
                         </div>
                         <div class="award__btn">
                             <a class="circle-btn" href="service-details.html"> <span class="icon__box"> <i
@@ -701,7 +713,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 d-none">
                     <div class="award__single-item style-two  wow fadeInUp" data-wow-delay=".9s" data-wow-duration="1s">
                         <div class="award__icon">
                             <span>

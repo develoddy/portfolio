@@ -13,9 +13,9 @@
                         <div class="section__title-wrapper">
                             <div class="section__title-wrapper mb-15">
                                 <span class="section__subtitle bg-field">BRANDING IDES</span>
-                                <h2 class="portfolio__details-title">Digital Agency</h2>
+                                <h2 class="portfolio__details-title">{{ $title }}</h2>
                             </div>
-                            <p>We provide digital experience services to startups and small businesses. We help our clients succeed by creating brand identities, digital experiences, and print materials. Install any demo, plugin or template in a matter of seconds.</p>
+                            <p>{{ $description }}</p>
                         </div>
                         <div class="portfolio__details-btn">
                             <a class="bd-btn is-btn-anim" href="portfolio.html">
@@ -192,12 +192,12 @@
             <div class="row g-5">
                 <div class="col-md-6">
                     <div class="portfolio__details-image-item">
-                        <img src="assets/imgs/portfolio/portfolio-16.png" alt="image not found">
+                        <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-16.png') }}" alt="image not found">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="portfolio__details-image-item">
-                        <img src="assets/imgs/portfolio/portfolio-20.png" alt="image not found">
+                        <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-20.png') }}" alt="image not found">
                     </div>
                 </div>
             </div>
