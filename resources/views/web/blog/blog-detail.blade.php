@@ -60,13 +60,13 @@
                                             </div>
                                         </div>
                                         <div class="postbox__details-content-wrapper">
-                                            <h5 class="postbox__details-title">Just set something gratifying to indulge in
-                                                after completing a certain undertaking. The best time to learn about
-                                                motivation is before you’re in the thick of things.</h5>
+                                            <h5 class="postbox__details-title">
+                                                {{ $blogDetail->subtitle }}
+                                            </h5>
                                             <p class="mb-20">
                                                 {{ $blogDetail->description }}
                                             </p>
-                                            <p class="mb-45">I should be incapable of drawing a single stroke at the
+                                            <p class="mb-45 d-none">I should be incapable of drawing a single stroke at the
                                                 present moment; and yet I feel that never was a greater artist than now.</p>
 
                                             {{-- implement foreach --}}

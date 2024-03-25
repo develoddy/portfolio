@@ -51,8 +51,19 @@ class PortfolioController extends Controller
                 }
             }    
 
-            $description = implode(', ', $portfolioDetail->pluck('description')->toArray());
-            $title = implode(', ', $portfolioDetail->pluck('title')->toArray());//$portfolioDetail->pluck('description')->toArray();
+            if (empty($portfolioDetail)) {
+                // El array $portfolioDetail está vacío
+                // Realiza las acciones necesarias aquí
+                $description = "-";
+                $title = '-';
+            } else {
+                // El array $portfolioDetail no está vacío
+                // Realiza las acciones necesarias aquí
+                $description = implode(', ', $portfolioDetail->pluck('description')->toArray());
+                $title = implode(', ', $portfolioDetail->pluck('title')->toArray());
+            }
+
+            
             
             return view('web.portfolio.portfolio-details', compact('portfolioDetail', 'description', 'title'));
 
