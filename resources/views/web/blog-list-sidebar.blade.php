@@ -14,7 +14,7 @@
                             <div class="breadcrumb__title-wrapperr">
                                 <h1 class="breadcrumb__title mb-25">Blog</h1>
                                 <p class="mb-15">
-                                    Welcome to My Blog, where I Share My Experiences and Knowledge as a Full Stack Web Developer.
+                                    Bienvenido a Mi Blog, donde comparto mis experiencias y conocimientos como desarrollador web Full Stack.
                                 </p>
                             </div>
                             <div class="breadcrumb__menu">

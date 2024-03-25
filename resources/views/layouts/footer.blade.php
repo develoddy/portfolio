@@ -24,18 +24,18 @@
             <div class="footer__bottom">
                 <div class="footer__widget">
                     <div class="footer__widget-title">
-                        <h5>About us</h5>
+                        <h5>Sobre mí</h5>
                     </div>
                     <div class="footer__widget-content">
-                        <p class="mb-30">I'm generally available during to regular business hours,</p>
+                        <p class="mb-30">
+                            Mi pasión es crear experiencias digitales impresionantes y funcionales. Desde sitios web elegantes hasta aplicaciones dinámicas, estoy aquí para convertir tus ideas en realidad.
+                        </p>
                         <div class="contact__info-item style-two">
                             <ul>
                                 <li>
                                     <div class="contact__info">
                                         <div class="contact__info-icon">
-                                            <span>
-                                 <i class="icon-phone"></i>
-                              </span>
+                                            <span><i class="icon-phone"></i></span>
                                         </div>
                                         <div class="contact__info-content">
                                             <p>Phone</p>
@@ -46,9 +46,7 @@
                                 <li>
                                     <div class="contact__info">
                                         <div class="contact__info-icon">
-                                            <span>
-                                 <i class="icon-envelope"></i>
-                              </span>
+                                            <span><i class="icon-envelope"></i></span>
                                         </div>
                                         <div class="contact__info-content">
                                             <p>Email</p>
@@ -62,47 +60,46 @@
                 </div>
                 <div class="footer__widget">
                     <div class="footer__widget-title">
-                        <h5>Company</h5>
+                        <h5>Lujandev</h5>
                     </div>
                     <div class="footer__links">
                         <ul>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="service.html">Services</a></li>
-                            <li><a href="portfolio.html">Project</a></li>
-                            <li><a href="testimonial.html">Testimonial</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="{{ route('about') }}">Sobre mí</a></li>
+                            <li><a href="{{ route('service') }}">Servicios</a></li>
+                            <li><a href="{{ route('portfolio-all') }}">Portfolio</a></li>
+                            <li><a href="{{ route('blog') }}">Blog</a></li>
+                            <li><a href="{{ route('contact') }}">Contacto</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="footer__widget">
                     <div class="footer__widget-title">
-                        <h5>Services</h5>
+                        <h5>Últimos Post</h5>
                     </div>
                     <div class="footer__links">
                         <ul>
-                            <li><a href="personal-portfolio.html">Personal Portfolio</a></li>
-                            <li><a href="minimal-portfolio-agency.html">Minimal Portfolio</a></li>
-                            <li><a href="creative-agency.html">Creative Agency</a></li>
-                            <li><a href="digital-agency.html">Digital Agency</a></li>
+                            <li><a href="personal-portfolio.html">Eddy Lujan - Full Stack Software Developer</a></li>
+                            <li><a href="minimal-portfolio-agency.html">La compañia sobre Indra</a></li>
+                            <li><a href="creative-agency.html">La compañia sobre Evidenze</a></li>
+                            {{-- <li><a href="digital-agency.html">Digital Agency</a></li>
                             <li><a href="corporate-business.html">Corporate Business</a></li>
-                            <li><a href="startup-business.html">Startup Business</a></li>
+                            <li><a href="startup-business.html">Startup Business</a></li> --}}
                         </ul>
                     </div>
                 </div>
                 <div class="footer__widget">
                     <div class="footer__widget-title">
-                        <h5>Subscribe Now</h5>
+                        <h5>Suscríbase ahora</h5>
                     </div>
                     <div class="footer__widget-content">
-                        <p>Subscribe to get the latest news from me</p>
+                        <p>Suscríbase para recibir mis últimas noticias</p>
                         <form action="#">
                             <div class="footer__input">
-                                <input type="text" placeholder="Enter your mail">
+                                <input type="text" placeholder="Introduzca su correo electónico">
                                 <button class="footer__btn" type="submit"><i class="icon-plane"></i></button>
                             </div>
                         </form>
-                        <p>*I am not going to save your data</p>
+                        <p>*No voy a guardar tus datos.</p>
                     </div>
                 </div>
             </div>

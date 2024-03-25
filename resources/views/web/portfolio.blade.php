@@ -14,8 +14,7 @@
                         <div class="breadcrumb__title-wrapperr">
                             <h1 class="breadcrumb__title mb-25">Portfolio</h1>
                             <p class="mb-15">
-                                I'm a passionate Full Stack Web Developer. Here you'll find a showcase of my projects
-                                and skills in web application development.
+                                Soy un apasionado desarrollador web Full Stack. Aquí encontrará una muestra de mis proyectos y habilidades en el desarrollo de aplicaciones web.
                             </p>
                         </div>
                         <div class="breadcrumb__menu">

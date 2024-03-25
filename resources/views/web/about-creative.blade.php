@@ -12,7 +12,7 @@
                 <div class="col-xl-8 col-lg-8 col-md-10">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1">
                         <div class="breadcrumb__title-wrapper text-center">
-                            <h1 class="breadcrumb__title mb-25">Full-Stack Software Developer</h1>
+                            <h1 class="breadcrumb__title mb-25">Full Stack Software Developer</h1>
                         </div>
                         <div class="breadcrumb__menu text-center">
                             <nav>
@@ -60,7 +60,7 @@
                             <div class="about__experience-content">
                                 <div class="about__experience-content-inner">
                                     <h2 class="about__experience-title"><span class="counter">5</span>+</h2>
-                                    <p>Years of Experience</p>
+                                    <p>Años de experiencia</p>
                                 </div>
                             </div>
                         </div>
@@ -70,14 +70,23 @@
                     <div class="about__content style-two  wow fadeInRight" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-25">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle bg-field">Who I Am</span>
-                                <h2 class="section__title">My history</h2>
+                                <span class="section__subtitle bg-field">Quien soy</span>
+                                <h2 class="section__title">Mi historia</h2>
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p>The minimal agency looking to outsource design work. a company in search of a designer or product work. a digital agency that needs a landing page a startup that wants to launch an app or an enterprise that plans to rebrand.</p>
-                        <p>The minimal agency looking to outsource design work. a company in search of a designer or product work.</p>
-                        <p>The minimal agency looking to outsource design work. a company in search of a designer or product work.</p>
+                        <p>Quiero compartir con ustedes un poco sobre mi viaje como desarrollador de software, desde mis comienzos en Indra hasta mi actual rol en Evidenze.</p>
+                        
+                        <span class="section__subtitle ">Mis Inicios en Indra</span>
+                        <p>
+                            Hace cinco años, tuve la increíble oportunidad de unirme a Indra, en el país. Durante mi tiempo allí, tuve el privilegio de trabajar en una variedad de proyectos desafiantes que me permitieron crecer tanto personal como profesionalmente.
+                            Desde el primer día, me sumergí en el mundo del desarrollo de software, donde aprendí los entresijos de la programación y la ingeniería de sistemas. Mis responsabilidades abarcaban desde el diseño y desarrollo de aplicaciones hasta la implementación de soluciones tecnológicas innovadoras para nuestros clientes.
+                        </p>
+                        <span class="section__subtitle ">El Salto a Evidenze</span>
+                        <p>
+                            Después de cinco años en Indra, decidí embarcarme en un nuevo desafío y llevar mis habilidades al siguiente nivel. Es así como llegué a Evidenze, una empresa apasionante que valora la innovación y la creatividad en el desarrollo de software.
+                            En Evidenze, me desempeño como desarrollador full stack, lo que significa que tengo la oportunidad de trabajar en todas las capas de una aplicación, desde el frontend hasta el backend. Este rol me ha permitido ampliar mi conjunto de habilidades y profundizar mi comprensión de cómo funciona realmente una aplicación de principio a fin.
+                        </p>
                         <div class="counter__wrapper" id="percentage">
                             <div class="counter__item">
                                 <div class="counter__canvas">

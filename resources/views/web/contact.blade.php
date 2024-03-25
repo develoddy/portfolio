@@ -12,9 +12,9 @@
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
                     <div class="breadcrumb__content-wrapper p-relative z-index-1 text-center">
                         <div class="breadcrumb__title-wrapperr">
-                            <h1 class="breadcrumb__title mb-25">Contact</h1>
+                            <h1 class="breadcrumb__title mb-25">Contacto</h1>
                             <p class="mb-15">
-                                Let's talk about your vision and how we can make it a reality through complete, custom web development!
+                                ¡Hablemos de su visión y de cómo podemos hacerla realidad a través de un desarrollo web completo y personalizado!
                             </p>
                         </div>
                         <div class="breadcrumb__menu">
