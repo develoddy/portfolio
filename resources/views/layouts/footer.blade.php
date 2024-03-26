@@ -38,7 +38,7 @@
                                             <span><i class="icon-phone"></i></span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <p>Phone</p>
+                                            <p>Teléfono</p>
                                             <h6><a href="tel:+034605974436">+034 605 97 44 36</a></h6>
                                         </div>
                                     </div>
@@ -49,7 +49,7 @@
                                             <span><i class="icon-envelope"></i></span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <p>Email</p>
+                                            <p>Correo electrónico</p>
                                             <h6><a href="mailto:lujandev@lujandev.com">lujandev@lujandev.com</a></h6>
                                         </div>
                                     </div>
