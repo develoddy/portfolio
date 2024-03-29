@@ -16,8 +16,8 @@ class DataRowsTableSeeder extends Seeder
         $userDataType = DataType::where('slug', 'users')->firstOrFail();
         $menuDataType = DataType::where('slug', 'menus')->firstOrFail();
         $roleDataType = DataType::where('slug', 'roles')->firstOrFail();
-        $portfolioDataType = DataType::where('slug', 'portfolio')->firstOrFail();
-        $portfolioDetailDataType = DataType::where('slug', 'portfolio-detail')->firstOrFail();
+        //$portfolioDataType = DataType::where('slug', 'portfolio')->firstOrFail();
+        //$portfolioDetailDataType = DataType::where('slug', 'portfolio-detail')->firstOrFail();
 
         $dataRow = $this->dataRow($userDataType, 'id');
         if (!$dataRow->exists) {
@@ -356,7 +356,7 @@ class DataRowsTableSeeder extends Seeder
         }
 
         // New Portfolio
-        $dataRow = $this->dataRow($portfolioDataType, 'id');
+        /*$dataRow = $this->dataRow($portfolioDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'number',
@@ -444,11 +444,11 @@ class DataRowsTableSeeder extends Seeder
                 'delete'       => 0,
                 'order'        => 6,
             ])->save();
-        }
+        }*/
 
 
         // --- NEW PORTFOLIO DETAIL ---
-        $dataRow = $this->dataRow($portfolioDetailDataType, 'id');
+        /*$dataRow = $this->dataRow($portfolioDetailDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
@@ -611,7 +611,7 @@ class DataRowsTableSeeder extends Seeder
                 'delete'       => 1,
                 'order'        => 11,
             ])->save();
-        }
+        }*/
     }
 
     

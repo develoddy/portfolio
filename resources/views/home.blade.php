@@ -7,7 +7,7 @@
     <!-- Banner area start -->
     <section class="banner__area banner-height d-flex align-items-center p-relative">
         <div class="banner-shape d-none d-lg-block">
-            <img class="banner__shape-two" src="{{ Vite::asset('resources/imgs/shape/tower-shape-small.png') }}" alt="image not found">
+            <img class="banner__shape-two" src="{{ Vite::asset('/resources/imgs/shape/tower-shape-small.png') }}" alt="image not found">
         </div>
         <!-- when slide active remove this class -->
         <div class="swiper banner__active overflow-visible">

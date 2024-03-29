@@ -18,5 +18,28 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        // php artisan db:seed --class=MenusTableSeeder
+
+
+        // Llama al seeder MenusTableSeeder  
+        $this->call(MenusTableSeeder::class);
+
+        // Llama al seeder MenuItemsTableSeeder
+        $this->call(MenuItemsTableSeeder::class);
+
+        // Llama al seeder DataTypesTableSeeder
+        $this->call(DataTypesTableSeeder::class);
+
+
+        // Llama al seeder RolesTableSeeder
+        $this->call(RolesTableSeeder::class);
+
+        // Llama al seeder UsersTableSeeder
+        $this->call(UsersTableSeeder::class);
+
+        
+        $this->call(SettingsTableSeeder::class);
+        $this->call(PagesTableSeeder::class);
+        
     }
 }
