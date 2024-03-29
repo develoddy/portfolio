@@ -1,12 +1,6 @@
-// @forward 'theme';
-// @forward 'components';
-// @forward 'layout';
-// @forward 'plugins';
-// @forward 'utils';
+@forward 'theme';
+@forward 'components';
+@forward 'layout';
+@forward 'plugins';
+@forward 'utils';
 
-
-@import 'theme';
-@import 'components';
-@import 'layout';
-@import 'plugins';
-@import 'utils';

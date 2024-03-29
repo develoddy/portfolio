@@ -451,7 +451,7 @@
 
 // wave shape
 .bd-wave {
-    background: url("../imgs/shape/wave.svg") repeat-x;
+    background: url("../../imgs/shape/wave.svg") repeat-x;
     position: absolute;
     width: 6400px;
 	top: 45px;
@@ -463,7 +463,7 @@
         height: 150px;
 
         &:nth-of-type(2) {
-            background: url("../imgs/shape/wave-white.svg") repeat-x;
+            background: url("../../imgs/shape/wave-white.svg") repeat-x;
 			filter: brightness(.08);
         }
     }
