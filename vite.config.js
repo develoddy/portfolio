@@ -9,8 +9,10 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/bootstrap.js',
                 'resources/js/main.js',
+                'resources/js/jarallax.min.js',
             ],
             refresh: true,
+            sourcemap: true,
         }),
         
     ],
