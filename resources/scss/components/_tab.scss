@@ -25,7 +25,7 @@
         gap: 15px;
         &-tab{
             display: flex;
-            justify-content: end;
+            justify-content: flex-end;
             @media #{$md,$sm,$xs}{
                 justify-content: start;
             }

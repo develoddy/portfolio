@@ -2800,7 +2800,7 @@ i[class^=icon-] {
 }
 .bd__menu-tab {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .bd__menu-tab {
@@ -2979,7 +2979,7 @@ i[class^=icon-] {
 }
 .info__list-2 ul {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: center;
   gap: 15px 30px;
   flex-wrap: wrap;
@@ -3002,7 +3002,7 @@ i[class^=icon-] {
 
 .info__list-3 ul {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px 25px;
   flex-wrap: wrap;
 }
@@ -8041,7 +8041,7 @@ input:checked + .switch:before {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: end;
+  justify-content: flex-end;
 }
 @media only screen and (min-width: 576px) and (max-width: 767px), (max-width: 575px) {
   .postbox__share-social {
@@ -10768,7 +10768,7 @@ input:checked + .switch:before {
 }
 .team__navigation {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .team__navigation button i {
   position: relative;

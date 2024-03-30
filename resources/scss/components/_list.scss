@@ -30,7 +30,7 @@
 	margin-top: 13px;
 	ul {
 		display: flex;
-		align-items: start;
+		align-items: flex-start;
 		justify-content: center;
 		gap: 15px 30px;
 		flex-wrap: wrap;
@@ -54,7 +54,7 @@
 .info__list-3 {
 	ul {
 		display: flex;
-		align-items: start;
+		align-items: flex-start;
 		gap: 10px 25px;
 		flex-wrap: wrap;
 		li {
