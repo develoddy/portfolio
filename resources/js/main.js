@@ -1,4 +1,5 @@
 (function ($) {
+//$(document).ready( function(){
   "use strict";
 
   var windowOn = $(window);
@@ -936,7 +937,5 @@
     });
   });
 
-
-
-
+  //});
 })(jQuery);

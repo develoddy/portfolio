@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <!-- Font Aweson -->
+        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
+
+        <title>{{ config('app.name', 'Lujandev') }}</title>
 
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
@@ -13,14 +18,14 @@
 
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Personal Portfolio || Personal Portfolio & Agency HTML5 Template</title>
+        
         <meta name="description" content="">
 
         <!-- Place favicon.ico in the root directory -->
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
 
         <!-- CSS here -->
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
+        {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/animate.min.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/swiper.min.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/slick.css')}}">
@@ -29,11 +34,17 @@
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/hover-reveal.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/spacing.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/main.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/main.css')}}"> --}}
 
         <!-- Scripts -->
-        {{-- @vite(['resources/scss/main.scss', 'resources/js/app.js']) --}}
 
+        {{-- @vite('resources/scss/main.scss') --}}
+        @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+        
+
+
+       
+        
     </head>
 
     <body>
@@ -67,7 +78,7 @@
                         <div class="offcanvas__top d-flex justify-content-between align-items-center">
                             <div class="offcanvas__logo">
                                 <a href="index.html">
-                                    <img src="assets/imgs/logo/logo.svg" alt="logo not found">
+                                    <img src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="logo not found">
                                 </a>
                             </div>
                             <div class="offcanvas__close">
@@ -114,7 +125,10 @@
 
         @include('layouts.footer')
 
-         <!-- JS here -->
+        {{-- @vite('resources/js/app.js') --}}
+
+        <!-- JS here -->
+        {{-- 
         <script src="{{ Vite::asset('resources/js/vendor/jquery-3.6.0.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/plugins/waypoints.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/vendor/bootstrap.bundle.min.js')}}"></script>
@@ -136,6 +150,8 @@
         <script src="{{ Vite::asset('resources/js/plugins/jarallax.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/vendor/ajax-form.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/vendor/js_circle-progress.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/main.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/main.js')}}"></script>  
+        --}}
+
     </body>
 </html>
