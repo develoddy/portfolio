@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- CSRF Token -->
         <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        <!-- Font Aweson -->
-        {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> --}}
 
         <title>{{ config('app.name', 'Lujandev') }}</title>
 
@@ -16,23 +14,25 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        
         <meta name="description" content="">
 
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
-        {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/fontawesome-pro.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}"> --}}
-        {{-- <link rel="stylesheet" href="resources/css/vendor/font-awesome-pro.css">
-        <link rel="stylesheet" href="resources/css/vendor/icomoon.css"> --}}
-        @vite(['resources/scss/app.scss', 'resources/js/app.js'])
+        
+        <!-- CSS here -->
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/animate.min.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/swiper.min.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/slick.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/magnific-popup.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/fontawesome-pro.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/hover-reveal.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/spacing.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/main.css')}}">
+
     </head>
 
     <body>
-        <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
 
         <!-- Preloader start -->
         <div id="preloader">
@@ -107,5 +107,28 @@
 
         @include('layouts.footer')
 
+        <!-- JS here -->
+        <script src="{{ Vite::asset('resources/js/vendor/jquery-3.6.0.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/waypoints.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/meanmenu.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/swiper.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/slick.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/wow.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/magnific-popup.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/isotope.pkgd.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/vanilla.tilt.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/counterup.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/nice-select.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/jquery-ui.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/hover-reveal.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/tween-max.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/parallax.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/parallax-scroll.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/plugins/jarallax.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/ajax-form.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/vendor/js_circle-progress.min.js')}}"></script>
+        <script src="{{ Vite::asset('resources/js/main.js')}}"></script>  
     </body>
 </html>

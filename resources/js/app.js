@@ -3,6 +3,9 @@
 
 import './bootstrap';
 import './main';
+/*
+import './bootstrap';
+import './main';
 import './vendor/jquery-3.6.0.min';
 import './plugins/waypoints.min';
 import './vendor/bootstrap.bundle.min';
@@ -20,9 +23,9 @@ import './vendor/hover-reveal';
 import './vendor/tween-max';
 import './plugins/parallax.min';
 import './plugins/parallax-scroll';
-//import './plugins/jarallax.min';            
+import './plugins/jarallax.min';            
 import './vendor/ajax-form';
-import './vendor/js_circle-progress.min';
+import './vendor/js_circle-progress.min';*/
 
 
 
