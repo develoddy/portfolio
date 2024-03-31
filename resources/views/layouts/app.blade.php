@@ -22,8 +22,10 @@
         <meta name="description" content="">
 
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/fontawesome-pro.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}">
+        {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/fontawesome-pro.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}"> --}}
+        {{-- <link rel="stylesheet" href="resources/css/vendor/font-awesome-pro.css">
+        <link rel="stylesheet" href="resources/css/vendor/icomoon.css"> --}}
         @vite(['resources/scss/app.scss', 'resources/js/app.js'])
     </head>
 
