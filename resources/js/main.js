@@ -1,3 +1,4 @@
+
 (function ($) {
 //$(document).ready( function(){
   "use strict";
@@ -30,7 +31,7 @@
   Sidebar Toggle
   ========================================*/
   $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
-    $(".offcanvas__area").removeClass("info-open");
+    $(".offcanvas__area").removeClass("in-open");
     $(".offcanvas__overlay").removeClass("overlay-open");
   });
   $(".sidebar__toggle").on("click", function () {
@@ -937,5 +938,5 @@
     });
   });
 
-  //});
+//});
 })(jQuery);
