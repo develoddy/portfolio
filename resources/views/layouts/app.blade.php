@@ -19,7 +19,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
         
         <!-- CSS here -->
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
+        {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/animate.min.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/swiper.min.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/slick.css')}}">
@@ -28,7 +28,24 @@
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/hover-reveal.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}">
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/spacing.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/main.css')}}">
+        <link rel="stylesheet" href="{{ Vite::asset('resources/css/main.css')}}">  --}}
+
+        {{-- @Vite([
+            'resources/scss/app.scss', 
+            'resources/js/app.js',
+            'resources/css/vendor/bootstrap.min.css',
+            'resources/css/vendor/animate.min.css',
+            'resources/css/plugins/swiper.min.css',
+            'resources/css/plugins/slick.css',
+            'resources/css/vendor/magnific-popup.css',
+            'resources/css/vendor/fontawesome-pro.css',
+            'resources/css/vendor/hover-reveal.css',
+            'resources/css/vendor/icomoon.css',
+            'resources/css/vendor/spacing.css',
+            'resources/css/main.css',
+        ]) --}}
+
+        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 
     </head>
 
@@ -107,8 +124,10 @@
 
         @include('layouts.footer')
 
+
+
         <!-- JS here -->
-        <script src="{{ Vite::asset('resources/js/vendor/jquery-3.6.0.min.js')}}"></script>
+        {{-- <script src="{{ Vite::asset('resources/js/vendor/jquery-3.6.0.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/plugins/waypoints.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/vendor/bootstrap.bundle.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/plugins/meanmenu.min.js')}}"></script>
@@ -129,6 +148,8 @@
         <script src="{{ Vite::asset('resources/js/plugins/jarallax.min.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/vendor/ajax-form.js')}}"></script>
         <script src="{{ Vite::asset('resources/js/vendor/js_circle-progress.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/main.js')}}"></script>  
+        <script src="{{ Vite::asset('resources/js/main.js')}}"></script> --}}
+
+        
     </body>
 </html>
