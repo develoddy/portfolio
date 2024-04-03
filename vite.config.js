@@ -6,12 +6,14 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-
                 'resources/sass/app.scss',
+                'resources/js/main.js',
                 'resources/js/app.js',
+                'resources/js/helper.js',
+                
             ],
             refresh: true,
-        }),  
+        }),
     ],
 
     resolve: {
@@ -22,5 +24,8 @@ export default defineConfig({
     },
     build: {
       target: 'esnext',
+      chunkSizeWarningLimit: 1600,
     },
 });
+
+

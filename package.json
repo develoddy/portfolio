@@ -6,6 +6,9 @@
         "build": "vite build"
     },
     "devDependencies": {
+        "@babel/core": "^7.24.4",
+        "@babel/preset-env": "^7.24.4",
+        "@rollup/plugin-babel": "^6.0.4",
         "@tailwindcss/forms": "^0.5.2",
         "alpinejs": "^3.13.7",
         "autoprefixer": "^10.4.19",
@@ -26,6 +29,7 @@
         "isotope-layout": "^3.0.6",
         "jquery": "^3.7.1",
         "masonry-layout": "^4.2.2",
-        "outlayer": "^2.1.1"
+        "outlayer": "^2.1.1",
+        "wow.js": "^1.2.2"
     }
 }

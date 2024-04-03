@@ -5,8 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
         <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
+        {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
 
         <title>{{ config('app.name', 'Lujandev') }}</title>
 
@@ -14,39 +15,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
-        <meta name="description" content="">
-
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
-        
-        <!-- CSS here -->
-        {{-- <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/animate.min.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/swiper.min.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/plugins/slick.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/magnific-popup.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/fontawesome-pro.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/hover-reveal.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/icomoon.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/vendor/spacing.css')}}">
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/main.css')}}">  --}}
-
-        {{-- @Vite([
-            'resources/scss/app.scss', 
-            'resources/js/app.js',
-            'resources/css/vendor/bootstrap.min.css',
-            'resources/css/vendor/animate.min.css',
-            'resources/css/plugins/swiper.min.css',
-            'resources/css/plugins/slick.css',
-            'resources/css/vendor/magnific-popup.css',
-            'resources/css/vendor/fontawesome-pro.css',
-            'resources/css/vendor/hover-reveal.css',
-            'resources/css/vendor/icomoon.css',
-            'resources/css/vendor/spacing.css',
-            'resources/css/main.css',
-        ]) --}}
 
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
     </head>
 
     <body>
@@ -123,33 +94,7 @@
         @yield('content')
 
         @include('layouts.footer')
-
-
-
-        <!-- JS here -->
-        {{-- <script src="{{ Vite::asset('resources/js/vendor/jquery-3.6.0.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/waypoints.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/bootstrap.bundle.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/meanmenu.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/swiper.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/slick.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/wow.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/magnific-popup.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/isotope.pkgd.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/imagesloaded.pkgd.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/vanilla.tilt.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/counterup.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/nice-select.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/jquery-ui.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/hover-reveal.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/tween-max.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/parallax.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/parallax-scroll.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/plugins/jarallax.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/ajax-form.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/vendor/js_circle-progress.min.js')}}"></script>
-        <script src="{{ Vite::asset('resources/js/main.js')}}"></script> --}}
-
+        @vite('resources/js/helper.js')
         
     </body>
 </html>

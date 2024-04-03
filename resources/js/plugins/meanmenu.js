@@ -25,6 +25,7 @@
 *
 */
 (function ($) {
+	console.log("LOAD MEANMENU.JS");
 	"use strict";
 		$.fn.meanmenu = function (options) {
 				var defaults = {

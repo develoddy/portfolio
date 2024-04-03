@@ -1,6 +1,4 @@
-
 (function ($) {
-//$(document).ready( function(){
   "use strict";
 
   var windowOn = $(window);
@@ -15,6 +13,7 @@
   /*======================================
   Mobile Menu Js
   ========================================*/
+
   $("#mobile-menu").meanmenu({
     meanMenuContainer: ".mobile-menu",
     meanScreenWidth: "991",
@@ -120,19 +119,23 @@
   });
 
 
+  
   /*======================================
   Wow Js
   ========================================*/
-  if ($('.wow').length) {
-    var wow = new WOW({
-      boxClass: 'wow', // animated element css class (default is wow)
-      animateClass: 'animated', // animation css class (default is animated)
-      offset: 0, // distance to the element when triggering the animation (default is 0)
-      mobile: false, // trigger animations on mobile devices (default is true)
-      live: true // act on asynchronously loaded content (default is true)
-    });
-    wow.init();
-  }
+  // if ($('.wow').length) {
+  //   var wow = new WOW({
+  //     boxClass: 'wow', // animated element css class (default is wow)
+  //     animateClass: 'animated', // animation css class (default is animated)
+  //     offset: 0, // distance to the element when triggering the animation (default is 0)
+  //     mobile: false, // trigger animations on mobile devices (default is true)
+  //     live: true, // act on asynchronously loaded content (default is true)
+  //     callback:     function(box) {
+  //       console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+  //     }
+  //   });
+  //   wow.init();
+  // }
 
   /*======================================
   Nice Select Js
@@ -938,5 +941,4 @@
     });
   });
 
-//});
 })(jQuery);

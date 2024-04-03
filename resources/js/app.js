@@ -1,40 +1,11 @@
+import.meta.glob(['../imgs/**']);
+
+
 import './bootstrap';
 import '../sass/app.scss';
-//import '../css/app.css';
 
 // CSS
-import '../css/vendor/bootstrap.min.css';
-import '../css/vendor/animate.min.css';
-import '../css/plugins/swiper.min.css';
-import '../css/plugins/slick.css';
-import '../css/vendor/magnific-popup.css';
-import '../css/vendor/fontawesome-pro.css';
-import '../css/vendor/hover-reveal.css';
-import '../css/vendor/icomoon.css';
-import '../css/vendor/spacing.css';
-import '../css/main.css';
-
+import './styles';
 
 // JS
-import './main';
-import './vendor/jquery-3.6.0.min';
-import './plugins/waypoints.min';
-import './vendor/bootstrap.bundle.min';
-import './plugins/meanmenu.min';
-import './plugins/swiper.min';
-import './plugins/slick.min';
-import './plugins/wow';
-import './vendor/magnific-popup.min';
-import './vendor/isotope.pkgd.min';
-import './vendor/imagesloaded.pkgd.min';
-import './vendor/vanilla.tilt';
-import './plugins/counterup';
-import './plugins/nice-select.min';
-import './vendor/jquery-ui.min';
-import './vendor/hover-reveal';
-import './vendor/tween-max';
-import './plugins/parallax.min';
-import './plugins/parallax-scroll';
-import './plugins/jarallax.min';
-import './vendor/ajax-form';
-import './vendor/js_circle-progress.min';
+//import './helper';
