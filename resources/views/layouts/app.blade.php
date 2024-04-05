@@ -18,6 +18,7 @@
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
 
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+
     </head>
 
     <body>
@@ -94,6 +95,8 @@
         @yield('content')
 
         @include('layouts.footer')
+
+        
         @vite('resources/js/helper.js')
         
     </body>

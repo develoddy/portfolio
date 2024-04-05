@@ -26,10 +26,18 @@
         "ev-emitter": "^2.1.2",
         "fizzy-ui-utils": "^3.0.0",
         "get-size": "^3.0.0",
+        "imagesloaded": "^5.0.0",
         "isotope-layout": "^3.0.6",
+        "jarallax": "^2.2.0",
         "jquery": "^3.7.1",
+        "jquery-bridget": "^3.0.1",
+        "magnific-popup": "^1.1.0",
         "masonry-layout": "^4.2.2",
         "outlayer": "^2.1.1",
+        "parallax.js": "^0.1.0",
+        "simple-parallax-js": "^5.6.2",
+        "slick-carousel": "^1.8.1",
+        "swiper": "^11.1.0",
         "wow.js": "^1.2.2"
     }
 }

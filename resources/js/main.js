@@ -1,3 +1,11 @@
+
+import Swiper from 'swiper';
+// import jQueryBridget from 'jquery-bridget';
+// import Isotope from 'isotope-layout';
+ import imagesLoaded from 'imagesloaded';
+
+import simpleParallax from 'simple-parallax-js';
+
 (function ($) {
   "use strict";
 
@@ -60,9 +68,9 @@
 
 
   // jarallax js
-  jarallax(document.querySelectorAll('.jarallax'), {
+  /*jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.4,
-  });
+  });*/
 
 
   /*======================================
@@ -86,28 +94,28 @@
   /*======================================
   MagnificPopup image view
   ========================================*/
-  $(".popup-image").magnificPopup({
+  /*$(".popup-image").magnificPopup({
     type: "image",
     gallery: {
       enabled: true,
     },
-  });
+  });*/
 
   ////////////////////////////////////////////////////
   // 22. Parallax Js image move
-  if ($('.scene').length > 0) {
+  /*if ($('.scene').length > 0) {
     $('.scene').parallax({
       scalarX: 10.0,
       scalarY: 15.0,
     });
-  };
+  };*/
 
   /*======================================
   MagnificPopup video view
   ========================================*/
-  $(".popup-video").magnificPopup({
+  /*$(".popup-video").magnificPopup({
     type: "iframe",
-  });
+  });*/
 
   /*======================================
   Counter Js
@@ -257,7 +265,7 @@
       .removeClass("active");
   });
 
-  $(".features__active").slick({
+  /*$(".features__active").slick({
     slidesToShow: 1,
     vertical: true,
     verticalSwiping: true,
@@ -266,7 +274,7 @@
     dots: true,
     arrows: false,
     speed: 500,
-  });
+  });*/
 
   //  Banner Slider Active Js
   if ($('.banner_more_item').length > 1) {
@@ -706,7 +714,7 @@
     animated_swiper(sliderActive1, sliderInit1);
   }
 
-  $(".testimonial-slide").slick({
+  /*$(".testimonial-slide").slick({
     speed: 300,
     autoplay: true,
     arrows: false,
@@ -740,7 +748,7 @@
       },
     },
     ],
-  });
+  });*/
 
   /*======================================
   Feedback activation js
@@ -915,30 +923,33 @@
   ========================================*/
   $('.contentHidden').remove();
 
-  // Masonry Js
-  $(".grid").imagesLoaded(function () {
-    // init Isotope
-    var $grid = $(".grid").isotope({
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: ".grid-item",
-      },
-    });
+  // console.log("Debugg: Ver la sie existe las clases: .grid y .grid-item");
+  // console.log($(".grid"));
+  // console.log($(".grid-item"));
+  // // Masonry Js
+  //  $(".grid").imagesLoaded(function () {
+  //    // init Isotope
+  //    var $grid = $(".grid").isotope({
+  //      itemSelector: ".grid-item",
+  //      percentPosition: true,
+  //      masonry: {
+  //        // use outer width of grid-sizer for columnWidth
+  //        columnWidth: ".grid-item",
+  //      },
+  //    });
 
-    // filter items on button click
-    $(".bf-filter-btn").on("click", "button", function () {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
-    });
+  //    // filter items on button click
+  //    $(".bf-filter-btn").on("click", "button", function () {
+  //      var filterValue = $(this).attr("data-filter");
+  //      $grid.isotope({ filter: filterValue });
+  //    });
 
-    //for menu active class
-    $(".bf-filter-btn button").on("click", function (event) {
-      $(this).siblings(".active").removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
-  });
+  //    //for menu active class
+  //    $(".bf-filter-btn button").on("click", function (event) {
+  //      $(this).siblings(".active").removeClass("active");
+  //      $(this).addClass("active");
+  //      event.preventDefault();
+  //    });
+  // });
 
 })(jQuery);
