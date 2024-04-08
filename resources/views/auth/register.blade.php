@@ -1,4 +1,4 @@
-<x-guest-layout>
+{{-- <x-guest-layout>
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
@@ -49,4 +49,100 @@
             </x-primary-button>
         </div>
     </form>
-</x-guest-layout>
+</x-guest-layout> --}}
+
+
+@extends('layouts.guest')
+
+@section('content')
+<!-- Body main wrapper start -->
+<main>
+
+    <!-- login area start -->
+    <section class="bd-login__area section-space">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8 col-md-10">
+                    <div class="login__wrapper">
+                        <div class="login__top mb-30 text-center">
+                            <h3 class="login__title">¡Regístrate ahora!</h3>
+                            <p>Puedes registrarte con tu cuenta social a continuación</p>
+                        </div>
+                        <div class="login__form">
+                            <form id="contact-form" action="assets/mail.php" method="POST">
+                                <div class="form__input-box">
+                                    <div class="form__input style-two">
+                                        <input type="text" placeholder="Email or Username">
+                                        <div class="form__icon"><span><i class="fa-light fa-user"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="form__input-box">
+                                    <div class="form__input style-two">
+                                        <input type="email" placeholder="Enter your email">
+                                        <div class="form__icon"><span><i class="fa-light fa-envelope"></i></span></div>
+                                    </div>
+                                </div>
+                                <div class="form__input-box">
+                                    <div class="form__input style-two">
+                                        <input type="password" placeholder="Password">
+                                        <i class="fa fa-eye pass-icon"></i>
+                                        <div class="form__icon"><span><i class="fa-light fa-lock"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form__input-box">
+                                    <div class="form__input style-two">
+                                        <input type="password" placeholder="Confirm Password">
+                                        <i class="fa fa-eye pass-icon"></i>
+                                        <div class="form__icon"><span><i class="fa-light fa-lock"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="login__option mb-30 d-sm-flex justify-content-between">
+                                    <div class="login__remember">
+                                        <input type="checkbox" id="bd-remember">
+                                        <label for="bd-remember">Recordar</label>
+                                    </div>
+                                </div>
+                                <div class="login__btn">
+                                    <button class="bd-btn w-100" type="submit">Registrarse</button>
+                                </div>
+                            </form>
+                            <div class="login__social text-center">
+                                <h6 class="login__social-header">O inicia sesión con</h6>
+                                <div class="login__social-item d-flex flex-wrap justify-content-sm-center">
+                                    <a href="#">
+                                        <span class="login__social-icon">
+                                            <img src="{{ Vite::asset('resources/imgs/icons/google.png') }}" alt="image">
+                                        </span>
+                                        <span>Google</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="login__social-icon">
+                                            <img src="{{ Vite::asset('resources/imgs/icons/facebook.png') }}" alt="image">                        
+                                        </span>
+                                        <span>Facebook</span>
+                                    </a>
+                                    <a href="#">
+                                        <span class="login__social-icon">
+                                            <img src="{{ Vite::asset('resources/imgs/icons/twiter.png') }}" alt="image">
+                                        </span>
+                                        <span>Twitter</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="login__register-now">
+                                <p>¿Ya tienes una cuenta? <a href="{{ route('login') }}">Iniciar sesión</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- login area end -->
+
+</main>
+<!-- Body main wrapper end -->
+@endsection

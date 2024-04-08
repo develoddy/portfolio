@@ -63,7 +63,7 @@
                             <p>Ingrese sus credenciales para acceder a su cuenta.</p>
                         </div>
                         <div class="login__form">
-                            <form id="contact-form" action="assets/mail.php" method="POST">
+                            <form id="contact-form" action="{{ route('home') }}" method="POST">
                                 <div class="form__input-box">
                                     <div class="form__input style-two">
                                         <input name="email" id="email" type="email" placeholder="Correo electrónico o username">
@@ -114,7 +114,7 @@
                                 </div>
                             </div>
                             <div class="login__register-now">
-                                <p>¿No tienes una cuenta? <a href="register.html">Regístrate ahora</a></p>
+                                <p>¿No tienes una cuenta? <a href="{{ route('register') }}">Regístrate ahora</a></p>
                             </div>
                         </div>
                     </div>
