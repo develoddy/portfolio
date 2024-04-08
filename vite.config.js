@@ -9,6 +9,8 @@ export default defineConfig({
             input: [
                 'resources/js/app.js', 
                 'resources/sass/app.scss',
+                'resources/js/bootstrap.js',
+                'resources/js/main.js',
             ],
             refresh: true,
         }),
@@ -25,6 +27,3 @@ export default defineConfig({
       chunkSizeWarningLimit: 1600,
     }
 });
-
-
-

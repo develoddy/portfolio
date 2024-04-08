@@ -1,4 +1,25 @@
-import WOW from 'wow.js';
+
+import $ from 'jquery';
+import 'waypoints/lib/jquery.waypoints';
+import 'bootstrap'; 
+import './plugins/meanmenu.min.js'; //import 'meanmenu';
+import Swiper from 'swiper/bundle'; 
+import 'slick-carousel'; // Slick como módulo
+import WOW from 'wow.js'; 
+import 'magnific-popup'; 
+import Isotope from 'isotope-layout';  //import './vendor/isotope.pkgd.min.js';
+import imagesLoaded from 'imagesloaded'; 
+import VanillaTilt from 'vanilla-tilt'; 
+import './plugins/counterup.js'; //import 'counterup/jquery.counterup.js'; // CounterUp como módulo
+import './plugins/nice-select.min.js';
+//import 'jquery-ui'; // jQuery UI como módulo
+import './vendor/jquery-ui.min.js'; //import 'jquery-ui/ui/widgets/slider';
+import './vendor/hover-reveal.js'; //import 'hover-reveal'; // Hover Reveal como módulo
+import { TweenMax } from 'gsap'; // GSAP (TweenMax) como módulo
+import Parallax from 'parallax-js'; // Parallax.js como módulo
+import {jarallax} from 'jarallax'; //import 'jarallax'; // Jarallax como módulo
+//import 'ajax-form'; // Ajax Form como módulo
+import 'js-circle-progress'; // Circle Progress como módulo
 
 (function ($) {
   "use strict";
@@ -925,28 +946,28 @@ import WOW from 'wow.js';
   $('.contentHidden').remove();
 
   // Masonry Js
-  $(".grid").imagesLoaded(function () {
-    // init Isotope
-    var $grid = $(".grid").isotope({
-      itemSelector: ".grid-item",
-      percentPosition: true,
-      masonry: {
-        // use outer width of grid-sizer for columnWidth
-        columnWidth: ".grid-item",
-      },
-    });
+  // $(".grid").imagesLoaded(function () {
+  //   // init Isotope
+  //   var $grid = $(".grid").isotope({
+  //     itemSelector: ".grid-item",
+  //     percentPosition: true,
+  //     masonry: {
+  //       // use outer width of grid-sizer for columnWidth
+  //       columnWidth: ".grid-item",
+  //     },
+  //   });
 
-    // filter items on button click
-    $(".bf-filter-btn").on("click", "button", function () {
-      var filterValue = $(this).attr("data-filter");
-      $grid.isotope({ filter: filterValue });
-    });
+  //   // filter items on button click
+  //   $(".bf-filter-btn").on("click", "button", function () {
+  //     var filterValue = $(this).attr("data-filter");
+  //     $grid.isotope({ filter: filterValue });
+  //   });
 
-    //for menu active class
-    $(".bf-filter-btn button").on("click", function (event) {
-      $(this).siblings(".active").removeClass("active");
-      $(this).addClass("active");
-      event.preventDefault();
-    });
-  });
+  //   //for menu active class
+  //   $(".bf-filter-btn button").on("click", function (event) {
+  //     $(this).siblings(".active").removeClass("active");
+  //     $(this).addClass("active");
+  //     event.preventDefault();
+  //   });
+  // });
 })(jQuery);
