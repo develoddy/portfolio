@@ -4,25 +4,18 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
         <!-- CSRF Token -->
         {{-- <meta name="csrf-token" content="{{ csrf_token() }}"> --}}
-
         <title>{{ config('app.name', 'Lujandev') }}</title>
-
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
-
         <link rel="shortcut icon" type="image/x-icon" href="{{ Vite::asset('resources/imgs/favicon.ico') }}">
-
-        @vite(['resources/sass/app.scss', 'resources/js/app.js'])
-
+        @vite(['resources/js/app.js', 'resources/sass/app.scss'])
+        
     </head>
 
     <body>
-
         <!-- Preloader start -->
         <div id="preloader">
             <div class="sk-three-bounce">
@@ -96,8 +89,36 @@
 
         @include('layouts.footer')
 
+        {{-- @vite([
+            'resources/js/vendor/jquery-3.6.0.min.js',
+            'resources/js/plugins/waypoints.min.js',
+            'resources/js/vendor/bootstrap.bundle.min.js',
+            'resources/js/plugins/meanmenu.min.js',
+            'resources/js/plugins/swiper.min.js',
+            'resources/js/plugins/slick.min.js',
+            'resources/js/plugins/wow.js',
+            'resources/js/vendor/magnific-popup.min.js',
+            'resources/js/vendor/isotope.pkgd.min.js',
+            'resources/js/vendor/imagesloaded.pkgd.min.js',
+            'resources/js/vendor/vanilla.tilt.js',
+            'resources/js/plugins/counterup.js',
+            'resources/js/plugins/nice-select.min.js',
+            'resources/js/vendor/jquery-ui.min.js',
+            'resources/js/vendor/hover-reveal.js',
+            'resources/js/vendor/tween-max.js',
+            'resources/js/plugins/parallax.min.js',
+            'resources/js/plugins/parallax-scroll.js',
+            'resources/js/plugins/jarallax.min.js',
+            'resources/js/vendor/ajax-form.js',
+            'resources/js/vendor/js_circle-progress.min.js',
+            'resources/js/main.js',
+        ]) --}}
         
-        @vite('resources/js/helper.js')
+        {{-- @vite(['resources/js/bootstrap.js', 'resources/js/main.js'])
+        <script src="/resources/js/plugins/wow.js"></script> --}}
+
+        {{-- <script src="{{ Vite::asset('resources/js/main.js') }}"></script> --}}
+        {{-- <script src="{{ Vite::asset('resources/js/main.js') }}"></script> --}}
         
     </body>
 </html>

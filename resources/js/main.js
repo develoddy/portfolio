@@ -1,10 +1,4 @@
-
-import Swiper from 'swiper';
-// import jQueryBridget from 'jquery-bridget';
-// import Isotope from 'isotope-layout';
- import imagesLoaded from 'imagesloaded';
-
-import simpleParallax from 'simple-parallax-js';
+import WOW from 'wow.js';
 
 (function ($) {
   "use strict";
@@ -21,7 +15,6 @@ import simpleParallax from 'simple-parallax-js';
   /*======================================
   Mobile Menu Js
   ========================================*/
-
   $("#mobile-menu").meanmenu({
     meanMenuContainer: ".mobile-menu",
     meanScreenWidth: "991",
@@ -38,7 +31,7 @@ import simpleParallax from 'simple-parallax-js';
   Sidebar Toggle
   ========================================*/
   $(".offcanvas__close,.offcanvas__overlay").on("click", function () {
-    $(".offcanvas__area").removeClass("in-open");
+    $(".offcanvas__area").removeClass("info-open");
     $(".offcanvas__overlay").removeClass("overlay-open");
   });
   $(".sidebar__toggle").on("click", function () {
@@ -68,9 +61,9 @@ import simpleParallax from 'simple-parallax-js';
 
 
   // jarallax js
-  /*jarallax(document.querySelectorAll('.jarallax'), {
+  jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.4,
-  });*/
+  });
 
 
   /*======================================
@@ -94,28 +87,28 @@ import simpleParallax from 'simple-parallax-js';
   /*======================================
   MagnificPopup image view
   ========================================*/
-  /*$(".popup-image").magnificPopup({
+  $(".popup-image").magnificPopup({
     type: "image",
     gallery: {
       enabled: true,
     },
-  });*/
+  });
 
   ////////////////////////////////////////////////////
   // 22. Parallax Js image move
-  /*if ($('.scene').length > 0) {
+  if ($('.scene').length > 0) {
     $('.scene').parallax({
       scalarX: 10.0,
       scalarY: 15.0,
     });
-  };*/
+  };
 
   /*======================================
   MagnificPopup video view
   ========================================*/
-  /*$(".popup-video").magnificPopup({
+  $(".popup-video").magnificPopup({
     type: "iframe",
-  });*/
+  });
 
   /*======================================
   Counter Js
@@ -127,23 +120,31 @@ import simpleParallax from 'simple-parallax-js';
   });
 
 
-  
   /*======================================
   Wow Js
   ========================================*/
-  // if ($('.wow').length) {
-  //   var wow = new WOW({
-  //     boxClass: 'wow', // animated element css class (default is wow)
-  //     animateClass: 'animated', // animation css class (default is animated)
-  //     offset: 0, // distance to the element when triggering the animation (default is 0)
-  //     mobile: false, // trigger animations on mobile devices (default is true)
-  //     live: true, // act on asynchronously loaded content (default is true)
-  //     callback:     function(box) {
-  //       console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-  //     }
-  //   });
-  //   wow.init();
-  // }
+   if ($('.wow').length) {
+     var wow = new WOW({
+       boxClass: 'wow', // animated element css class (default is wow)
+       animateClass: 'animated', // animation css class (default is animated)
+       offset: 0, // distance to the element when triggering the animation (default is 0)
+       mobile: false, // trigger animations on mobile devices (default is true)
+       live: true // act on asynchronously loaded content (default is true)
+     });
+     wow.init();
+   }
+
+  // Inicializar el objeto WOW si está disponible en el ámbito global
+  /*if (typeof windowOn.WOW !== 'undefined') {
+    var wow = new windowOn.WOW({
+      boxClass: 'wow', // animated element css class (default is wow)
+      animateClass: 'animated', // animation css class (default is animated)
+      offset: 0, // distance to the element when triggering the animation (default is 0)
+      mobile: false, // trigger animations on mobile devices (default is true)
+      live: true // act on asynchronously loaded content (default is true)
+    });
+    wow.init();
+  }*/
 
   /*======================================
   Nice Select Js
@@ -265,7 +266,7 @@ import simpleParallax from 'simple-parallax-js';
       .removeClass("active");
   });
 
-  /*$(".features__active").slick({
+  $(".features__active").slick({
     slidesToShow: 1,
     vertical: true,
     verticalSwiping: true,
@@ -274,7 +275,7 @@ import simpleParallax from 'simple-parallax-js';
     dots: true,
     arrows: false,
     speed: 500,
-  });*/
+  });
 
   //  Banner Slider Active Js
   if ($('.banner_more_item').length > 1) {
@@ -714,7 +715,7 @@ import simpleParallax from 'simple-parallax-js';
     animated_swiper(sliderActive1, sliderInit1);
   }
 
-  /*$(".testimonial-slide").slick({
+  $(".testimonial-slide").slick({
     speed: 300,
     autoplay: true,
     arrows: false,
@@ -748,7 +749,7 @@ import simpleParallax from 'simple-parallax-js';
       },
     },
     ],
-  });*/
+  });
 
   /*======================================
   Feedback activation js
@@ -923,33 +924,29 @@ import simpleParallax from 'simple-parallax-js';
   ========================================*/
   $('.contentHidden').remove();
 
-  // console.log("Debugg: Ver la sie existe las clases: .grid y .grid-item");
-  // console.log($(".grid"));
-  // console.log($(".grid-item"));
-  // // Masonry Js
-  //  $(".grid").imagesLoaded(function () {
-  //    // init Isotope
-  //    var $grid = $(".grid").isotope({
-  //      itemSelector: ".grid-item",
-  //      percentPosition: true,
-  //      masonry: {
-  //        // use outer width of grid-sizer for columnWidth
-  //        columnWidth: ".grid-item",
-  //      },
-  //    });
+  // Masonry Js
+  $(".grid").imagesLoaded(function () {
+    // init Isotope
+    var $grid = $(".grid").isotope({
+      itemSelector: ".grid-item",
+      percentPosition: true,
+      masonry: {
+        // use outer width of grid-sizer for columnWidth
+        columnWidth: ".grid-item",
+      },
+    });
 
-  //    // filter items on button click
-  //    $(".bf-filter-btn").on("click", "button", function () {
-  //      var filterValue = $(this).attr("data-filter");
-  //      $grid.isotope({ filter: filterValue });
-  //    });
+    // filter items on button click
+    $(".bf-filter-btn").on("click", "button", function () {
+      var filterValue = $(this).attr("data-filter");
+      $grid.isotope({ filter: filterValue });
+    });
 
-  //    //for menu active class
-  //    $(".bf-filter-btn button").on("click", function (event) {
-  //      $(this).siblings(".active").removeClass("active");
-  //      $(this).addClass("active");
-  //      event.preventDefault();
-  //    });
-  // });
-
+    //for menu active class
+    $(".bf-filter-btn button").on("click", function (event) {
+      $(this).siblings(".active").removeClass("active");
+      $(this).addClass("active");
+      event.preventDefault();
+    });
+  });
 })(jQuery);
