@@ -5,6 +5,8 @@ use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+
+use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,46 +20,49 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('api.key')->group(function () {
+//Route::middleware('api.key')->group(function () {
     /* Route::get('/new-lujandev', function () {
          // Lógica específica de /new-lujandev
     });
     */
 
-    // -- Service
-    Route::get('/service', function () {
-        return view('web.service-standard');
-    })->name('service');
-    
-    // -- Contact
-    Route::get('/contact', function () {
-        return view('web.contact');
-    })->name('contact');
-
-    // -- About
-    Route::group(['prefix' => 'about'], function () {
-        Route::get('/', [AboutController::class, 'index'])->name('about');
-    });
-
-    // - Portfolio
-    Route::group(['prefix' => 'portfolio'], function () {
-        Route::get('/', [PortfolioController::class, 'index'])->name('portfolio-all');
-        Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
-    });
-
-    // Blog
-    Route::group(['prefix' => 'blog'], function () {
-        Route::get('/', [BlogController::class, 'index'])->name('blog');
-        Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
-    });
-
     // La siguiente ruta solo será accesible si se proporciona la clave API correcta
     //Route::get('/', [HomeController::class, 'index'])->name('home');
+//});
+
+
+
+
+//Route::get('/', [AuthenticatedSessionController::class, 'create'])->name('login');
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+
+// -- Service
+Route::get('/service', function () {
+    return view('web.service-standard');
+})->name('service');
+
+// -- Contact
+Route::get('/contact', function () {
+    return view('web.contact');
+})->name('contact');
+
+// -- About
+Route::group(['prefix' => 'about'], function () {
+    Route::get('/', [AboutController::class, 'index'])->name('about');
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+// - Portfolio
+Route::group(['prefix' => 'portfolio'], function () {
+    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio-all');
+    Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
+});
 
-
+// Blog
+Route::group(['prefix' => 'blog'], function () {
+    Route::get('/', [BlogController::class, 'index'])->name('blog');
+    Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
+});
 
 
 
