@@ -69,22 +69,24 @@
                             <p>Puedes registrarte con tu cuenta social a continuación</p>
                         </div>
                         <div class="login__form">
-                            <form id="contact-form" action="assets/mail.php" method="POST">
+                            {{-- <form method="POST" action="{{ route('auth-register') }}"> --}}
+                            <form method="POST" action="#">
+                                @csrf
                                 <div class="form__input-box">
                                     <div class="form__input style-two">
-                                        <input type="text" placeholder="Email or Username">
+                                        <input type="text" name="name" id="name" placeholder="Username">
                                         <div class="form__icon"><span><i class="fa-light fa-user"></i></span></div>
                                     </div>
                                 </div>
                                 <div class="form__input-box">
                                     <div class="form__input style-two">
-                                        <input type="email" placeholder="Enter your email">
+                                        <input type="email" id="email" name="email"  placeholder="Enter your email">
                                         <div class="form__icon"><span><i class="fa-light fa-envelope"></i></span></div>
                                     </div>
                                 </div>
                                 <div class="form__input-box">
                                     <div class="form__input style-two">
-                                        <input type="password" placeholder="Password">
+                                        <input type="password" id="password" name="password" placeholder="Password">
                                         <i class="fa fa-eye pass-icon"></i>
                                         <div class="form__icon"><span><i class="fa-light fa-lock"></i></span>
                                         </div>
@@ -92,7 +94,7 @@
                                 </div>
                                 <div class="form__input-box">
                                     <div class="form__input style-two">
-                                        <input type="password" placeholder="Confirm Password">
+                                        <input type="password" id="password_confirmation" name="password_confirmation" placeholder="Confirm Password">
                                         <i class="fa fa-eye pass-icon"></i>
                                         <div class="form__icon"><span><i class="fa-light fa-lock"></i></span>
                                         </div>
