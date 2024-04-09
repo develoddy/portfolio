@@ -1198,8 +1198,8 @@
                     <div class="portfolio__more text-md-center text-center">
                         <a class="bd-btn is-btn-anim" href="{{ route('blog') }}">
                             <span class="bd-btn-inner">
-                                <span class="bd-btn-normal">View all blog</span>
-                                <span class="bd-btn-hover">View all blog</span>
+                                <span class="bd-btn-normal">Ver todos los blogs</span>
+                                <span class="bd-btn-hover">Ver todos los blogs</span>
                                 <i class="contentHidden"></i>
                             </span>
                         </a>
@@ -1220,40 +1220,40 @@
             <div class="row g-5 align-items-center">
                 <div class="col-xl-6 col-lg-6 col-md-6 order-md-0 order-1 wow fadeInLeft" data-wow-delay=".3s">
                     <div class="section__title-wrapper section__title-space">
-                        <span class="section__subtitle mb-15">GET IN TOUCH</span>
-                        <h2 class="section__title">Feel Free Contact Me</h2>
+                        <span class="section__subtitle mb-15">PONERSE EN CONTACTO</span>
+                        <h2 class="section__title">No dudes en contactarme</h2>
                     </div>
                     <div class="floating__form-content">
                         <div class="row g-4">
                             <div class="col-12">
                                 <div class="floating__form-input">
                                     <input type="text" class="inputText" required="">
-                                    <span class="floating-label">Name*</span>
+                                    <span class="floating-label">Nombre*</span>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <div class="floating__form-input">
                                     <input type="text" class="inputText" required="">
-                                    <span class="floating-label">Email*</span>
+                                    <span class="floating-label">Correo electrónico*</span>
                                 </div>
                             </div>
                             <div class="col-lg-12">
                                 <div class="floating__form-input">
                                     <input type="text" class="inputText" required="">
-                                    <span class="floating-label">Subject</span>
+                                    <span class="floating-label">Asunto</span>
                                 </div>
                             </div>
                             <div class="col-12 text-center">
                                 <div class="from__input-box">
                                     <div class="floating__form-input">
                                         <textarea class="textareaText" required=""></textarea>
-                                        <span class="floating-label-two">Message*</span>
+                                        <span class="floating-label-two">Mensaje*</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="contact__btn">
-                            <a class="bd-btn w-100" href="contact.html">Submit now</a>
+                            <a class="bd-btn w-100" href="contact.html">Enviar</a>
                         </div>
                     </div>
                 </div>
@@ -1272,8 +1272,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a target="_blank" href="https://www.google.com/maps">672
-                                                    Tallahassee Florida</a></h6>
+                                            <h6><a target="_blank" href="https://www.google.com/maps"> Paseo de la chopera 76, Madrid Spain</a></h6>
                                         </div>
                                     </div>
                                 </li>
@@ -1285,7 +1284,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a href="tel:+13322078097">+13322078097</a></h6>
+                                            <h6><a href="tel:+13322078097">+34 605 974 436</a></h6>
                                         </div>
                                     </div>
                                 </li>
@@ -1297,7 +1296,7 @@
                                 </span>
                                         </div>
                                         <div class="contact__info-content">
-                                            <h6><a href="mailto:me@portlu.com">me@portlu.com</a></h6>
+                                            <h6><a href="mailto:me@portlu.com">lujandev@lujandev.com</a></h6>
                                         </div>
                                     </div>
                                 </li>
