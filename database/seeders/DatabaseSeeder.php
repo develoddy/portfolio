@@ -29,6 +29,11 @@ class DatabaseSeeder extends Seeder
 
         // Llama al seeder DataTypesTableSeeder
         $this->call(DataTypesTableSeeder::class);
+        $this->call(DataRowsTableSeeder::class);
+
+        // Permision
+        $this->call(PermissionRoleTableSeeder::class);
+        $this->call(PermissionsTableSeeder::class);
 
 
         // Llama al seeder RolesTableSeeder
@@ -38,8 +43,16 @@ class DatabaseSeeder extends Seeder
         $this->call(UsersTableSeeder::class);
 
         
-        $this->call(SettingsTableSeeder::class);
         $this->call(PagesTableSeeder::class);
+        $this->call(CategoriesTableSeeder::class);
+
+
+        //Voyagger
+        
+        $this->call(SettingsTableSeeder::class);
+        $this->call(TranslationsTableSeeder::class);
+        $this->call(VoyagerDatabaseSeeder::class);
+        $this->call(VoyagerDummyDatabaseSeeder::class);
         
     }
 }

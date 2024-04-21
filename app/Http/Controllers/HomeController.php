@@ -16,30 +16,41 @@ class HomeController extends Controller
     }
 
     public function index() {
-        try {
+
+        //try {
             $portfolios = Portfolio::take(6)->get();
-        
-            foreach ( $portfolios as $portfolio ) {
-                if ( $portfolio->image != '[]' ) {
-                    $portfolio->image = Storage::url(
-                        (json_decode($portfolio->image))[0]->download_link
-                    );
-                }
-            }
 
+            // Si la coleccion Portfolio no esta vacio
+            //if (!$portfolios->isEmpty()) {
+                // foreach ( $portfolios as $portfolio ) {
+                //     if ( $portfolio->image != null || $portfolio->image != '[]' ) {
+                //         $portfolio->image = Storage::url(
+                //             (json_decode($portfolio->image))[0]
+                //         );
+                //     }
+                // }
+            //} 
+        
+            
             $blogs = Blog::take(4)->get();
-        
-            foreach ( $blogs as $blog ) {
-                if ( $blog->image != '[]' ) {
-                    $blog->image = Storage::url(
-                        (json_decode($blog->image))[0]->download_link
-                    );
-                }
-            }
-
+           
+            
+            // Si la coleccion Blog no esta vacio
+            //if (!$blogs->isEmpty()) {
+                
+                // foreach ( $blogs as $blog ) {
+                //     if ( $blog->image != null || $blog->image != '[]' ) {
+                        
+                //         $blog->image = Storage::url(
+                //             (json_decode($blog->image))[0]
+                //         );
+                //     }
+                // }
+            //}
             return view('home', compact('portfolios', 'blogs'));
-        } catch (\Throwable $th) {
+        /*} catch (\Throwable $th) {
+            dd("xx");
             throw $th;
-        }
+        }*/
     }
 }

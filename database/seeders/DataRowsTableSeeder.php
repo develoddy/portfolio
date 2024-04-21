@@ -16,8 +16,9 @@ class DataRowsTableSeeder extends Seeder
         $userDataType = DataType::where('slug', 'users')->firstOrFail();
         $menuDataType = DataType::where('slug', 'menus')->firstOrFail();
         $roleDataType = DataType::where('slug', 'roles')->firstOrFail();
-        //$portfolioDataType = DataType::where('slug', 'portfolio')->firstOrFail();
-        //$portfolioDetailDataType = DataType::where('slug', 'portfolio-detail')->firstOrFail();
+        $portfolioDataType = DataType::where('slug', 'portfolio')->firstOrFail();
+        $portfolioDetailDataType = DataType::where('slug', 'portfolio_detail')->firstOrFail();
+        $blogDataType = DataType::where('slug', 'blogs')->firstOrFail();
 
         $dataRow = $this->dataRow($userDataType, 'id');
         if (!$dataRow->exists) {
@@ -355,8 +356,116 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
+
+
+        // -- BLOGS ---
+        
+        $dataRow = $this->dataRow($blogDataType, 'id');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Id',
+                'required'     => 1,
+                'browse'       => 0,
+                'read'         => 0,
+                'edit'         => 0,
+                'add'          => 0,
+                'delete'       => 0,
+                'order'        => 1,
+            ])->save();
+        }
+        $dataRow = $this->dataRow($blogDataType, 'title');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Title',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 2,
+            ])->save();
+        }
+        $dataRow = $this->dataRow($blogDataType, 'Description');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Description',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 3,
+            ])->save();
+        }
+        $dataRow = $this->dataRow($blogDataType, 'image');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'image',
+                'display_name' => 'Image',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 4,
+            ])->save();
+        }
+        $dataRow = $this->dataRow($blogDataType, 'countComment');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'number',
+                'display_name' => 'CountComment',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 5,
+            ])->save();
+        }
+        $dataRow = $this->dataRow($blogDataType, 'created_at');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'timestamp',
+                'display_name' => 'Created At',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 0,
+                'delete'       => 1,
+                'order'        => 6,
+            ])->save();
+        }
+        $dataRow = $this->dataRow($blogDataType, 'Updated At');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'timestamp',
+                'display_name' => 'Created At',
+                'required'     => 0,
+                'browse'       => 0,
+                'read'         => 0,
+                'edit'         => 0,
+                'add'          => 0,
+                'delete'       => 0,
+                'order'        => 7,
+            ])->save();
+        }
+        
+
+
+
+
+
         // New Portfolio
-        /*$dataRow = $this->dataRow($portfolioDataType, 'id');
+        $dataRow = $this->dataRow($portfolioDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'number',
@@ -444,11 +553,11 @@ class DataRowsTableSeeder extends Seeder
                 'delete'       => 0,
                 'order'        => 6,
             ])->save();
-        }*/
+        }
 
 
         // --- NEW PORTFOLIO DETAIL ---
-        /*$dataRow = $this->dataRow($portfolioDetailDataType, 'id');
+        $dataRow = $this->dataRow($portfolioDetailDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'text',
@@ -611,7 +720,7 @@ class DataRowsTableSeeder extends Seeder
                 'delete'       => 1,
                 'order'        => 11,
             ])->save();
-        }*/
+        }
     }
 
     
