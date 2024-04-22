@@ -19,6 +19,7 @@ class DataRowsTableSeeder extends Seeder
         $portfolioDataType = DataType::where('slug', 'portfolio')->firstOrFail();
         $portfolioDetailDataType = DataType::where('slug', 'portfolio_detail')->firstOrFail();
         $blogDataType = DataType::where('slug', 'blogs')->firstOrFail();
+        $pblogDetailDataType = DataType::where('slug', 'blog-details')->firstOrFail();
 
         $dataRow = $this->dataRow($userDataType, 'id');
         if (!$dataRow->exists) {
@@ -374,6 +375,7 @@ class DataRowsTableSeeder extends Seeder
                 'order'        => 1,
             ])->save();
         }
+
         $dataRow = $this->dataRow($blogDataType, 'title');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -388,6 +390,7 @@ class DataRowsTableSeeder extends Seeder
                 'order'        => 2,
             ])->save();
         }
+
         $dataRow = $this->dataRow($blogDataType, 'Description');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -458,12 +461,33 @@ class DataRowsTableSeeder extends Seeder
                 'order'        => 7,
             ])->save();
         }
+
+        $dataRow = $this->dataRow($blogDataType, 'blog_belongsto_blog_detail_relationship');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'relationship',
+                'display_name' => 'blog_details',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'details'      => [
+                    "model"         => "App\\Models\\BlogDetail",
+                    "table"         => "blog_details",
+                    "type"          => "belongsTo",
+                    "column"        => "id",
+                    "key"           => "id",
+                    "label"         => "title",
+                    "pivot_table"   => "abouts",
+                    "pivot"         => "0",
+                    "taggable"      => null
+                ],
+                'order'        => 8,
+            ])->save();
+        }
         
-
-
-
-
-
         // New Portfolio
         $dataRow = $this->dataRow($portfolioDataType, 'id');
         if (!$dataRow->exists) {
@@ -555,8 +579,7 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
-
-        // --- NEW PORTFOLIO DETAIL ---
+        // --- PORTFOLIO DETAIL ---
         $dataRow = $this->dataRow($portfolioDetailDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -721,6 +744,231 @@ class DataRowsTableSeeder extends Seeder
                 'order'        => 11,
             ])->save();
         }
+
+
+
+        // ----- BLOG DETAILS -----
+        $dataRow = $this->dataRow($pblogDetailDataType, 'id');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Id',
+                'required'     => 1,
+                'browse'       => 0,
+                'read'         => 0,
+                'edit'         => 0,
+                'add'          => 0,
+                'delete'       => 0,
+                'order'        => 1,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'blog_id');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'number',
+                'display_name' => 'Blog Id',
+                'required'     => 1,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 2,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'comment_id');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'number',
+                'display_name' => 'Comment Id',
+                'required'     => 1,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 3,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'title');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Title',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 4,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'description');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Description',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 5,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'image');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'multiple_images',
+                'display_name' => 'Image',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 6,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'related_images');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'multiple_images',
+                'display_name' => 'Related Images',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 7,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'countComment');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'number',
+                'display_name' => 'CountComment',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 8,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'viewComment');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'number',
+                'display_name' => 'ViewComment',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 9,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'Published');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'date',
+                'display_name' => 'Published',
+                'required'     => 1,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 10,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'created_at');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'timestamp',
+                'display_name' => 'Created At',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 0,
+                'delete'       => 1,
+                'order'        => 11,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'updated_at');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'timestamp',
+                'display_name' => 'Updated At',
+                'required'     => 0,
+                'browse'       => 0,
+                'read'         => 0,
+                'edit'         => 0,
+                'add'          => 0,
+                'delete'       => 0,
+                'order'        => 12,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'subtitle');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'text',
+                'display_name' => 'Subtitle',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 13,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($pblogDetailDataType, 'blog_detail_belongsto_blog_relationship');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'relationship',
+                'display_name' => 'blogs',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'details'      => [
+                    "model"             => "App\\Models\\Blog",
+                    "table"             => "blogs",
+                    "type"              => "belongsTo",
+                    "column"            => "blog_id",
+                    "key"               => "id",
+                    "label"             => "title",
+                    "pivot_table"       => "abouts",
+                    "pivot"             => "0",
+                    "taggable"          => "0"
+                ],
+                'order'        => 14,
+            ])->save();
+        }
+
     }
 
     

@@ -9,7 +9,8 @@
                 <div class="row align-items-center">
                     <div class="col-xl-8 col-lg-10 col-md-10">
                         <div class="section__title-wrapper section__title-space">
-                            <h2 class="section__title">{{ $blogDetail->title }}</h2>
+                            {{-- <h2 class="section__title">{{ $blogDetail->title }}</h2> --}}
+                            <h2 class="section__title">{{ $blogDetail->title ? $blogDetail->title : "Title no disponible" }}</h2>
                         </div>
                     </div>
                 </div>
@@ -70,16 +71,19 @@
                                                 present moment; and yet I feel that never was a greater artist than now.</p>
 
                                             {{-- implement foreach --}}
-                                            <div class="postbox__thumb-wrapper">
-                                                <div class="postbox__thumb">
-                                                    <img src="{{ Vite::asset('resources/imgs/blog/details/blog-details-01.png') }}"
-                                                        alt="image not found">
+                                            @foreach ($images as $image)
+                                                <div class="postbox__thumb-wrapper">
+                                                    <div class="postbox__thumb">
+                                                        {{-- <img src="{{ $image }}" alt="image not found"> --}}
+                                                        <img src="{{ asset('storage/' . $image) }}" alt="image not found">
+                                                    </div>
+                                                    {{-- <div class="postbox__thumb">
+                                                        <img src="{{ Vite::asset('resources/imgs/blog/details/blog-details-02.png') }}"
+                                                            alt="image not found">
+                                                    </div> --}}
                                                 </div>
-                                                <div class="postbox__thumb">
-                                                    <img src="{{ Vite::asset('resources/imgs/blog/details/blog-details-02.png') }}"
-                                                        alt="image not found">
-                                                </div>
-                                            </div>
+                                            @endforeach
+                                            
                                             <p>His many legs, pitifully thin compared with the size of the rest of him,
                                                 waved about helplessly as he looked. "What's happened to me?" he thought. It
                                                 wasn't a dream. His room, a proper human room although a little too small,

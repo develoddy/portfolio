@@ -116,6 +116,30 @@ class DataTypesTableSeeder extends Seeder
                 ]
             ])->save();
         }
+
+        $dataType = $this->dataType('slug', 'blog-details');
+        if (!$dataType->exists) {
+            $dataType->fill([
+                'name'                  => 'blog_details',
+                'display_name_singular' => 'Blog Detail',
+                'display_name_plural'   => 'Blog Details',
+                'icon'                  => 'voyager-documentation',
+                'model_name'            => 'App\Models\BlogDetail',
+                'controller'            => '',
+                'description'           => '',
+                'generate_permissions'  => 1,
+                'server_side' => 0,
+                'details'               => [
+                    "order_column" => null,
+                    "order_display_column" => null,
+                    "order_direction" => "asc",
+                    "default_search_key" => null,
+                    "scope" => null,
+                ]
+            ])->save();
+        }
+
+        
     }
 
     

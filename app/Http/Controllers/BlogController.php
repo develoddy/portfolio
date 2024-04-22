@@ -24,18 +24,18 @@ class BlogController extends Controller
     }
 
     public function show($blog_id) {
-        $blogDetail = blogDetail::where('blog_id', $blog_id)->get();
+        $blogDetail = blogDetail::where('blog_id', $blog_id)->first();
 
-        foreach ( $blogDetail as $blogDetail ) {
+        $images = json_decode($blogDetail->image);
+
+        /*foreach ( $blogDetail as $blogDetail ) {
             if ( $blogDetail->image != '[]' ) {
                 $blogDetail->image = Storage::url(
                     (json_decode($blogDetail->image))[0]->download_link
                 );
             }
-        }
-
-
-        return view('web.blog.blog-detail', compact('blogDetail'));
+        }*/
+        return view('web.blog.blog-detail', compact('blogDetail', 'images'));
 
     }
 }
