@@ -171,6 +171,7 @@
                                 <div class="portfolio__thumb">
                                     <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">
                                         <img src="{{ $portfolio->image }}" alt="img not found">
+                                        {{-- <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found"> --}}
                                     </a>
                                 </div>
                                 <div class="portfolio__content">

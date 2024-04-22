@@ -38,5 +38,7 @@ class PermissionsTableSeeder extends Seeder
         Permission::generateFor('blogs');
 
         Permission::generateFor('portfolio');
+
+        Permission::generateFor('portfolio_detail');
     }
 }

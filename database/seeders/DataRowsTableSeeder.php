@@ -504,6 +504,21 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
+        $dataRow = $this->dataRow($portfolioDataType, 'portfolio_detail_id');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'number',
+                'display_name' => 'Portfolio Detail Id',
+                'required'     => 1,
+                'browse'       => 0,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'order'        => 8,
+            ])->save();
+        }
+
         $dataRow = $this->dataRow($portfolioDataType, 'title');
         if (!$dataRow->exists) {
             $dataRow->fill([
@@ -537,7 +552,7 @@ class DataRowsTableSeeder extends Seeder
         $dataRow = $this->dataRow($portfolioDataType, 'image');
         if (!$dataRow->exists) {
             $dataRow->fill([
-                'type'         => 'file',
+                'type'         => 'multiple_images',
                 'display_name' => 'Image',
                 'required'     => 0,
                 'browse'       => 1,
@@ -576,6 +591,32 @@ class DataRowsTableSeeder extends Seeder
                 'add'          => 0,
                 'delete'       => 0,
                 'order'        => 6,
+            ])->save();
+        }
+
+        $dataRow = $this->dataRow($portfolioDataType, 'portfolio_belongsto_portfolio_detail_relationship');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'relationship',
+                'display_name' => 'portfolio_detail',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'details'        => [
+                    "model" => "App\\Models\\PortfolioDetail",
+                    "table" => "portfolio_detail",
+                    "type" => "belongsTo",
+                    "column" => "portfolio_detail_id",
+                    "key" => "id",
+                    "label" => "title",
+                    "pivot_table" => "abouts",
+                    "pivot" => "0",
+                    "taggable" => "0"
+                ],
+                'order'        => 7,
             ])->save();
         }
 
@@ -643,7 +684,7 @@ class DataRowsTableSeeder extends Seeder
         $dataRow = $this->dataRow($portfolioDetailDataType, 'image');
         if (!$dataRow->exists) {
             $dataRow->fill([
-                'type'         => 'text',
+                'type'         => 'multiple_images',
                 'display_name' => 'Image',
                 'required'     => 0,
                 'browse'       => 1,
@@ -703,7 +744,7 @@ class DataRowsTableSeeder extends Seeder
         $dataRow = $this->dataRow($portfolioDetailDataType, 'related_images');
         if (!$dataRow->exists) {
             $dataRow->fill([
-                'type'         => 'text',
+                'type'         => 'multiple_images',
                 'display_name' => 'Related Images',
                 'required'     => 0,
                 'browse'       => 1,
@@ -745,7 +786,32 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
-
+        /*$dataRow = $this->dataRow($portfolioDetailDataType, 'portfolio_detail_belongsto_portfolio_relationship');
+        if (!$dataRow->exists) {
+            $dataRow->fill([
+                'type'         => 'relationship',
+                'display_name' => 'portfolio',
+                'required'     => 0,
+                'browse'       => 1,
+                'read'         => 1,
+                'edit'         => 1,
+                'add'          => 1,
+                'delete'       => 1,
+                'details' => [
+                    "model" => "App\\Models\\Portfolio",
+                    "table" => "portfolio",
+                    "type" => "belongsTo",
+                    "column" => "portfolio_id",
+                    "key" => "id",
+                    "label" => "title",
+                    "pivot_table" => "abouts",
+                    "pivot" => "0",
+                    "taggable" => "0"
+                ],
+                'order'        => 12,
+            ])->save();
+        }*/
+        
 
         // ----- BLOG DETAILS -----
         $dataRow = $this->dataRow($pblogDetailDataType, 'id');

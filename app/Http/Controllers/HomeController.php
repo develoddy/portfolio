@@ -19,17 +19,29 @@ class HomeController extends Controller
 
         //try {
             $portfolios = Portfolio::take(6)->get();
+            
+            /*if (!$portfolios->isEmpty()) {
+                foreach ( $portfolios as $portfolio ) {
+                    if ( $portfolio->image != null || $portfolio->image != '[]' ) {
+                        $portfolio->image = Storage::url(
+                            (json_decode($portfolio->image))[0]
+                        );
+                    }
+                }
+            }*/
 
             // Si la coleccion Portfolio no esta vacio
-            //if (!$portfolios->isEmpty()) {
-                // foreach ( $portfolios as $portfolio ) {
-                //     if ( $portfolio->image != null || $portfolio->image != '[]' ) {
-                //         $portfolio->image = Storage::url(
-                //             (json_decode($portfolio->image))[0]
-                //         );
-                //     }
-                // }
-            //} 
+            if (!$portfolios->isEmpty()) {
+                foreach ($portfolios as $portfolio) {
+                    if ($portfolio->image != null && $portfolio->image != '[]') {
+                        $imageArray = json_decode($portfolio->image, true);
+                        if (is_array($imageArray) && !empty($imageArray)) {
+                            $portfolio->image = Storage::url($imageArray[0]['download_link']);
+                        }
+                    }
+                }
+            }
+            
         
             
             $blogs = Blog::take(4)->get();
