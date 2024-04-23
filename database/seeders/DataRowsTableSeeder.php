@@ -636,21 +636,6 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
-        $dataRow = $this->dataRow($portfolioDetailDataType, 'portfolio_id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
-                'display_name' => 'Portfolio Id',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'order'        => 2,
-            ])->save();
-        }
-
         $dataRow = $this->dataRow($portfolioDetailDataType, 'title');
         if (!$dataRow->exists) {
             $dataRow->fill([
