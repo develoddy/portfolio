@@ -30,8 +30,10 @@ class HomeController extends Controller
                 }
             }*/
 
+            //dd($portfolios);
+
             // Si la coleccion Portfolio no esta vacio
-            if (!$portfolios->isEmpty()) {
+            /*if (!$portfolios->isEmpty()) {
                 foreach ($portfolios as $portfolio) {
                     if ($portfolio->image != null && $portfolio->image != '[]') {
                         $imageArray = json_decode($portfolio->image, true);
@@ -40,7 +42,7 @@ class HomeController extends Controller
                         }
                     }
                 }
-            }
+            }*/
             
         
             

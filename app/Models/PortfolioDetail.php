@@ -14,7 +14,6 @@ class PortfolioDetail extends Model
 
     protected $fillable = [
         'id',
-        'portfolio_id',
         'title',
         'description',
         'image',
@@ -27,6 +26,10 @@ class PortfolioDetail extends Model
     ];
 
     public function portfolio() {
-        return $this->belongsTo(Portfolio::class, 'portfolio_id');
+        //return $this->belongsTo(Portfolio::class, 'portfolio_id');
+
+        return $this->belongsTo(Portfolio::class, 'portfolio_detail_id');
     }
+
+    
 }

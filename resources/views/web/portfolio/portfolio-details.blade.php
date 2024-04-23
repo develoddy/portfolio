@@ -91,7 +91,7 @@
                         <div class="portfolio__wrapper style-six portfolio-details wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
                             <div class="swiper portfolio-details__active">
                                 <div class="swiper-wrapper">
-                                    @foreach ( $portfolioDetail as $portDetail )
+                                    {{-- @foreach ( $portfolioDetail as $portDetail )
                                         @foreach ( $portDetail->related_images as $images )
                                         <div class="swiper-slide">
                                             <div class="portfolio__item style-six portfolio-details">
@@ -101,6 +101,16 @@
                                             </div>
                                         </div>
                                         @endforeach
+                                    @endforeach --}}
+                                    @foreach ( $arr_images as $images )
+                                        <div class="swiper-slide">
+                                            <div class="portfolio__item style-six portfolio-details">
+                                                <div class="portfolio__item-thumb">
+                                                    {{-- <img src="{{ $images }}" alt=""> --}}
+                                                    <img src="{{ asset('storage/' . $images) }}" alt="image not found">
+                                                </div>
+                                            </div>
+                                        </div>
                                     @endforeach
                                 </div>
                                 <!-- If we need navigation buttons -->

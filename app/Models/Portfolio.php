@@ -17,7 +17,8 @@ class Portfolio extends Model
         'id',
         'title',
         'description',
-        'image'
+        'image',
+        'portfolio_detail_id'
     ];
 
     public function link() {
@@ -26,6 +27,7 @@ class Portfolio extends Model
 
     public function portfolioDetails()
     {
-        return $this->hasMany(PortfolioDetail::class, 'id');
+        //return $this->hasMany(PortfolioDetail::class, 'id');
+        return $this->hasMany(PortfolioDetail::class, 'id', 'portfolio_detail_id');
     }
 }

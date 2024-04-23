@@ -169,20 +169,20 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                             <div class=" portfolio__item">
                                 <div class="portfolio__thumb">
-                                    <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">
-                                        <img src="{{ $portfolio->image }}" alt="img not found">
-                                        {{-- <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found"> --}}
+                                    <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">
+                                        {{-- <img src="{{ $portfolio->image }}" alt="img not found"> --}}
+                                        <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found">
                                     </a>
                                 </div>
                                 <div class="portfolio__content">
                                     <div class="portfolio__info">
                                         <div class="portfolio__tag">
-                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">Design</a>
+                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">Design</a>
                                         </div>
-                                        <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">Mockup Design</a></h5>
+                                        <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">Mockup Design</a></h5>
                                     </div>
                                     <div class="portfolio__btn">
-                                        <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}" class="circle-btn">
+                                        <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}" class="circle-btn">
                                             <span class="icon__box">
                                 <i class="fa-regular fa-arrow-right-long"></i>
                                 </span>
