@@ -80,7 +80,8 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class=" portfolio__item style-seven">
                                                 <div class="portfolio__item-thumb">
-                                                    <img src="{{ $portfolio->image }}" alt="image not found">
+                                                    {{-- <img src="{{ $portfolio->image }}" alt="image not found"> --}}
+                                                    <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found">
                                                     <div class="portfolio__item-btn">
                                                         <span class="icon__box">
                                                             <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ $portfolio->image }}">
@@ -92,10 +93,10 @@
                                                 <div class="portfolio__item-content">
                                                     <div class="portfolio__item-info">
                                                         <div class="portfolio__tag">
-                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->id,'name' => $portfolio->link() ]) }}">{{ $portfolio->title }}</a>
+                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">{{ $portfolio->title }}</a>
                                                         </div>
                                                         <h5 class="portfolio__item-title underline">
-                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->id, 'name' => $portfolio->link()]) }}">{{ $portfolio->title }}</a>
+                                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id, 'name' => $portfolio->link()]) }}">{{ $portfolio->title }}</a>
                                                         </h5>
                                                     </div>
                                                 </div>

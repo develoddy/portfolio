@@ -12,15 +12,6 @@ class PortfolioController extends Controller
     public function index() {
         try {
             $portfolios = Portfolio::all();
-        
-            foreach ( $portfolios as $portfolio ) {
-                if ( $portfolio->image != '[]' ) {
-                    $portfolio->image = Storage::url(
-                        (json_decode($portfolio->image))[0]->download_link
-                    );
-                }
-            }
-
             return view('web.portfolio', compact('portfolios'));
         } catch (\Throwable $th) {
             throw $th;
