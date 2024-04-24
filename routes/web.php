@@ -60,6 +60,16 @@ Route::group(['prefix' => 'blog'], function () {
 });
 
 
+Route::get('/prueba', function () {
+    return "prueba";
+})->name('prueba');
+
+Route::group(['prefix' => 'prueba2'], function () {
+    Route::get('/', function () {
+        return 'prueba2.';
+    })->name('prueba2');
+});
+
 
 
 

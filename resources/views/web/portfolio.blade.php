@@ -5,8 +5,7 @@
 <main>
     <!-- breadcrumb area  start -->
     <section class="breadcrumb__area p-relative style-one is-breadcrumb-space">
-        <div class="breadcrumb__thumb-bg include-bg bg__thumb-position"
-            data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-bg-03.png') }}"></div>
+        <div class="breadcrumb__thumb-bg include-bg bg__thumb-position" data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-bg-03.png') }}"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-xxl-7 col-xl-7 col-lg-8">
@@ -72,8 +71,7 @@
             <div class="row ">
                 <div class="col-12">
                     <div class="tab-content wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s" id="myTabContent">
-                        <div class="tab-pane fade show active" id="view" role="tabpanel"
-                            aria-labelledby="view-tab">
+                        <div class="tab-pane fade show active" id="view" role="tabpanel" aria-labelledby="view-tab">
                             <div class="row g-5">
                                 @if(isset($portfolios) && !empty($portfolios))
                                     @foreach ($portfolios as $portfolio)
@@ -104,341 +102,6 @@
                                         </div>
                                     @endforeach
                                 @endif
-
-                                
-
-                                
-                                {{-- <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven ">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box">
-                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="{{ route('creative-idea') }}">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline">
-                                                    <a href="{{ route('creative-idea') }}">Creative Idea is key</a>
-                                                </h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-12.png') }}"
-                                                alt="image not found">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-12.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Creative Idea Combines
-                                                        Technology</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-05.png') }}"
-                                                alt="image not found">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-05.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Branding</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Logo With Branding</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-10.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"href="{{ Vite::asset('resources/imgs/portfolio/portfolio-10.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Logo</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Card Branding</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-11.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-11.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Art</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Digital Art is Creative</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-09.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-09.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative Art</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Implement Dynamic Lighting to
-                                                        Highlight</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-04.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-04.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Responsive</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Design Flexible Layouts That Can
-                                                        Adapt</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-13.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-13.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-23.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-23.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-24.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-24.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-25.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-25.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-26.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-26.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-27.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-27.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4 col-md-6">
-                                    <div class=" portfolio__item style-seven">
-                                        <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-28.png') }}"
-                                                alt="">
-                                            <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-28.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
-                                            </div>
-                                        </div>
-                                        <div class="portfolio__item-content">
-                                            <div class="portfolio__item-info">
-                                                <div class="portfolio__tag">
-                                                    <a href="portfolio-details.html">Creative</a>
-                                                </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Illustrate Renewable Energy
-                                                        Sources</a></h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> --}}
                             </div>
                         </div>
                         <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab">
@@ -449,10 +112,11 @@
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}"
                                                 alt="image not found">
                                             <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
+                                                <span class="icon__box">
+                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-02.png') }}">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="portfolio__item-content">
@@ -460,8 +124,7 @@
                                                 <div class="portfolio__tag">
                                                     <a href="portfolio-details.html">Branding</a>
                                                 </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Logo With Branding</a></h5>
+                                                <h5 class="portfolio__item-title underline"><a href="portfolio-details.html">Logo With Branding</a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -469,13 +132,13 @@
                                 <div class="col-lg-4 col-md-6">
                                     <div class=" portfolio__item style-seven">
                                         <div class="portfolio__item-thumb">
-                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-10.png') }}"
-                                                alt="">
+                                            <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-10.png') }}" alt="">
                                             <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-10.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
+                                                <span class="icon__box">
+                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-10.png') }}">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="portfolio__item-content">
@@ -483,8 +146,7 @@
                                                 <div class="portfolio__tag">
                                                     <a href="portfolio-details.html">Logo</a>
                                                 </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Card Branding</a></h5>
+                                                <h5 class="portfolio__item-title underline"><a href="portfolio-details.html">Card Branding</a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -495,10 +157,11 @@
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-05.png') }}"
                                                 alt="image not found">
                                             <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-05.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
+                                                <span class="icon__box">
+                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-05.png') }}">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="portfolio__item-content">
@@ -506,8 +169,7 @@
                                                 <div class="portfolio__tag">
                                                     <a href="portfolio-details.html">Branding</a>
                                                 </div>
-                                                <h5 class="portfolio__item-title underline"><a
-                                                        href="portfolio-details.html">Logo With Branding</a></h5>
+                                                <h5 class="portfolio__item-title underline"><a href="portfolio-details.html">Logo With Branding</a></h5>
                                             </div>
                                         </div>
                                     </div>
@@ -518,10 +180,11 @@
                                             <img src="{{ Vite::asset('resources/imgs/portfolio/portfolio-27.png') }}"
                                                 alt="image not found">
                                             <div class="portfolio__item-btn">
-                                                <span class="icon__box"><a
-                                                        class="popup-image circle-btn is-bg-white is-btn-large"
-                                                        href="{{ Vite::asset('resources/imgs/portfolio/portfolio-27.png') }}">
-                                                        <i class="icon-plus"></i></a></span>
+                                                <span class="icon__box">
+                                                    <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ Vite::asset('resources/imgs/portfolio/portfolio-27.png') }}">
+                                                        <i class="icon-plus"></i>
+                                                    </a>
+                                                </span>
                                             </div>
                                         </div>
                                         <div class="portfolio__item-content">
