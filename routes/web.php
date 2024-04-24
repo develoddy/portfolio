@@ -65,7 +65,11 @@ Route::get('/prueba', function () {
 })->name('prueba');
 
 Route::group(['prefix' => 'prueba2'], function () {
-    Route::get('/', function () {
+    
+
+    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
+
+    Route::get('/funciona', function () {
         return 'prueba2.';
     })->name('prueba2');
 });
