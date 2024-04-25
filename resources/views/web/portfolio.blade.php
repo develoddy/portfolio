@@ -647,7 +647,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="portfolio__more text-center mt-50">
-                        <a class="bd-btn is-btn-anim" href="{{ route('all-portfolio') }}">
+                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                             <span class="bd-btn-inner">
                                 <span class="bd-btn-normal">View all project</span>
                                 <span class="bd-btn-hover">View all project</span>

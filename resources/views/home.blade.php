@@ -27,7 +27,7 @@
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
-                                    <a class="bd-btn is-btn-anim" href="{{ route('all-portfolio') }}">
+                                    <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                                         <span class="bd-btn-inner"><span class="bd-btn-normal">Ver mi trabajo</span>
                                         <span class="bd-btn-hover">Ver mi trabajo</span>
                                         <i class="contentHidden"></i>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-lg-7 col-md-5">
                     <div class="portfolio__more text-md-end">
-                        <a class="bd-btn is-btn-anim" href="{{ route('all-portfolio') }}">
+                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
                             <span class="bd-btn-inner">
                                 <span class="bd-btn-normal">Ver todo el proyecto</span>
                                 <span class="bd-btn-hover">Ver todo el proyecto</span>
