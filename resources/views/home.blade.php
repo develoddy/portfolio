@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-lg-7 col-md-5">
                     <div class="portfolio__more text-md-end">
-                        <a class="bd-btn is-btn-anim" href="{{ route('portfolio') }}">
+                        <a class="bd-btn is-btn-anim" href="{{ route('route-portfolio') }}">
                             <span class="bd-btn-inner">
                                 <span class="bd-btn-normal">Ver todo el proyecto</span>
                                 <span class="bd-btn-hover">Ver todo el proyecto</span>
