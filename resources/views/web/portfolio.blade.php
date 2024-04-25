@@ -104,7 +104,7 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab">
+                        {{-- <div class="tab-pane fade" id="brand" role="tabpanel" aria-labelledby="brand-tab">
                             <div class="row  g-5">
                                 <div class="col-lg-4 col-md-6">
                                     <div class=" portfolio__item style-seven">
@@ -640,7 +640,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div>

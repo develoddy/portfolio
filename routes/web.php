@@ -48,33 +48,16 @@ Route::group(['prefix' => 'about'], function () {
 });
 
 // - Portfolio
-// Route::group(['prefix' => 'portfolio'], function () {
-//     Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
-//     Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
-// });
+Route::group(['prefix' => 'portafolio'], function () {
+    Route::get('/', [PortfolioController::class, 'index'])->name('route-portfolio');
+    Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
+});
 
 // Blog
 Route::group(['prefix' => 'blog'], function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
     Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
 });
-
-/*
-Route::get('/prueba', function () {
-    return "prueba";
-})->name('prueba');*/
-
-Route::group(['prefix' => 'portafolio'], function () {
-
-    Route::get('/', [PortfolioController::class, 'index'])->name('route-portfolio');
-    Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
-
-    Route::get('/funciona', function () {
-        return 'prueba2.';
-    })->name('prueba2');
-});
-
-
 
 
 
