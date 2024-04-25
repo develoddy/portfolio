@@ -652,9 +652,12 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable. Navigation are
-                                                more intuitive and the layout our visitors through our content seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>¡Increíble trabajo! Como propietario de un pequeño negocio, necesitaba una aplicación web para ampliar mi alcance en línea.</p>
+                                            <p>
+                                                Me conecté con Eddy Lujan y desde el primer día supe que estaba en buenas manos. No solo desarrolló una aplicación web altamente funcional, sino 
+                                                que también me guió a través de todo el proceso con claridad y profesionalismo. 
+                                            </p>
+                                            <p>¡Recomendaría sus servicios a cualquiera que necesite un desarrollador web confiable!</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
@@ -687,9 +690,9 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable. Navigation are
-                                                more intuitive and the layout our visitors through our content seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>¡No podría estar más feliz con el resultado! Contraté a Eddy Lujan para desarrollar una aplicación web para mi startup y superó todas mis expectativas.</p> 
+                                            <p> Su conocimiento técnico y su enfoque creativo fueron evidentes desde el principio. Además, siempre estuvo dispuesto a escuchar mis ideas y hacer ajustes según mis necesidades. </p>
+                                            <p> ¡Gracias a su experiencia, ahora tengo una aplicación web robusta que está impulsando el crecimiento de mi negocio!</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
@@ -722,9 +725,9 @@
                                             </a>
                                         </div>
                                         <div class="testimonial__text">
-                                            <p>“The improved user experience our website immediately noticeable. Navigation are
-                                                more intuitive and the layout our visitors through our content seamlessly.
-                                                The responsive design ensures.”</p>
+                                            <p>¡Profesionalismo y excelencia en su máxima expresión! Cuando decidí buscar un desarrollador web para mi proyecto, me recomendaron a Eddy Lujan y ahora entiendo por qué.</p>
+                                            <p>Su atención al detalle y su habilidad para transformar mis ideas en una aplicación web funcional y atractiva fueron impresionantes. Además, su capacidad para cumplir con los plazos fue fundamental para el éxito de mi proyecto.</p>
+                                            <p>¡No dudaría en trabajar con Eddy Lujan nuevamente en el futuro!</p>
                                         </div>
                                         <div class="testimonial__avatar-item">
                                             <div class="testimonial__avatar-thumb">
