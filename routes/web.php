@@ -49,7 +49,7 @@ Route::group(['prefix' => 'about'], function () {
 
 // - Portfolio
 Route::group(['prefix' => 'portfolio'], function () {
-    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
+    Route::get('/', [PortfolioController::class, 'index'])->name('all-portfolio');
     Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
 });
 
