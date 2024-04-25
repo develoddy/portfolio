@@ -49,7 +49,7 @@ Route::group(['prefix' => 'about'], function () {
 
 // - Portfolio
 Route::group(['prefix' => 'portfolio'], function () {
-    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
+    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio-all');
     Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
 });
 
@@ -64,15 +64,15 @@ Route::get('/prueba', function () {
     return "prueba";
 })->name('prueba');
 
-// Route::group(['prefix' => 'prueba2'], function () {
+Route::group(['prefix' => 'prueba2'], function () {
     
 
-//     Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
+    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
 
-//     Route::get('/funciona', function () {
-//         return 'prueba2.';
-//     })->name('prueba2');
-// });
+    Route::get('/funciona', function () {
+        return 'prueba2.';
+    })->name('prueba2');
+});
 
 
 
