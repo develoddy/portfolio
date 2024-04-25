@@ -828,7 +828,7 @@
                                             </a>
                                         </span>
                                         <div class="testimonial__shape">
-                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07.png') }}.png" alt="image not found">
+                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07.png') }}" alt="image not found">
                                         </div>
                                     </div>
                                     <div class="testimonial__item">
