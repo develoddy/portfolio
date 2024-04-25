@@ -19,7 +19,7 @@
                                         <li><a href="{{ route('home') }}">Inicio</a></li>
                                         <li><a href="{{ route('about') }}">Sobre mí</a></li>
                                         <li><a href="{{ route('service') }}">Servicios</a></li>
-                                        <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                                        <li><a href="{{ route('route-portfolio') }}">Portfolio</a></li>
                                         <li><a href="{{ route('blog') }}">Blog</a>
                                         <li><a href="{{ route('contact') }}">Contacto</a></li>
                                         <li class="nav-item dropdown">
