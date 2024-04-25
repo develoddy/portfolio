@@ -82,7 +82,7 @@
                                                     <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found">
                                                     <div class="portfolio__item-btn">
                                                         <span class="icon__box">
-                                                            <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ $portfolio->image }}">
+                                                            <a class="popup-image circle-btn is-bg-white is-btn-large" href="{{ asset('storage/' .  $portfolio->image) }}">
                                                                 <i class="icon-plus"></i>
                                                             </a>
                                                         </span>
