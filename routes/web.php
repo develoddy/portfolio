@@ -49,7 +49,7 @@ Route::group(['prefix' => 'about'], function () {
 
 // - Portfolio
 Route::group(['prefix' => 'portfolio'], function () {
-    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio-all');
+    Route::get('/', [PortfolioController::class, 'index'])->name('portfolio');
     Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
 });
 
@@ -59,7 +59,7 @@ Route::group(['prefix' => 'blog'], function () {
     Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
 });
 
-
+/*
 Route::get('/prueba', function () {
     return "prueba";
 })->name('prueba');
@@ -74,7 +74,7 @@ Route::group(['prefix' => 'prueba2'], function () {
     })->name('prueba2');
 });
 
-
+*/
 
 
 
