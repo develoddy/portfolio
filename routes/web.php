@@ -64,7 +64,7 @@ Route::get('/prueba', function () {
     return "prueba";
 })->name('prueba');*/
 
-Route::group(['prefix' => 'portfolio'], function () {
+Route::group(['prefix' => 'portafolio'], function () {
 
     Route::get('/', [PortfolioController::class, 'index'])->name('route-portfolio');
     Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
