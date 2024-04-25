@@ -834,10 +834,12 @@
                                     <div class="testimonial__item">
                                         <div class="testimonial__content">
                                             <div class="testimonial__text">
-                                                <p>I've had the pleasure of working with them for the past year, and I can
+                                                <p>
+                                                    I've had the pleasure of working with them for the past year, and I can
                                                     confidently say
                                                     they have
-                                                    exceeded all of our expectations From the moment </p>
+                                                    exceeded all of our expectations From the moment 
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -873,7 +875,7 @@
                                             </a>
                                         </span>
                                         <div class="testimonial__shape">
-                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07') }}.png" alt="image not found">
+                                            <img class="testimonial__shape-quote" src="{{ Vite::asset('resources/imgs/shape/testimonial-quote-07.png') }}" alt="image not found">
                                         </div>
                                     </div>
                                     <div class="testimonial__item">
