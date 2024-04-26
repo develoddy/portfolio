@@ -1115,7 +1115,8 @@
                                 <div class="blog__thumb is-hover">
                                     <a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">
                                         {{-- <img src="{{ $blog->image }}" alt="image not found"> --}}
-                                        <img src="{{ asset('storage/' . $blog->image) }}" alt="image not found">
+                                        {{-- <img src="{{ asset('storage/' . $blog->image) }}" alt="image not found"> --}}
+                                        <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
                                     </a>
                                     <div class="blog__meta style-one">
                                         <h2 class="date">26 <span class="month">FEB</span></h2>
