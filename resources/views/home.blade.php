@@ -1113,7 +1113,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <section class="blog__wrap blog__item bg-solid">
                                 <div class="blog__thumb is-hover">
-                                    <a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">
+                                    <a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">
                                         {{-- <img src="{{ $blog->image }}" alt="image not found"> --}}
                                         {{-- <img src="{{ asset('storage/' . $blog->image) }}" alt="image not found"> --}}
                                         <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
@@ -1123,10 +1123,10 @@
                                     </div>
                                 </div>
                                 <div class="blog__content">
-                                    <h4 class="blog__title small"><a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a></h4>
+                                    <h4 class="blog__title small"><a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a></h4>
                                     <p>{{ $blog->description }}</p>
                                     <div class="blog__btn-text">
-                                        <a  href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}" class="underline-btn">
+                                        <a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}" class="underline-btn">
                                             Leer más
                                         </a>
                                     </div>
