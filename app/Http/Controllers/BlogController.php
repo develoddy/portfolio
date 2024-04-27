@@ -12,13 +12,13 @@ class BlogController extends Controller
     public function index() {
         $blogs = Blog::all();
         
-        foreach ( $blogs as $blog ) {
+        /*foreach ( $blogs as $blog ) {
             if ( $blog->image != '[]' ) {
                 $blog->image = Storage::url(
                     (json_decode($blog->image))[0]->download_link
                 );
             }
-        }
+        }*/
 
         return view('web.blog-list-sidebar', compact('blogs'));
     }
