@@ -56,7 +56,8 @@
                                                 data-wow-delay=".3s">
                                                 <div class="blog__thumb is-hover">
                                                     <a href="blog-details.html">
-                                                        <img src="{{ $blog->image }}" alt="image not found">
+                                                        {{-- <img src="{{ $blog->image }}" alt="image not found"> --}}
+                                                        <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
                                                     </a>
                                                     <div class="blog__tag">
                                                         <a href="#">Development</a>
