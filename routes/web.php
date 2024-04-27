@@ -47,30 +47,18 @@ Route::group(['prefix' => 'about'], function () {
     Route::get('/', [AboutController::class, 'index'])->name('about');
 });
 
-// - Portfolio
+// -- Portfolio
 Route::group(['prefix' => 'portafolio'], function () {
     Route::get('/', [PortfolioController::class, 'index'])->name('route-portfolio');
     Route::get('/{id}/{name}', [PortfolioController::class, 'show'])->name('portfolio-detail');
 });
 
-// Blog
+// -- Blog
 Route::group(['prefix' => 'blog'], function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
     Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
 });
 
-
-
-/* Rutas por defecto de laravel */
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
 
 require __DIR__.'/auth.php';
 

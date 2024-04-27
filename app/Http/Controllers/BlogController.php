@@ -24,9 +24,14 @@ class BlogController extends Controller
     }
 
     public function show($blog_id) {
-        $blogDetail = blogDetail::where('blog_id', $blog_id)->first();
+
+        $blogDetail = blogDetail::where('id', $blog_id)->first();
+
+        
 
         $images = json_decode($blogDetail->image);
+
+        //dd($images);
 
         /*foreach ( $blogDetail as $blogDetail ) {
             if ( $blogDetail->image != '[]' ) {
