@@ -3,7 +3,6 @@
 @section('content')
     <!-- Body main wrapper start -->
     <main>
-
         <!-- breadcrumb area  start -->
         <section class="breadcrumb__area p-relative style-one is-breadcrumb-space">
             <div class="breadcrumb__thumb-bg include-bg bg__thumb-position" data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-bg-05.png') }}"></div>
@@ -40,7 +39,7 @@
                     <div class="col-xl-6 col-lg-6 col-md-8 col-sm-10">
                         <div class="section__title-wrapper section__title-space">
                             <span class="contentHidden">contentHidden</span>
-                            <h2 class="section__title">Read My Latest Article</h2>
+                            <h2 class="section__title">Lea mis últimos artículos</h2>
                             <p class="contentHidden">contentHidden</p>
                         </div>
                     </div>
@@ -52,10 +51,9 @@
                                 @if(isset($blogs) && !empty($blogs))
                                     @foreach ($blogs as $blog)
                                         <div class="col-xl-12 col-lg-12 col-md-6">
-                                            <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                                data-wow-delay=".3s">
+                                            <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp" data-wow-delay=".3s">
                                                 <div class="blog__thumb is-hover">
-                                                    <a href="blog-details.html">
+                                                    <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">
                                                         {{-- <img src="{{ $blog->image }}" alt="image not found"> --}}
                                                         <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
                                                     </a>
@@ -71,18 +69,18 @@
                                                         </span>
                                                         <span>
                                                             <i class="fa-light fa-comment"></i>
-                                                            {{ $blog->countComment == null ? 0 : $blog->countComment }} Comments
+                                                            {{ $blog->countComment == null ? 0 : $blog->countComment }} Commentarios
                                                         </span>
                                                     </div>
                                                     <h5 class="blog__title">
-                                                        <a href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a>
+                                                        <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a>
                                                     </h5>
                                                     <p>
                                                         {{ $blog->description }}
                                                     </p>
                                                     <div class="blog-btn-text">
-                                                        <a href="{{ route('blog-detail', ['id' => $blog->id,'name' => $blog->link() ]) }}" class="underline-btn">
-                                                            Read More
+                                                        <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}" class="underline-btn">
+                                                            Leer más
                                                         </a>
                                                     </div>
                                                 </div>
@@ -316,12 +314,12 @@
                     <div class="col-xxl4 col-lg-4">
                         <div class="sidebar__wrapper">
                             <div class="sidebar__widget">
-                                <h5 class=" sidebar__widget-title">Search Here</h5>
+                                <h5 class=" sidebar__widget-title">Buscar en lujandev</h5>
                                 <div class="sidebar__widget-content">
                                     <div class="sidebar__search">
                                         <form action="#">
                                             <div class="sidebar__search-input">
-                                                <input type="text" placeholder="Enter your keywords...">
+                                                <input type="text" placeholder="Buscar">
                                                 <button type="submit">
                                                     <i class="fa-sharp fa-light fa-magnifying-glass"></i>
                                                 </button>
