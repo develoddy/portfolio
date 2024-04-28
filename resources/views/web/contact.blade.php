@@ -122,8 +122,8 @@
                             <div class="cta__content">
                                 <div class="section__title-wrapper text-center ">
                                     <div class="section__title-wrapper text-center">
-                                        <span class="section__subtitle bg-field">SUBSCRIBE</span>
-                                        <h2 class="section__title mb-30">Stay Informed with the Latest News</h2>
+                                        <span class="section__subtitle bg-field">SUSCRIBIR</span>
+                                        <h2 class="section__title mb-30">Manténgase informado con las últimas noticias</h2>
                                         <p class="contentHidden">contentHidden</p>
                                     </div>
                                 </div>
@@ -131,8 +131,8 @@
                             <div class="cta__form">
                                 <form action="#">
                                     <div class="cta__input">
-                                        <input type="text" placeholder="Enter email">
-                                        <a href="contact.html" class="bd-btn is-bg-gradient">Submit Now</a>
+                                        <input type="text" placeholder="Ingrese su correo electrónico">
+                                        <a href="{{ route('contact') }}" class="bd-btn is-bg-gradient">Aplique ahora</a>
                                     </div>
                                 </form>
                             </div>

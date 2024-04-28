@@ -3,17 +3,15 @@
 @section('content')
     <!-- Body main wrapper start -->
     <main>
-
         <!-- breadcrumb area  start -->
         <section class="breadcrumb__area p-relative style-two is-breadcrumb-space">
-            <div class="breadcrumb__thumb-bg include-bg bg__thumb-position"
-                data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-bg-02.png') }}"></div>
+            <div class="breadcrumb__thumb-bg include-bg bg__thumb-position" data-background="{{ Vite::asset('resources/imgs/breadcrumb/breadcrumb-bg-02.png') }}"></div>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-xl-6 col-lg-8 col-md-9">
                         <div class="breadcrumb__content-wrapper p-relative z-index-1">
                             <div class="breadcrumb__title-wrapper text-center">
-                                <h1 class="breadcrumb__title mb-25">Services</h1>
+                                <h1 class="breadcrumb__title mb-25">Servicios</h1>
                                 <p class="mb-15">
                                     ¡Hablemos de su visión y de cómo podemos hacerla realidad a través de un desarrollo web completo y personalizado!
                                 </p>
@@ -23,7 +21,7 @@
                                     <ul>
                                         <li><span><a href="index.html">Home</a></span></li>
                                         <li><span><a href="services.html">Service</a></span></li>
-                                        <li><span>Service Creative</span></li>
+                                        {{-- <li><span>Service Creative</span></li> --}}
                                     </ul>
                                 </nav>
                             </div>
@@ -147,13 +145,13 @@
                                         <div class="about__counter-count">
                                             <h2><span class="counter">5</span>+</h2>
                                         </div>
-                                        <p>Years of Experience</p>
+                                        <p>Años de experiencia</p>
                                     </div>
                                     <div class="about__counter-info d-none">
                                         <div class="about__counter-count">
                                             <h2><span class="counter">500</span>+</h2>
                                         </div>
-                                        <p>Stratified Customers</p>
+                                        <p>Clientes estratificadas</p>
                                     </div>
                                 </div>
                             </div>
@@ -163,14 +161,14 @@
                         <div class="about__content style-four  wow fadeInRight" data-wow-delay=".3s">
                             <div class="section__title-wrapper mb-25">
                                 <div class="section__title-wrapper">
-                                    <span class="section__subtitle sec-border">Who I Am</span>
-                                    <h2 class="section__title">Full Stack Web Development Turning Ideas into Digital Reality</h2>
+                                    <span class="section__subtitle sec-border">Quien soy</span>
+                                    <h2 class="section__title">Desarrollo web que convierte ideas en realidad digital</h2>
                                     <p class="contentHidden">contentHiddenText</p>
                                 </div>
                             </div>
                             <p>
-                                Discover how I can turn your ideas into functional and appealing web applications. With a solid experience in developing various applications over the past years, 
-                                I am ready to take your project to the next digital level.
+                                Colaboro diariamente con un destacado profesional del sector, un experto en desarrollo de aplicaciones para páginas web, backend y diseño gráfico. 
+                                Después de años de trabajo conjunto, somos el equipo perfecto para hacer realidad tu idea digital.
                             </p>
                             <div class="about__info-list">
                                 <div class="about__info-item">
@@ -178,8 +176,8 @@
                                         <span><i class="icon-partner"></i></span>
                                     </div>
                                     <div class="about__info-content">
-                                        <h5>Trustworthy</h5>
-                                        <p>A service you can fully trust.</p>
+                                        <h5>Confiable</h5>
+                                        <p>Un servicio en el que puedes confiar plenamente.</p>
                                     </div>
                                 </div>
                                 <div class="about__info-item">
@@ -187,8 +185,8 @@
                                         <span><i class="icon-grow"></i></span>
                                     </div>
                                     <div class="about__info-content">
-                                        <h5>Improvement</h5>
-                                        <p>Your path to growth and continuous improvement.</p>
+                                        <h5>Mejora</h5>
+                                        <p>Tu camino hacia el crecimiento y la mejora continua.</p>
                                     </div>
                                 </div>
                                 <div class="about__info-item">
@@ -196,16 +194,16 @@
                                         <span><i class="icon-strategy"></i></span>
                                     </div>
                                     <div class="about__info-content">
-                                        <h5>Strategy</h5>
-                                        <p>Strategic planning for success.</p>
+                                        <h5>Estrategia</h5>
+                                        <p>Planificación estratégica para el éxito.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="about__btn">
                                 <a class="bd-btn is-btn-anim bordered-blue" href="about.html">
                                     <span class="bd-btn-inner">
-                                        <span class="bd-btn-normal">Know more</span>
-                                        <span class="bd-btn-hover">Know more</span>
+                                        <span class="bd-btn-normal">Saber más</span>
+                                        <span class="bd-btn-hover">Saber más</span>
                                         <i class="contentHidden"></i>
                                     </span>
                                 </a>
@@ -223,18 +221,17 @@
                 <div class="row g-5 align-items-end  section__title-space">
                     <div class="col-xl-5 col-lg-5 col-md-6">
                         <div class="section__title-wrapper">
-                            <span class="section__subtitle sec-border">WHAT I HAVE DONE</span>
-                            <h2 class="section__title">The Pinnacle of Artistry Our Works</h2>
-                            <p class="contentHidden">For each project in the portfolio, provide detailed descriptions that
-                                cover latest work.</p>
+                            <span class="section__subtitle sec-border">QUE HE HECHO</span>
+                            <h2 class="section__title">Últimos proyectos</h2>
+                            <p class="contentHidden">For each project in the portfolio, provide detailed descriptions that cover latest work.</p>
                         </div>
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-6">
                         <div class="portfolio__more text-md-end">
-                            <a class="bd-btn is-btn-anim" href="portfolio.html">
+                            <a class="bd-btn is-btn-anim" href="{{ route('route-portfolio') }}">
                                 <span class="bd-btn-inner">
-                                    <span class="bd-btn-normal">View all project</span>
-                                    <span class="bd-btn-hover">View all project</span>
+                                    <span class="bd-btn-normal">Ver todo el proyecto</span>
+                                    <span class="bd-btn-hover">Ver todo el proyecto</span>
                                     <i class="contentHidden"></i>
                                 </span>
                             </a>
@@ -434,8 +431,8 @@
                 <div class="row g-5 justify-content-center">
                     <div class="col-xl-5 col-lg-6 col-md-8">
                         <div class="section__title-wrapper section__title-space text-center">
-                            <span class="section__subtitle bg-field">TESTIMONIALS </span>
-                            <h2 class="section__title">What Our Client Say About Us</h2>
+                            <span class="section__subtitle bg-field">TESTIMONIOS </span>
+                            <h2 class="section__title">Lo que nuestro cliente dice sobre nosotros</h2>
                             <p class="contentHidden">contentHidden</p>
                         </div>
                     </div>

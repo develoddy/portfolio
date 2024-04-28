@@ -663,8 +663,8 @@
                 <div class="col-lg-6">
                     <div class="section__title-wrapper section__title-space">
                         <div class="section__title-wrapper">
-                            <span class="section__subtitle bg-field">Achievement</span>
-                            <h2 class="section__title">My Awards</h2>
+                            <span class="section__subtitle bg-field">Logro</span>
+                            <h2 class="section__title">Mis premios</h2>
                             <p class="contentHidden">contentHiddenText</p>
                         </div>
                     </div>
@@ -752,8 +752,8 @@
             <div class="row g-5 justify-content-center">
                 <div class="col-xl-6 col-lg-8 col-md-10">
                     <div class="section__title-wrapper section__title-space text-center">
-                        <span class="section__subtitle bg-field">TESTIMONIALS </span>
-                        <h2 class="section__title">What Our Clients Say</h2>
+                        <span class="section__subtitle bg-field">TESTIMONIOS </span>
+                        <h2 class="section__title">Lo que dicen nuestros clientes</h2>
                         <p class="contentHidden">contentHidden</p>
                     </div>
                 </div>

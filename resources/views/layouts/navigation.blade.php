@@ -23,9 +23,11 @@
                                         <li><a href="{{ route('blog') }}">Blog</a>
                                         <li><a href="{{ route('contact') }}">Contacto</a></li>
                                         <li class="nav-item dropdown">
+                                            @auth
                                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                                 {{ Auth::user()->name }}
                                             </a>
+                                            @endauth
                                             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                                 <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                                                     {{ __('Salir') }}
