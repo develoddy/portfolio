@@ -12,7 +12,20 @@ class PortfolioController extends Controller
     public function index() {
         try {
             $portfolios = Portfolio::all();
-            return view('web.portfolio', compact('portfolios'));
+            // Obtener todos los portafolios con sus detalles
+
+            // $portfolios = Portfolio::with('portfolioDetails')->get();
+            // Obtener todos los portafolios que tienen al menos un detalle con la categoría "Brand"
+            $brands = Portfolio::whereHas('portfolioDetails', function ($query) {
+                $query->where('category', 'Brand');
+            })->get();
+
+            // Obtener todos los portafolios que tienen al menos un detalle con la categoría "Project"
+            $projects = Portfolio::whereHas('portfolioDetails', function ($query) {
+                $query->where('category', 'Project');
+            })->get();
+            
+            return view('web.portfolio', compact('portfolios', 'brands', 'projects'));
         } catch (\Throwable $th) {
             throw $th;
         }

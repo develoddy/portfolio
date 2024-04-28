@@ -27,7 +27,7 @@ class Portfolio extends Model
 
     public function portfolioDetails()
     {
-        //return $this->hasMany(PortfolioDetail::class, 'id');
-        return $this->hasMany(PortfolioDetail::class, 'id', 'portfolio_detail_id');
+        //return $this->hasMany(PortfolioDetail::class, 'id', 'portfolio_detail_id');
+        return $this->hasOne(PortfolioDetail::class, 'id', 'portfolio_detail_id');
     }
 }
