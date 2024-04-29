@@ -770,39 +770,13 @@ class DataRowsTableSeeder extends Seeder
                 'order'        => 11,
             ])->save();
         }
-
-        /*$dataRow = $this->dataRow($portfolioDetailDataType, 'portfolio_detail_belongsto_portfolio_relationship');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'relationship',
-                'display_name' => 'portfolio',
-                'required'     => 0,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details' => [
-                    "model" => "App\\Models\\Portfolio",
-                    "table" => "portfolio",
-                    "type" => "belongsTo",
-                    "column" => "portfolio_id",
-                    "key" => "id",
-                    "label" => "title",
-                    "pivot_table" => "abouts",
-                    "pivot" => "0",
-                    "taggable" => "0"
-                ],
-                'order'        => 12,
-            ])->save();
-        }*/
-        
+  
 
         // ----- BLOG DETAILS -----
         $dataRow = $this->dataRow($pblogDetailDataType, 'id');
         if (!$dataRow->exists) {
             $dataRow->fill([
-                'type'         => 'text',
+                'type'         => 'number',
                 'display_name' => 'Id',
                 'required'     => 1,
                 'browse'       => 0,
@@ -1020,9 +994,11 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
+
+        // About
+        
     }
 
-    
 
     /**
      * [dataRow description].

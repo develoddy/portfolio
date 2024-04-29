@@ -235,15 +235,14 @@
                         <div class="swiper portfolio-details__active">
                             <div class="swiper-wrapper">
                                 @foreach ($abouts as $about)
-                                    @foreach ( $about->images as $image )
                                         <div class="swiper-slide">
                                             <div class=" portfolio__item style-six portfolio-details">
                                                 <div class="portfolio__item-thumb">
-                                                    <img src="{{ $image }}" alt="">
+                                                    {{-- <img src="{{ $portfolio->images }}" alt=""> --}}
+                                                    <img src="{{ asset('storage/' . $about->images) }}" alt="{{ $about->title }}">
                                                 </div>
                                             </div>
                                         </div>
-                                    @endforeach
                                 @endforeach
                                 {{-- 
                                 <div class="swiper-slide">

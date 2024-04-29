@@ -17,7 +17,7 @@ class HomeController extends Controller
 
     public function index() {
 
-        //try {
+        try {
             $portfolios = Portfolio::take(6)->get();
             
             /*if (!$portfolios->isEmpty()) {
@@ -62,9 +62,8 @@ class HomeController extends Controller
                 // }
             //}
             return view('home', compact('portfolios', 'blogs'));
-        /*} catch (\Throwable $th) {
-            dd("xx");
+        } catch (\Throwable $th) {
             throw $th;
-        }*/
+        }
     }
 }

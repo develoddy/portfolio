@@ -21,7 +21,7 @@
                                         <span class="banner__shape-hand">
                                             <img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found">
                                         </span>
-                                        Soy <span class="bd-text-primary">Eddy</span> Software Developer con sede en Madrid </h1>
+                                        Soy <span class="bd-text-primary">Eddy</span> Full Stack Developer con sede en Madrid </h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
                                         Mi pasión es crear experiencias digitales impresionantes y funcionales. Desde sitios web elegantes hasta aplicaciones dinámicas, estoy aquí para convertir tus ideas en realidad. Bienvenido a mi portafolio, donde puedes ver lo que puedo hacer por ti.
                                     </p>
@@ -1114,8 +1114,6 @@
                             <section class="blog__wrap blog__item bg-solid">
                                 <div class="blog__thumb is-hover">
                                     <a  href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">
-                                        {{-- <img src="{{ $blog->image }}" alt="image not found"> --}}
-                                        {{-- <img src="{{ asset('storage/' . $blog->image) }}" alt="image not found"> --}}
                                         <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
                                     </a>
                                     <div class="blog__meta style-one">
