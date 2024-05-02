@@ -19,7 +19,7 @@
                             <div class="breadcrumb__menu">
                                 <nav>
                                     <ul>
-                                        <li><span><a href="index.html">Home</a></span></li>
+                                        <li><span><a href="{{ route('home') }}">Inicio</a></span></li>
                                         {{-- <li><span><a href="blog.html">Blog</a></span></li> --}}
                                         <li><span>Blog</span></li>
                                     </ul>

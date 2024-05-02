@@ -17,8 +17,8 @@
                         <div class="breadcrumb__menu text-center">
                             <nav>
                                 <ul>
-                                    <li><span><a href="{{ route('home') }}">Home</a></span></li>
-                                    <li><span>About</span></li>
+                                    <li><span><a href="{{ route('home') }}">Inicio</a></span></li>
+                                    <li><span>Sobre mí</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -75,7 +75,7 @@
                                 <p class="contentHidden">contentHiddenText</p>
                             </div>
                         </div>
-                        <p>Quiero compartir con ustedes un poco sobre mi viaje como desarrollador de software, desde mis comienzos en Indra hasta mi actual rol en Evidenze.</p>
+                        <p>Quiero compartir con ustedes un poco sobre mi viaje como desarrollador de aplicaciones web, desde mis comienzos en Indra hasta mi actual rol en Evidenze.</p>
                         
                         <span class="section__subtitle ">Mis Inicios en Indra</span>
                         <p>
@@ -315,9 +315,10 @@
                     <div class="skill__content-wrapper  wow fadeInLeft" data-wow-delay=".3s">
                         <div class="section__title-wrapper mb-40">
                             <div class="section__title-wrapper">
-                                <span class="section__subtitle bg-field">OUR SKILLS</span>
+                                <span class="section__subtitle bg-field">MIS HABILIDADES</span>
                                 <h2 class="section__title mb-20">Frontend and Backend Developer</h2>
-                                <p>Since I began my journey as a developer over 4 years ago, I have undertaken remote work for startups and collaborated with talented individuals to create digital products for both commercial and consumer use. I am quietly confident, naturally curious, and perpetually working to enhance my skills, one development challenge at a time.</p>
+                                <p>Como desarrollador web con experiencia diversa, mi habilidad principal es construir aplicaciones web sólidas y escalables utilizando Laravel en el backend. Complemento esto con JavaScript tanto en el frontend como en el backend, creando interacciones dinámicas y fluidas. Especializado en Angular, tengo experiencia en el desarrollo de interfaces de usuario reactivas y dinámicas para aplicaciones de una sola página. Además, utilizo Node.js para desarrollar backend eficiente y escalable, implementando API RESTful y aplicaciones en tiempo real. En resumen, ofrezco un enfoque integral para el desarrollo web y móvil, centrándome en la creación de soluciones tecnológicas eficientes y de calidad.</p>
+                                {{-- Como desarrollador web con experiencia diversa, mi habilidad principal es construir aplicaciones web sólidas y escalables utilizando Laravel en el backend. Complemento esto con JavaScript tanto en el frontend como en el backend, creando interacciones dinámicas y fluidas. Especializado en Angular, tengo experiencia en el desarrollo de interfaces de usuario reactivas y dinámicas para aplicaciones de una sola página. Además, utilizo Node.js para desarrollar backend eficiente y escalable, implementando API RESTful y aplicaciones en tiempo real. También tengo experiencia en el desarrollo de aplicaciones móviles nativas para iOS utilizando Swift. En resumen, ofrezco un enfoque integral para el desarrollo web y móvil, centrándome en la creación de soluciones tecnológicas eficientes y de calidad. --}}
                             </div>
                         </div>
                         <div class="bd-progress__wrap">
@@ -408,18 +409,16 @@
             <div class="row g-5">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6">
                     <div class="service__wrapper service__item style-seven bg-solid text-center is-padding-reduce is-transition wow fadeIn" data-wow-delay=".3s">
-                        <span class="service__icon-wrap">
-                    <i class="icon-ux-design"></i>
-                 </span>
+                        <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
-                            <p>Design everything we make</p>
+                            <h5 class="service__title"><a href="{{ route('service') }}">UX/UI Design</a></h5>
+                            <p>Experiencias digitales <br> impactantes.</p>
                             <div class="service__more">
-                                <a class="bd-text-btn style-two" href="service-details.html">Read More <span
-                             class="icon__box">
-                             <i class="fa-regular fa-arrow-right-long icon__first"></i>
-                             <i class="fa-regular fa-arrow-right-long icon__second"></i>
-                          </span>
+                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Leer más 
+                                    <span class="icon__box">
+                                        <i class="fa-regular fa-arrow-right-long icon__first"></i>
+                                        <i class="fa-regular fa-arrow-right-long icon__second"></i>
+                                    </span>
                                 </a>
                             </div>
                         </div>
@@ -431,10 +430,10 @@
                     <i class="icon-design"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
-                            <p>Learn clean and useful code</p>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Web Design</a></h5>
+                            <p>Sitios web funcionales <br> y atractivos.</p>
                             <div class="service__more">
-                                <a class="bd-text-btn style-two" href="service-details.html">Read More <span
+                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -450,11 +449,11 @@
                     <i class="icon-project"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Project</a></h5>
-                            <p>Useful project biggest asset</p>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Project</a></h5>
+                            <p>Gestión efectiva <br> de proyectos.</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="service-details.html">Read More <span
+                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>
@@ -470,11 +469,11 @@
                     <i class="icon-animation"></i>
                  </span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Animation</a></h5>
-                            <p>Animation is about creating</p>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Animation</a></h5>
+                            <p>Animaciones que <br> destacan.</p>
                             <div class="service__more">
 
-                                <a class="bd-text-btn style-two" href="service-details.html">Read More <span
+                                <a class="bd-text-btn style-two" href="{{ route('service') }}">Leer más <span
                              class="icon__box">
                              <i class="fa-regular fa-arrow-right-long icon__first"></i>
                              <i class="fa-regular fa-arrow-right-long icon__second"></i>

@@ -21,7 +21,7 @@
                                         <span class="banner__shape-hand">
                                             <img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found">
                                         </span>
-                                        Soy <span class="bd-text-primary">Eddy</span> Full Stack Developer con sede en Madrid </h1>
+                                        Soy <span class="bd-text-primary">Eddy Lujan</span> Full Stack Developer con sede en Madrid </h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
                                         Mi pasión es crear experiencias digitales impresionantes y funcionales. Desde sitios web elegantes hasta aplicaciones dinámicas, estoy aquí para convertir tus ideas en realidad. Bienvenido a mi portafolio, donde puedes ver lo que puedo hacer por ti.
                                     </p>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <p class="about__text">
-                            Con más de cinco años de experiencia como desarrollador de software, he tenido el privilegio de trabajar en una variedad de proyectos desafiantes que han enriquecido mis habilidades y conocimientos en el campo de la tecnología. Cada paso en mi carrera ha sido guiado por una pasión inquebrantable por la innovación y la excelencia técnica.
+                            Con más de cinco años de experiencia como desarrollador de aplicaciones web, he tenido el privilegio de trabajar en una variedad de proyectos desafiantes que han enriquecido mis habilidades y conocimientos en el campo de la tecnología. Cada paso en mi carrera ha sido guiado por una pasión inquebrantable por la innovación y la excelencia técnica.
                         </p>
                         <p class="about__text-two">
                             Estoy emocionado por seguir creciendo y aprendiendo en este apasionante campo, y estoy comprometido a empujar los límites de lo que es posible en el desarrollo de software. Estoy listo para enfrentar nuevos desafíos y contribuir con mi experiencia y habilidades a proyectos innovadores que marquen la diferencia en el mundo digital.
@@ -324,11 +324,11 @@
                         <div class="contentHidden"></div>
                         <span class="service__icon-wrap"><i class="icon-ux-design"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">UX/UI Design</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">UX/UI Design</a></h5>
                             <p>Me destaco en la creación de interfaces de usuario atractivas y funcionales que equilibran la estética con la funcionalidad.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -339,11 +339,11 @@
                         <div class="service__shape-2"></div>
                         <span class="service__icon-wrap"><i class="icon-design"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Web Design</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Web Design</a></h5>
                             <p>Desarrollador web full stack con pasión por el diseño web. Creo interfaces atractivas y funcionales que cautivan a los usuarios.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -355,11 +355,11 @@
                         <div class="service__shape-2"></div>
                         <span class="service__icon-wrap"><i class="icon-project"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Project Design</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Project Design</a></h5>
                             <p>Desarrollador web full stack con habilidades en diseño de proyectos, creando soluciones atractivas y funcionales.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -371,11 +371,11 @@
                         <div class="service__shape-2"></div>
                         <span class="service__icon-wrap"><i class="icon-animation"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Animation</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Animation</a></h5>
                             <p>Uso de JavaScript y Bootstrap para mejorar la interactividad y la experiencia del usuario en proyectos web.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -387,11 +387,11 @@
                         <div class="service__shape-2"></div>
                         <span class="service__icon-wrap"><i class="icon-application"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Mobile Application</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Mobile Application</a></h5>
                             <p>Desarrollador web full stack en proceso de aprendizaje de tecnologías Swift y Android para el desarrollo de aplicaciones móviles.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>
@@ -403,11 +403,11 @@
                         <div class="service__shape-2"></div>
                         <span class="service__icon-wrap"><i class="icon-game"></i></span>
                         <div class="service__content">
-                            <h5 class="service__title"><a href="service-details.html">Game Development</a></h5>
+                            <h5 class="service__title"><a href="{{ route('service') }}">Game Development</a></h5>
                             <p>Share design documents, storyboards, or game design document that illustrate your planning and concept.</p>
                             <div class="contentHidden">
-                                <a class="contentHidden" href="service-details.html">contentHidden <span><i class="contentHidden"></i></span></a>
-                                <a class="contentHidden" href="service-details.html"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}">contentHidden <span><i class="contentHidden"></i></span></a>
+                                <a class="contentHidden" href="{{ route('service') }}"> <span class="contentHidden"><i class="{{ Vite::asset('resources/imgs/icons/arrow.png') }}"> </i></span></a>
                             </div>
                         </div>
                     </div>

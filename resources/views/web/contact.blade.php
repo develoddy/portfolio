@@ -20,8 +20,8 @@
                         <div class="breadcrumb__menu">
                             <nav>
                                 <ul>
-                                    <li><span><a href="index.html">Home</a></span></li>
-                                    <li><span>Contact</span></li>
+                                    <li><span><a href="{{ route('home') }}">Inicio</a></span></li>
+                                    <li><span>Contacto</span></li>
                                 </ul>
                             </nav>
                         </div>
@@ -44,7 +44,7 @@
                     </span>
                         </div>
                         <div class="contact__item-content">
-                            <span class="contact-item-subtitle">Location</span>
+                            <span class="contact-item-subtitle">Ubicación</span>
                             <h5><a target="_blank" href="https://www.google.com/maps">Paseo de la chopera 76, Alcobendas, Madrid</a></h5>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                     </span>
                         </div>
                         <div class="contact__item-content">
-                            <span class="contact-item-subtitle">Email Address</span>
+                            <span class="contact-item-subtitle">Dirección de correo electrónico</span>
                             <h5><a href="mailto:lujandev@lujandev.com">lujandev@lujandev.com</a></h5>
                         </div>
                     </div>
@@ -70,8 +70,8 @@
                     </span>
                         </div>
                         <div class="contact__item-content">
-                            <span class="contact-item-subtitle">Contact Number</span>
-                            <h5><a href="tel:+034605974436">+034 605 97 44 36</a></h5>
+                            <span class="contact-item-subtitle">Número de contacto</span>
+                            <h5><a href="tel:+034605974436">+34 605 97 44 36</a></h5>
                         </div>
                     </div>
                 </div>

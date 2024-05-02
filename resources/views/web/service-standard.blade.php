@@ -19,9 +19,9 @@
                             <div class="breadcrumb__menu text-center">
                                 <nav>
                                     <ul>
-                                        <li><span><a href="index.html">Home</a></span></li>
-                                        <li><span><a href="services.html">Service</a></span></li>
-                                        {{-- <li><span>Service Creative</span></li> --}}
+                                        <li><span><a href="{{ route('home') }}">Inicio</a></span></li>
+                                        {{-- <li><span><a href="services.html">Servicio</a></span></li> --}}
+                                        <li><span>Servicio</span></li>
                                     </ul>
                                 </nav>
                             </div>
@@ -200,7 +200,7 @@
                                 </div>
                             </div>
                             <div class="about__btn">
-                                <a class="bd-btn is-btn-anim bordered-blue" href="about.html">
+                                <a class="bd-btn is-btn-anim bordered-blue" href="{{ route('about') }}">
                                     <span class="bd-btn-inner">
                                         <span class="bd-btn-normal">Saber más</span>
                                         <span class="bd-btn-hover">Saber más</span>
