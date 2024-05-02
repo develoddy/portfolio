@@ -15,7 +15,7 @@
                 <div class="swiper-slide banner_more_item">
                     <div class="container">
                         <div class="row align-items-center gy-5">
-                            <div class="col-xl-6 col-lg-6">
+                            <div class="col-xl-6 col-lg-6 order-lg-1 order-2">
                                 <div class="banner__content p-relative">
                                     <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".7s">Hola, 
                                         <span class="banner__shape-hand">
@@ -35,7 +35,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-xl-6 col-lg-6">
+                            <div class="col-xl-6 col-lg-6 order-lg-2 order-1">
                                 <div class="banner__thumb-wrapper wow fadeInRight" data-wow-delay=".8s" data-wow-duration="1.2s">
                                     <div class="banner__shape">
                                         <img class="banner__shape-one" src="{{ Vite::asset('resources/imgs/shape/tower-shape.png') }}" alt="image not found">
