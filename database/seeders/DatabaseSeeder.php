@@ -21,38 +21,27 @@ class DatabaseSeeder extends Seeder
         // php artisan db:seed --class=MenusTableSeeder
 
 
-        // Llama al seeder MenusTableSeeder  
+        // Creación inicial
         $this->call(MenusTableSeeder::class);
-
-        // Llama al seeder MenuItemsTableSeeder
         $this->call(MenuItemsTableSeeder::class);
-
-        // Llama al seeder DataTypesTableSeeder
         $this->call(DataTypesTableSeeder::class);
         $this->call(DataRowsTableSeeder::class);
 
-        // Permision
+        // Roles y permisos
+        $this->call(RolesTableSeeder::class);
         $this->call(PermissionRoleTableSeeder::class);
         $this->call(PermissionsTableSeeder::class);
 
-
-        // Llama al seeder RolesTableSeeder
-        $this->call(RolesTableSeeder::class);
-
-        // Llama al seeder UsersTableSeeder
+        // Usuarios y datos adicionales
         $this->call(UsersTableSeeder::class);
-
-        
         $this->call(PagesTableSeeder::class);
         $this->call(CategoriesTableSeeder::class);
 
-
-        //Voyagger
-        
+        // Datos específicos de Voyager
         $this->call(SettingsTableSeeder::class);
-        $this->call(TranslationsTableSeeder::class);
+        
         $this->call(VoyagerDatabaseSeeder::class);
         $this->call(VoyagerDummyDatabaseSeeder::class);
-        
+        $this->call(TranslationsTableSeeder::class);
     }
 }
