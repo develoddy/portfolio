@@ -35,7 +35,10 @@ Route::get('/', function () {
     return redirect(route('login'));
 });
 
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+//Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('home');
 
 // -- Service
 Route::get('/service', function () {
