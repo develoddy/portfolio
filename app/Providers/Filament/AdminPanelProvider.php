@@ -64,9 +64,9 @@ class AdminPanelProvider extends PanelProvider
         ]);
     }
 
-     public function register(): void
-     {
-       parent::register();
-       FilamentView::registerRenderHook('panels::body.end', fn(): string => Blade::render("@vite('resources/js/app.js')"));
-     }
+    // public function register(): void
+    // {
+    //   parent::register();
+    //   FilamentView::registerRenderHook('panels::body.end', fn(): string => Blade::render("@vite('resources/js/app.js')"));
+    // }
 }
