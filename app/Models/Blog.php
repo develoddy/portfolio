@@ -22,12 +22,14 @@ class Blog extends Model
         "updated_at",
     ];
 
+    public function BlogDetail(): BelongsTo
+    {
+        return $this->belongsTo(BlogDetail::class);
+    }
+
+
     public function link() {
         return str_replace(' ', '-', strtolower($this->title));
     }
 
-    public function blogDetails()
-    {
-        return $this->hasMany(BlogDetail::class, 'id');
-    }
 }

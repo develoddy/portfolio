@@ -14,7 +14,6 @@ class BlogDetail extends Model
 
     protected $fillable = [
         "id",
-        "blog_id",
         "comment_id",
         "title",
         "description",
@@ -27,8 +26,11 @@ class BlogDetail extends Model
         "updated_at",
     ];
 
-    public function blog() {
-        return $this->belongsTo(Blog::class, 'id');
+    public function portfolio() 
+    {
+        return $this->hasMany(Blog::class);
     }
+
+    
 
 }

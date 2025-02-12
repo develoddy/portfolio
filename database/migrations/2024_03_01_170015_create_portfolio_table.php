@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('portfolio', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->string('image')->nullable();
+            $table->foreignId('portfolio_id');
             $table->timestamps();
         });
     }

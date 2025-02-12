@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->string('image')->nullable();
             $table->integer('countComment')->nullable();
-            
+            //$table->foreign('blog_id')->references('id')->on('blogs')->onDelete('cascade');
+            $table->foreignId('blog_id');
             $table->timestamps();
         });
     }

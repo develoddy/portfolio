@@ -3,7 +3,9 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Filament\Forms\Components\TextInput;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\Portfolio;
 
 class PortfolioDetail extends Model
@@ -25,9 +27,19 @@ class PortfolioDetail extends Model
         'updated_at',
     ];
 
-    public function portfolio() 
+    public function portfolios(): HasMany
     {
-        //return $this->belongsTo(Portfolio::class, 'portfolio_detail_id');
-        return $this->belongsTo(Portfolio::class, 'portfolio_detail_id');
+        return $this->hasMany(Portfolio::class);
+    }
+
+
+    public static function getForm(): array
+    {
+      return [
+        TextInput::make('title')
+            ->label('Titulo')
+            ->required()
+            ->maxLength(255),
+      ];
     }
 }
