@@ -33,15 +33,16 @@ class PortfolioController extends Controller
 
     public function show($portfolio_id) {
         try {
-            $portfolioDetail = PortfolioDetail::where('id', $portfolio_id)->get(); 
+            $portfolioDetails = PortfolioDetail::where('id', $portfolio_id)->get(); 
+            return view('web.portfolio.portfolio-details', compact('portfolioDetails'));
             
-            if (!empty($portfolioDetail)) {
+            /*if (!empty($portfolioDetail)) {
                 $description = implode(', ', $portfolioDetail->pluck('description')->toArray());
                 $title = implode(', ', $portfolioDetail->pluck('title')->toArray());
                 $images =  implode(', ', $portfolioDetail->pluck('image')->toArray()); 
                 $arr_images =  json_decode($images, true);
             }
-            return view('web.portfolio.portfolio-details', compact('portfolioDetail', 'description', 'title', 'arr_images'));
+            return view('web.portfolio.portfolio-details', compact('portfolioDetails', 'description', 'title', 'arr_images'));*/
 
         } catch (\Throwable $th) {
             throw $th;

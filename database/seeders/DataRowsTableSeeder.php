@@ -504,7 +504,7 @@ class DataRowsTableSeeder extends Seeder
             ])->save();
         }
 
-        $dataRow = $this->dataRow($portfolioDataType, 'portfolio_detail_id');
+        $dataRow = $this->dataRow($portfolioDataType, 'portfolio_id');
         if (!$dataRow->exists) {
             $dataRow->fill([
                 'type'         => 'number',
@@ -609,7 +609,7 @@ class DataRowsTableSeeder extends Seeder
                     "model" => "App\\Models\\PortfolioDetail",
                     "table" => "portfolio_detail",
                     "type" => "belongsTo",
-                    "column" => "portfolio_detail_id",
+                    "column" => "portfolio_id",
                     "key" => "id",
                     "label" => "title",
                     "pivot_table" => "abouts",

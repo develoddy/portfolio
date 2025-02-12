@@ -7,7 +7,8 @@
                     <div class="header__left">
                         <div class="header__logo">
                             <a href="{{ route('home') }}">
-                                <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="logo not found">
+                                {{-- <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo.svg') }}" alt="logo not found"> --}}
+                                <img class="logo__white" src="{{ Vite::asset('resources/imgs/logo/logo-white.png') }}" alt="Lujandev" title="Lujandev"> 
                             </a>
                         </div>
                     </div>

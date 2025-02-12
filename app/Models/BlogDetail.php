@@ -4,6 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Filament\Forms\Components\TextInput;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use App\Models\Blog;
 
 class BlogDetail extends Model
@@ -26,11 +28,20 @@ class BlogDetail extends Model
         "updated_at",
     ];
 
-    public function portfolio() 
+
+    public function blogs(): HasMany
     {
         return $this->hasMany(Blog::class);
     }
 
-    
+    public static function getForm(): array
+    {
+      return [
+        TextInput::make('title')
+            ->label('Titulo')
+            ->required()
+            ->maxLength(255),
+      ];
+    }
 
 }

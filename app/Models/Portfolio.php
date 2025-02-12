@@ -32,12 +32,12 @@ class Portfolio extends Model
     ];
 
     public function link() {
-        return str_replace(' ', '-', strtolower($this->title));
+        return str_replace(' ', '-', strtolower(strip_tags($this->title))); //return str_replace(' ', '-', strtolower($this->title));
     }
 
     public function portfolioDetail(): BelongsTo
     {
-        return $this->belongsTo(PortfolioDetail::class);
+        return $this->belongsTo(PortfolioDetail::class, 'portfolio_id');
     }
 
 
@@ -65,7 +65,7 @@ class Portfolio extends Model
             Section::make('Organización y publicación')
             ->columns(2)
             ->schema([
-                Select::make('portfolio_detail_id')
+                Select::make('portfolio_id')
                     ->label('Portfolio detail')
                     ->relationship('portfolioDetail', 'title')
                     ->searchable()

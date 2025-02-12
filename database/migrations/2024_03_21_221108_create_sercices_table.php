@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('sercices', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
-            $table->string('description')->nullable();
+            $table->longText('description')->nullable();
             $table->string('images')->nullable();
             $table->timestamps();
         });

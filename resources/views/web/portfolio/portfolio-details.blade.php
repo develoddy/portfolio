@@ -13,9 +13,11 @@
                         <div class="section__title-wrapper">
                             <div class="section__title-wrapper mb-15">
                                 <span class="section__subtitle bg-field">BRANDING IDES</span>
-                                <h2 class="portfolio__details-title">{{ $title }}</h2>
+                                {{-- {{ $title }} --}}
+                                <h2 class="portfolio__details-title">XXX</h2>
                             </div>
-                            <p>{{ $description }}</p>
+                            {{-- {{ $description }} --}}
+                            <p>XXX XXX</p>
                         </div>
                         <div class="portfolio__details-btn">
                             <a class="bd-btn is-btn-anim" href="portfolio.html">
@@ -83,7 +85,7 @@
     <!-- portfolio area end -->
 
     <!-- portfolio slider area start -->
-    @if(!empty($portfolioDetail))
+    @if(!empty($portfolioDetails))
         <div class="bd-portfoli-details-area section-space-bottom fix">
             <div class="container">
                 <div class="row">
@@ -102,12 +104,12 @@
                                         </div>
                                         @endforeach
                                     @endforeach --}}
-                                    @foreach ( $arr_images as $images )
+                                    @foreach ( $portfolioDetails as $portfolioDetail )
                                         <div class="swiper-slide">
                                             <div class="portfolio__item style-six portfolio-details">
                                                 <div class="portfolio__item-thumb">
                                                     {{-- <img src="{{ $images }}" alt=""> --}}
-                                                    <img src="{{ asset('storage/' . $images) }}" alt="image not found">
+                                                    <img src="{{ asset('storage/' . $portfolioDetail->image) }}" alt="image not found">
                                                 </div>
                                             </div>
                                         </div>

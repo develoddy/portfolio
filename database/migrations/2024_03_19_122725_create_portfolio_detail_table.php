@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('portfolio_detail', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('portfolio_id');
             $table->string('title')->nullable();
             $table->longText('description')->nullable();
             $table->string('image')->nullable();

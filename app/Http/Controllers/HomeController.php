@@ -19,6 +19,7 @@ class HomeController extends Controller
 
         try {
             $portfolios = Portfolio::take(6)->get();
+       
             
             /*if (!$portfolios->isEmpty()) {
                 foreach ( $portfolios as $portfolio ) {

@@ -17,13 +17,13 @@
                         <div class="row align-items-center gy-5">
                             <div class="col-xl-6 col-lg-6">
                                 <div class="banner__content p-relative">
-                                    <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".7s">Hola, 
+                                    <h1 class="banner__title large wow fadeInUp" data-wow-delay=".3s" data-wow-duration=".7s">Hi, 
                                         <span class="banner__shape-hand">
                                             <img src="{{ Vite::asset('resources/imgs/shape/hand-shape.png') }}" alt="image not found">
                                         </span>
-                                        Soy <span class="bd-text-primary">Eddy Lujan</span> Full Stack Developer con sede en Madrid </h1>
+                                        I’m <span class="bd-text-primary">Eddy Lujan</span> Full Stack Based in Madrid</h1>
                                     <p class="wow fadeInUp" data-wow-delay=".4s" data-wow-duration=".9s">
-                                        Mi pasión es crear experiencias digitales impresionantes y funcionales. Desde sitios web elegantes hasta aplicaciones dinámicas, estoy aquí para convertir tus ideas en realidad. Bienvenido a mi portafolio, donde puedes ver lo que puedo hacer por ti.
+                                        Creo experiencias digitales impactantes y funcionales. Descubre mi portafolio y ve cómo puedo hacer realidad tus ideas.
                                     </p>
                                 </div>
                                 <div class="banner__btn wow fadeInUp" data-wow-delay=".6s" data-wow-duration="1.1s">
@@ -75,6 +75,8 @@
         </div>
     </section>
     <!-- Banner area end -->
+
+    
 
     <!-- About area start -->
     <section id="homeabout" class="bd-about__area section-space theme-bg-secondary">
@@ -135,7 +137,7 @@
     <!-- About area end -->
 
     <!-- Section divider -->
-    <div class="section__divider d-none">
+    <div class="section__divider">
         <hr>
     </div>
 
@@ -146,7 +148,7 @@
                 <div class="col-lg-5 col-md-7">
                     <div class="section__title-wrapper">
                         <span class="section__subtitle">MI PORTAFOLIO RECIENTE</span>
-                        <h2 class="section__title">Mira mis últimos trabajos</h2>
+                        <h2 class="section__title">Mis últimos trabajos</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
@@ -169,7 +171,7 @@
                         <div class="col-xl-4 col-lg-4 col-md-6 grid-item">
                             <div class=" portfolio__item">
                                 <div class="portfolio__thumb">
-                                    <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">
+                                    <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_id,'name' => $portfolio->link() ]) }}">
                                         {{-- <img src="{{ $portfolio->image }}" alt="img not found"> --}}
                                         <img src="{{ asset('storage/' . $portfolio->image) }}" alt="image not found">
                                     </a>
@@ -177,15 +179,15 @@
                                 <div class="portfolio__content">
                                     <div class="portfolio__info">
                                         <div class="portfolio__tag">
-                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">Design</a>
+                                            <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_id,'name' => $portfolio->link() ]) }}">Design</a>
                                         </div>
-                                        <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}">Mockup Design</a></h5>
+                                        <h5 class="portfolio__title"><a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_id, 'name' => $portfolio->link() ]) }}">Mockup Design</a></h5>
                                     </div>
                                     <div class="portfolio__btn">
-                                        <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_detail_id,'name' => $portfolio->link() ]) }}" class="circle-btn">
+                                        <a href="{{ route('portfolio-detail', ['id' => $portfolio->portfolio_id,'name' => $portfolio->link() ]) }}" class="circle-btn">
                                             <span class="icon__box">
-                                <i class="fa-regular fa-arrow-right-long"></i>
-                                </span>
+                                                <i class="fa-regular fa-arrow-right-long"></i>
+                                            </span>
                                         </a>
                                     </div>
                                 </div>
@@ -210,8 +212,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="section__title-wrapper section__title-space">
-                        <span class="section__subtitle">Experiencia en tecnologías</span>
-                        <h2 class="section__title">Habilidades de desarrollador</h2>
+                        <span class="section__subtitle">Developer experience</span>
+                        <h2 class="section__title">Developer Skills</h2>
                         <p class="contentHidden">contentHiddenText</p>
                     </div>
                 </div>
@@ -261,7 +263,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6 d-none">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
                         <div class="skill__icon-thumb white-bg">
                             <img src="{{ Vite::asset('resources/imgs/skill/05.png') }}" alt="img not found">
@@ -272,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6 d-none">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
                         <div class="skill__icon-thumb white-bg">
                             <img src="{{ Vite::asset('resources/imgs/skill/06.png') }}" alt="img not found">
@@ -283,7 +285,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6">
+                <div class="col-lg-3 col-md-4 col-md-6 col-sm-6 d-none">
                     <div class="skill__wrapper skill__item wow fadeIn" data-wow-delay=".9s">
                         <div class="skill__icon-thumb white-bg">
                             <img src="{{ Vite::asset('resources/imgs/skill/07.png') }}" alt="img not found">
@@ -312,7 +314,7 @@
                         <h2 class="section__title mb-20">Servicios profesionales</h2>                        
                         {{-- <p class="section__paragraph is-br-none">Begin with a brief introduction or summary that <br> highlights who you are and what</p> --}}
                         <p class="section__paragraph is-br-none">
-                            Desarrollador web experto en frontend y backend, que combina habilidades técnicas con diseño gráfico para crear experiencias digitales impactantes. Desde la arquitectura del sistema hasta la implementación de interfaces atractivas, estoy comprometido a crear experiencias digitales que sean funcionales y visualmente impactantes para mis clientes.
+                            Desarrollador web full-stack, experto en crear soluciones funcionales y visualmente atractivas, desde la arquitectura hasta la interfaz.
                         </p>
                     </div>
                 </div>
