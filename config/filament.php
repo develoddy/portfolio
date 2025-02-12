@@ -57,6 +57,9 @@ return [
 
     'assets_path' => null,
 
+    'path' => 'admin', // Cambia esta línea si necesitas un prefijo diferente
+
+
     /*
     |--------------------------------------------------------------------------
     | Cache Path

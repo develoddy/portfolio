@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use Filament\Facades\Filament;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
@@ -64,6 +65,5 @@ require __DIR__.'/auth.php';
 
 
 Route::group(['prefix' => 'admin'], function () {
-    //Voyager::routes();
-    //Route::resource('abouts', AboutController::class);
+    Filament::routes();
 });
