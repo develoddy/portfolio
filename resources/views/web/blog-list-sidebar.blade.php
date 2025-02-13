@@ -53,10 +53,9 @@
                                         <div class="col-xl-12 col-lg-12 col-md-6">
                                             <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp" data-wow-delay=".3s">
                                                 <div class="blog__thumb is-hover">
-                                                    <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">
-                                                        {{-- <img src="{{ $blog->image }}" alt="image not found"> --}}
+                                                    {{-- <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">
                                                         <img src="{{ Voyager::image( $blog->image ) }}" alt="{{ $blog->title }}">
-                                                    </a>
+                                                    </a> --}}
                                                     <div class="blog__tag">
                                                         <a href="#">Development</a>
                                                     </div>
@@ -73,241 +72,21 @@
                                                         </span>
                                                     </div>
                                                     <h5 class="blog__title">
-                                                        <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a>
+                                                        {{-- <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}">{{ $blog->title }}</a> --}}
                                                     </h5>
                                                     <p>
                                                         {{ $blog->description }}
                                                     </p>
                                                     <div class="blog-btn-text">
-                                                        <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}" class="underline-btn">
+                                                        {{-- <a href="{{ route('blog-detail', ['id' => $blog->blog_details_id,'name' => $blog->link() ]) }}" class="underline-btn">
                                                             Leer más
-                                                        </a>
+                                                        </a> --}}
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     @endforeach
                                 @endif
-
-                                <!--
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                        data-wow-delay=".3s">
-                                        <div class="blog__thumb is-hover">
-                                            <a href="blog-details.html">
-                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-18.png') }}"
-                                                    alt="image not found">
-                                            </a>
-                                            <div class="blog__tag">
-                                                <a href="#">Development</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog__content ">
-                                            <div class="blog__meta">
-                                                <span>
-                                                    <i class="fa-light fa-calendar"></i>
-                                                    Nov 12, 2023
-                                                </span>
-                                                <span>
-                                                    <i class="fa-light fa-comment"></i>
-                                                    10 Comments
-                                                </span>
-                                            </div>
-                                            <h5 class="blog__title">
-                                                <a href="#">Eddy Lujan | Software Developer</a>
-                                            </h5>
-                                            <p>Explore how subtle micro actions can enhance user engagement and satisfaction
-                                                Stay up to date
-                                                with latest trends </p>
-                                            <div class="blog-btn-text">
-                                                <a href="#" class="underline-btn">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                        data-wow-delay=".4s">
-                                        <div class="blog__thumb is-hover">
-                                            <a href="blog-details.html">
-                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-19.png') }}"
-                                                    alt="image not found">
-                                            </a>
-                                            <div class="blog__tag">
-                                                <a href="#">Evidenze</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog__content">
-                                            <div class="blog__meta">
-                                                <span>
-                                                    <i class="fa-light fa-calendar"></i>
-                                                    Mar 12, 2023
-                                                </span>
-                                                <span>
-                                                    <i class="fa-light fa-comment"></i>
-                                                    12 Comments
-                                                </span>
-                                            </div>
-                                            <h5 class="blog__title"><a href="blog-details.html">Excellence A Corporate into
-                                                    Showcase
-                                                    of Achievement</a></h5>
-                                            <p>Remote work can enhance include allowing employees with various needs and
-                                                backgrounds to in
-                                                the workforce.</p>
-                                            <div class="blog-btn-text">
-                                                <a href="blog-details.html" class="underline-btn">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                        data-wow-delay=".5s">
-                                        <div class="blog__thumb is-hover">
-                                            <a href="blog-details.html">
-                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-29.png') }}"
-                                                    alt="image not found">
-                                            </a>
-                                            <div class="blog__tag">
-                                                <a href="#">Indra</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog__content">
-                                            <div class="blog__meta">
-                                                <span>
-                                                    <i class="fa-light fa-calendar"></i>
-                                                    Mar 12, 2023
-                                                </span>
-                                                <span>
-                                                    <i class="fa-light fa-comment"></i>
-                                                    12 Comments
-                                                </span>
-                                            </div>
-                                            <h5 class="blog__title"><a href="blog-details.html">Clearly outline the purpose
-                                                    of your blog and what you want to achieve</a></h5>
-                                            <p>Remote work can enhance include allowing employees with various needs and
-                                                backgrounds to in
-                                                the workforce.</p>
-                                            <div class="blog-btn-text">
-                                                <a href="blog-details.html" class="underline-btn">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                        data-wow-delay=".6s">
-                                        <div class="blog__thumb is-hover">
-                                            <a href="blog-details.html">
-                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-30.png') }}"
-                                                    alt="image not found">
-                                            </a>
-                                            <div class="blog__tag">
-                                                <a href="#">Development</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog__content">
-                                            <div class="blog__meta">
-                                                <span>
-                                                    <i class="fa-light fa-calendar"></i>
-                                                    Mar 12, 2023
-                                                </span>
-                                                <span>
-                                                    <i class="fa-light fa-comment"></i>
-                                                    12 Comments
-                                                </span>
-                                            </div>
-                                            <h5 class="blog__title"><a href="blog-details.html">Select a memorable and
-                                                    relevant domain name for your website</a></h5>
-                                            <p>Remote work can enhance include allowing employees with various needs and
-                                                backgrounds to in
-                                                the workforce.</p>
-                                            <div class="blog-btn-text">
-                                                <a href="blog-details.html" class="underline-btn">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                        data-wow-delay=".7s">
-                                        <div class="blog__thumb is-hover">
-                                            <a href="blog-details.html">
-                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-31.png') }}"
-                                                    alt="image not found">
-                                            </a>
-                                            <div class="blog__tag">
-                                                <a href="#">Design</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog__content">
-                                            <div class="blog__meta">
-                                                <span>
-                                                    <i class="fa-light fa-calendar"></i>
-                                                    Mar 12, 2023
-                                                </span>
-                                                <span>
-                                                    <i class="fa-light fa-comment"></i>
-                                                    12 Comments
-                                                </span>
-                                            </div>
-                                            <h5 class="blog__title"><a href="blog-details.html">Pick a clean and
-                                                    responsive template that aligns with your style</a></h5>
-                                            <p>Remote work can enhance include allowing employees with various needs and
-                                                backgrounds to in
-                                                the workforce.</p>
-                                            <div class="blog-btn-text">
-                                                <a href="blog-details.html" class="underline-btn">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xl-12 col-lg-12 col-md-6">
-                                    <div class="blog__wrap blog__item style-seven bg-solid wow fadeInUp"
-                                        data-wow-delay=".8s">
-                                        <div class="blog__thumb is-hover">
-                                            <a href="blog-details.html">
-                                                <img src="{{ Vite::asset('resources/imgs/blog/blog-32.png') }}"
-                                                    alt="image not found">
-                                            </a>
-                                            <div class="blog__tag">
-                                                <a href="#">Project</a>
-                                            </div>
-                                        </div>
-                                        <div class="blog__content">
-                                            <div class="blog__meta">
-                                                <span>
-                                                    <i class="fa-light fa-calendar"></i>
-                                                    Mar 12, 2023
-                                                </span>
-                                                <span>
-                                                    <i class="fa-light fa-comment"></i>
-                                                    12 Comments
-                                                </span>
-                                            </div>
-                                            <h5 class="blog__title"><a href="blog-details.html">Share a more detailed bio,
-                                                    including your background and interests</a></h5>
-                                            <p>Remote work can enhance include allowing employees with various needs and
-                                                backgrounds to in
-                                                the workforce.</p>
-                                            <div class="blog-btn-text">
-                                                <a href="blog-details.html" class="underline-btn">
-                                                    Read More
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>-->
                             </div>
                         </div>
                     </div>

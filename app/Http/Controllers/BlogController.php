@@ -27,19 +27,11 @@ class BlogController extends Controller
 
         $blogDetail = blogDetail::where('id', $blog_id)->first();
 
+        if (!$blogDetail) {
+            abort(404, 'Blog no encontrado'); // Retorna un error 404 si no se encuentra el blog
+        }
         
-
         $images = json_decode($blogDetail->image);
-
-        //dd($images);
-
-        /*foreach ( $blogDetail as $blogDetail ) {
-            if ( $blogDetail->image != '[]' ) {
-                $blogDetail->image = Storage::url(
-                    (json_decode($blogDetail->image))[0]->download_link
-                );
-            }
-        }*/
         return view('web.blog.blog-detail', compact('blogDetail', 'images'));
 
     }
