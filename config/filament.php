@@ -57,8 +57,6 @@ return [
 
     'assets_path' => null,
 
-    'path' => 'admin', // Cambia esta línea si necesitas un prefijo diferente
-
 
     /*
     |--------------------------------------------------------------------------
@@ -73,6 +71,41 @@ return [
     */
 
     'cache_path' => base_path('bootstrap/cache/filament'),
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | Configuración de Autenticación para Filament
+    |--------------------------------------------------------------------------
+    |
+    | Define el guardia y las rutas de autenticación de Filament.
+    |
+    */
+
+    'auth' => [
+        'guard' => 'filament',
+        'pages' => [
+            'login' => \Filament\Http\Livewire\Auth\Login::class,
+        ],
+    ],
+    
+
+    /*
+    |--------------------------------------------------------------------------
+    | Middleware de Autenticación
+    |--------------------------------------------------------------------------
+    |
+    | Configura los middlewares que Filament usará para la autenticación.
+    |
+    */
+
+    'auth_middleware' => [
+        'filament' => [
+            \Illuminate\Auth\Middleware\Authenticate::class,
+        ],
+    ],
+
+
 
     /*
     |--------------------------------------------------------------------------

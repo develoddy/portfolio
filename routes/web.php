@@ -10,6 +10,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -71,5 +72,6 @@ Route::group(['prefix' => 'blog'], function () {
     Route::get('/', [BlogController::class, 'index'])->name('blog');
     Route::get('/{id}/{name}', [BlogController::class, 'show'])->name('blog-detail');
 });
+
 
 require __DIR__.'/auth.php';
