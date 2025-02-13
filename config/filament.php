@@ -133,12 +133,16 @@ return [
 
     'default_panel' => 'admin',
 
+    // 'panels' => [
+    //     'admin' => [
+    //         'id' => 'admin',
+    //         'path' => 'admin',
+    //         'login' => \Filament\Http\Livewire\Auth\Login::class,
+    //     ],
+    // ],
+
     'panels' => [
-        'admin' => [
-            'id' => 'admin',
-            'path' => 'admin',
-            'login' => \Filament\Http\Livewire\Auth\Login::class,
-        ],
+        'admin' => App\Providers\Filament\AdminPanelProvider::class,
     ],
 
 
