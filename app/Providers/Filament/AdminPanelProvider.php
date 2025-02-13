@@ -33,7 +33,7 @@ class AdminPanelProvider extends PanelProvider
         ->passwordReset()
         ->emailVerification()
         ->darkModeBrandLogo(asset('images/logos/aom_hub_blanco.svg'))
-        ->brandLogo(asset('images/logos/aom_hub.svg'))
+        ->brandLogo(asset('imgs/logo/logo-white.png'))
         ->favicon(asset('images/favicon.ico'))
         ->colors([
             'primary' => Color::Amber,
