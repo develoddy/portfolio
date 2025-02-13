@@ -25,14 +25,14 @@ class BlogController extends Controller
 
     public function show($blog_id) {
 
-        $blogDetail = blogDetail::where('id', $blog_id)->first();
+        // $blogDetail = blogDetail::where('id', $blog_id)->first();
 
-        if (!$blogDetail) {
-            abort(404, 'Blog no encontrado'); // Retorna un error 404 si no se encuentra el blog
-        }
-        
-        $images = json_decode($blogDetail->image);
-        return view('web.blog.blog-detail', compact('blogDetail', 'images'));
+        // if (!$blogDetail) {
+        //     abort(404, 'Blog no encontrado'); // Retorna un error 404 si no se encuentra el blog
+        // }
+
+        // $images = json_decode($blogDetail->image);
+        // return view('web.blog.blog-detail', compact('blogDetail', 'images'));
 
     }
 }
