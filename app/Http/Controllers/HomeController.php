@@ -3,17 +3,17 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
+//use Illuminate\Support\Facades\Auth;
 use App\Models\Portfolio;
 use App\Models\Blog;
 use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
-    public function __construct() {
+    //public function __construct() {
         // Middleware para verificar la autenticación del usuario
-        $this->middleware('auth');
-    }
+    //    $this->middleware('auth');
+    //}
 
     public function index() {
 

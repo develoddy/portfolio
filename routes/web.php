@@ -31,14 +31,19 @@ use Illuminate\Support\Facades\Route;
     //Route::get('/', [HomeController::class, 'index'])->name('home');
 //});
 
-Route::get('/', function () {
-    return redirect(route('login'));
-});
+// Route::get('/', function () {
+//     return redirect(route('login'));
+// });
 
 //Route::get('/home', [HomeController::class, 'index'])->name('home');
-Route::get('/home', [HomeController::class, 'index'])
-    ->middleware(['auth', 'verified'])
-    ->name('home');
+// Route::get('/home', [HomeController::class, 'index'])
+//     ->middleware(['auth', 'verified'])
+//     ->name('home');
+
+
+
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 // -- Service
 Route::get('/service', function () {
