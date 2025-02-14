@@ -99,10 +99,9 @@ return [
     |
     */
 
-    'auth_middleware' => [
-        'filament' => [
-            \Illuminate\Auth\Middleware\Authenticate::class,
-        ],
+    'middleware' => [
+        'auth',
+        'can:access-admin', // Asegura que solo los usuarios con este permiso puedan entrar
     ],
 
 
