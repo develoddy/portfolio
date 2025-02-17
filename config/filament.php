@@ -108,6 +108,7 @@ return [
     */
 
     'middleware' => [
+        'web',
         'auth',
         'role:admin', // Asegura que solo los usuarios con este permiso puedan entrar
     ],
