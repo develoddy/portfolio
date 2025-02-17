@@ -40,11 +40,6 @@ return [
             'driver' => 'session',
             'provider' => 'users',
         ],
-
-        'filament' => [ // <-- Nuevo guardia para Filament
-            'driver' => 'session',
-            'provider' => 'users',
-        ],
     ],
 
     /*
