@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import laravel, { refreshPaths } from 'laravel-vite-plugin'; //import laravel from 'laravel-vite-plugin';
+import laravel from 'laravel-vite-plugin'; //import laravel, { refreshPaths } from 'laravel-vite-plugin';
 import path from 'path';
 
 
@@ -12,11 +12,7 @@ export default defineConfig({
                 'resources/js/bootstrap.js',
                 'resources/js/main.js',
             ],
-            refresh: [
-                ...refreshPaths,
-                'app/Livewire/**',
-                'app/Filament/**'
-              ],
+            refresh: true,
         }),
     ],
 
