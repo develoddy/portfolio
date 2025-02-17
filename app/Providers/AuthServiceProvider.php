@@ -22,9 +22,9 @@ class AuthServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->registerPolicies();
+        // $this->registerPolicies();
 
-        // Permitir el acceso a Filament a cualquier usuario autenticado
-        Gate::define('viewFilament', fn ($user) => true);
+        // // Permitir el acceso a Filament a cualquier usuario autenticado
+        // Gate::define('viewFilament', fn ($user) => true);
     }
 }
