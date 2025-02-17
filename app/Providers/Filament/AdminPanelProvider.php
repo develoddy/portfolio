@@ -33,7 +33,7 @@ class AdminPanelProvider extends PanelProvider
         ->passwordReset()
         ->emailVerification()
         ->profile()
-        ->darkModeBrandLogo(asset('images/logos/aom_hub_blanco.svg'))
+        ->darkModeBrandLogo(asset('imgs/logo/logo-white.png'))
         ->brandLogo(asset('imgs/logo/logo-white.png'))
         ->favicon(asset('images/favicon.ico'))
         ->colors([
@@ -67,9 +67,9 @@ class AdminPanelProvider extends PanelProvider
 
    
 
-    // public function register(): void
-    // {
-    //   parent::register();
-    //   FilamentView::registerRenderHook('panels::body.end', fn(): string => Blade::render("@vite('resources/js/app.js')"));
-    // }
+    public function register(): void
+    {
+      parent::register();
+      FilamentView::registerRenderHook('panels::body.end', fn(): string => Blade::render("@vite('resources/js/app.js')"));
+    }
 }
