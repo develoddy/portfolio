@@ -73,6 +73,38 @@ return [
     'cache_path' => base_path('bootstrap/cache/filament'),
 
 
+    /*
+    |--------------------------------------------------------------------------
+    | Configuración de Autenticación para Filament
+    |--------------------------------------------------------------------------
+    |
+    | Define el guardia y las rutas de autenticación de Filament.
+    |
+    */
+
+    'auth' => [
+        'guard' => 'web', //old filament
+        'pages' => [
+            'login' => \Filament\Http\Livewire\Auth\Login::class,
+        ],
+    ],
+    
+
+    /*
+    |--------------------------------------------------------------------------
+    | Middleware de Autenticación
+    |--------------------------------------------------------------------------
+    |
+    | Configura los middlewares que Filament usará para la autenticación.
+    |
+    */
+
+    'middleware' => [
+        'auth',
+        'can:access-admin', // Asegura que solo los usuarios con este permiso puedan entrar
+    ],
+
+
 
     /*
     |--------------------------------------------------------------------------
@@ -88,5 +120,29 @@ return [
     */
 
     'livewire_loading_delay' => 'default',
+
+        /*
+    |--------------------------------------------------------------------------
+    | Filament Panels
+    |--------------------------------------------------------------------------
+    |
+    | Define the panels for your application.
+    |
+    */
+
+    'default_panel' => 'admin',
+
+    // 'panels' => [
+    //     'admin' => [
+    //         'id' => 'admin',
+    //         'path' => 'admin',
+    //         'login' => \Filament\Http\Livewire\Auth\Login::class,
+    //     ],
+    // ],
+
+    'panels' => [
+        'admin' => App\Providers\Filament\AdminPanelProvider::class,
+    ],
+
 
 ];
