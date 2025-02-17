@@ -75,6 +75,47 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Authentication Guards
+    |--------------------------------------------------------------------------
+    |
+    | Filament uses Laravel's default authentication guards to authorize users
+    | and provide access to the Filament dashboard. In this case, we'll use
+    | the `web` guard, which is the default Laravel guard.
+    |
+    */
+
+    'guard' => 'web',  // Aquí aseguramos que estamos usando el guard `web` que es el predeterminado
+
+    /*
+    |--------------------------------------------------------------------------
+    | Role
+    |--------------------------------------------------------------------------
+    |
+    | Filament allows you to define a role that should be required to access the
+    | Filament dashboard. In this case, we define the role as 'admin'.
+    |
+    */
+
+    'role' => 'admin',  // Aseguramos que el rol requerido para acceder es 'admin'
+
+    /*
+    |--------------------------------------------------------------------------
+    | Middleware de Autenticación
+    |--------------------------------------------------------------------------
+    |
+    | Configura los middlewares que Filament usará para la autenticación.
+    |
+    */
+
+    'middleware' => [
+        'auth',
+        'role:admin', // Asegura que solo los usuarios con este permiso puedan entrar
+    ],
+
+
+
+    /*
+    |--------------------------------------------------------------------------
     | Livewire Loading Delay
     |--------------------------------------------------------------------------
     |
@@ -87,5 +128,6 @@ return [
     */
 
     'livewire_loading_delay' => 'default',
+
 
 ];
